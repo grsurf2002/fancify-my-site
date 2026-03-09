@@ -22,7 +22,7 @@ const services = [
     title: "Filming & Analysis",
     description:
       "Video analysis is a key tool for improving technique. Break down your movements in detail, identify areas for improvement, and track your progress over time to stay motivated.",
-    image: "https://freight.cargo.site/w/750/i/S1733482241316149609439673663945/33333.png",
+    image: videoAnalysisImg,
   },
 ];
 

@@ -17,8 +17,9 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between">
-        <a href="#" className="font-heading text-2xl font-bold tracking-wider text-foreground">
-          UPGRADE
+        <a href="#" className="flex items-center gap-2">
+          <img src={logo} alt="Upgrade Surfing" className="h-10 w-10 rounded-lg" />
+          <span className="font-heading text-2xl font-bold tracking-wider text-foreground">UPGRADE</span>
         </a>
         <div className="flex items-center gap-8">
           <a href="#services" className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
