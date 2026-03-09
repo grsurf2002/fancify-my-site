@@ -52,14 +52,6 @@ const ContactSection = () => {
           </div>
         </div>
 
-        <div className="mt-12">
-          <a
-            href="mailto:UPGRADESURFING@GMAIL.COM"
-            className="inline-block px-10 py-4 rounded-full bg-primary text-primary-foreground font-bold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
-          >
-            Schedule Your Class
-          </a>
-        </div>
       </div>
     </section>
   );
