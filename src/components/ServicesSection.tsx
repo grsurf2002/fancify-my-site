@@ -70,6 +70,14 @@ const ServicesSection = () => {
                 <p className="text-sm leading-relaxed text-muted-foreground">
                   {service.description}
                 </p>
+                {service.link && (
+                  <Link
+                    to={service.link}
+                    className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:underline transition-colors"
+                  >
+                    Find out more <ArrowRight size={16} />
+                  </Link>
+                )}
               </div>
             </div>
           ))}
