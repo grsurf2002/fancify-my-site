@@ -1,0 +1,78 @@
+import { Waves, Compass, Video } from "lucide-react";
+
+const services = [
+  {
+    icon: Waves,
+    title: "Surf Lessons",
+    description:
+      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
+    image: "https://freight.cargo.site/w/750/i/J1733477602052248791855989998025/F5B6F47B-F0DF-4975-BD41-687861DF8F40-1.png",
+  },
+  {
+    icon: Compass,
+    title: "Surf Skate Lessons",
+    description:
+      "We use surfskating to upgrade surf skills quicker — work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
+    image: "https://freight.cargo.site/w/750/i/B1733479139200985709999216607689/F5B6F47B-F0DF-4975-BD41-687861DF8F40-2.png",
+  },
+  {
+    icon: Video,
+    title: "Filming & Analysis",
+    description:
+      "Video analysis is a key tool for improving technique. Break down your movements in detail, identify areas for improvement, and track your progress over time to stay motivated.",
+    image: "https://freight.cargo.site/w/750/i/S1733482241316149609439673663945/33333.png",
+  },
+];
+
+const ServicesSection = () => {
+  return (
+    <section id="services" className="py-24 md:py-32 bg-ocean">
+      <div className="container px-4">
+        <div className="text-center mb-16">
+          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
+            What We Offer
+          </p>
+          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground">
+            Our Services
+          </h2>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
+          {services.map((service, i) => (
+            <div
+              key={service.title}
+              className="group relative rounded-2xl overflow-hidden bg-card shadow-card hover:shadow-glow transition-all duration-500"
+              style={{ animationDelay: `${i * 0.15}s` }}
+            >
+              {/* Image */}
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
+                <div className="absolute bottom-4 left-4">
+                  <service.icon className="text-primary" size={28} />
+                </div>
+              </div>
+
+              {/* Content */}
+              <div className="p-6">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-3">
+                  {service.title}
+                </h3>
+                <p className="text-sm leading-relaxed text-muted-foreground">
+                  {service.description}
+                </p>
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesSection;
