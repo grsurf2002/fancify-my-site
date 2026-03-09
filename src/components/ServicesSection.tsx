@@ -2,6 +2,7 @@ import { Waves, Compass, Video, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import videoAnalysisImg from "@/assets/video-analysis.jpeg";
 import beachCoachingImg from "@/assets/beach-coaching.jpeg";
+import surfCoachingImg from "@/assets/coaching-1.jpeg";
 
 const services = [
   {
@@ -9,7 +10,7 @@ const services = [
     title: "Surf Coaching / Lesson",
     description:
       "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
-    image: "https://freight.cargo.site/w/750/i/J1733477602052248791855989998025/F5B6F47B-F0DF-4975-BD41-687861DF8F40-1.png",
+    image: surfCoachingImg,
     link: "/surf-coaching",
   },
   {
