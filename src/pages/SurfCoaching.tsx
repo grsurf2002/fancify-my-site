@@ -2,12 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import coaching1 from "@/assets/coaching-1.jpeg";
 import coaching2 from "@/assets/coaching-2.jpeg";
-import coaching3 from "@/assets/coaching-3.jpeg";
-import coaching4 from "@/assets/coaching-4.jpeg";
 import coaching5 from "@/assets/coaching-5.jpeg";
-import coaching6 from "@/assets/coaching-6.jpeg";
 
-const images = [coaching1, coaching2, coaching3, coaching4, coaching5, coaching6];
+const images = [coaching1, coaching2, coaching5];
 
 const SurfCoaching = () => {
   return (
