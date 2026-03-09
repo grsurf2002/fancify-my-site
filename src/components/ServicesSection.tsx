@@ -1,4 +1,6 @@
 import { Waves, Compass, Video } from "lucide-react";
+import videoAnalysisImg from "@/assets/video-analysis.jpeg";
+import beachCoachingImg from "@/assets/beach-coaching.jpeg";
 
 const services = [
   {
