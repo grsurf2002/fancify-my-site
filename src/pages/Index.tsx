@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
 import ServicesSection from "@/components/ServicesSection";
 import TeamSection from "@/components/TeamSection";
+import VideoSection from "@/components/VideoSection";
 import MissionSection from "@/components/MissionSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
