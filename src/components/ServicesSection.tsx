@@ -5,7 +5,7 @@ import beachCoachingImg from "@/assets/beach-coaching.jpeg";
 const services = [
   {
     icon: Waves,
-    title: "Surf Lessons",
+    title: "Surf Coaching / Lesson",
     description:
       "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
     image: "https://freight.cargo.site/w/750/i/J1733477602052248791855989998025/F5B6F47B-F0DF-4975-BD41-687861DF8F40-1.png",
