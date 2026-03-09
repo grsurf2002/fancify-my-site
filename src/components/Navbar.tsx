@@ -26,10 +26,10 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+          <a href="#services" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Services
           </a>
-          <a href="#team" className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+          <a href="#team" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Team
           </a>
           <a
