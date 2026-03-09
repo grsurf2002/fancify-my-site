@@ -22,7 +22,7 @@ const coaches = [
     images: [
       "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
     ],
-    bio: "Born in Ericeira, surfing since age 5. Started competing at 11 — his entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
+    bio: "Born in Ericeira, surfing since age 5. Started competing at 11, with a full junior career and a couple years of QS (Qualifying Series) around Europe. His entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
     instagram: "https://www.instagram.com/hugodsc/",
     handle: "@hugodsc",
   },
