@@ -22,15 +22,15 @@ const coaches = [
     images: [
       "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
     ],
-    bio: "Born in Ericeira, surfing since age 5. Started competing at 11 — his entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
+    bio: "Born in Ericeira, surfing since age 5. Started competing at 11, with a full junior career and a couple years of QS (Qualifying Series) around Europe. His entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
     instagram: "https://www.instagram.com/hugodsc/",
     handle: "@hugodsc",
   },
   {
     name: "Gabriel Ribeiro",
-    role: "Coach",
+    role: "Certified Coach",
     images: gabrielImages,
-    bio: "Born in Cascais, surfing since age 3. Moved to Ericeira young and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
+    bio: "Born in Cascais, surfing since age 3. Moved to Ericeira young and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in his junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
     instagram: "https://www.instagram.com/_gabriel.ribeiro7/",
     handle: "@_gabriel.ribeiro7",
   },
