@@ -125,6 +125,9 @@ const TeamSection = () => {
                     <p className="text-sm text-primary font-medium tracking-wider uppercase">
                       {coach.role}
                     </p>
+                    <p className="text-xs text-muted-foreground font-medium tracking-wide">
+                      Co-Founder
+                    </p>
                   </div>
                   <a
                     href={coach.instagram}
