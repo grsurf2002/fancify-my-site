@@ -26,14 +26,17 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-8">
-          <a href="#services" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/#services" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Services
           </a>
-          <a href="#team" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/prices" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+            Prices
+          </a>
+          <a href="/#team" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Team
           </a>
           <a
-            href="#contact"
+            href="/#contact"
             className="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
           >
             Contact
