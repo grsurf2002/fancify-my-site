@@ -10,7 +10,7 @@ const VideoSection = () => {
             Latest Video
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-            Gabriel Ribeiro in action — see what Upgrade Surfing is all about.
+            Your coach in action.
           </p>
         </div>
 
