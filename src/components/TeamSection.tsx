@@ -1,10 +1,27 @@
 import { Instagram } from "lucide-react";
+import { useState, useEffect } from "react";
+import gabriel1 from "@/assets/gabriel-1.jpeg";
+import gabriel2 from "@/assets/gabriel-2.jpeg";
+import gabriel3 from "@/assets/gabriel-3.jpeg";
+import gabriel4 from "@/assets/gabriel-4.jpeg";
+import gabriel5 from "@/assets/gabriel-5.jpeg";
+
+const gabrielImages = [
+  "https://freight.cargo.site/w/1000/i/O1733496448574160066841008619977/F5B6F47B-F0DF-4975-BD41-687861DF8F40-4.png",
+  gabriel1,
+  gabriel2,
+  gabriel3,
+  gabriel4,
+  gabriel5,
+];
 
 const coaches = [
   {
     name: "Hugo Cardoso",
     role: "Certified Coach",
-    image: "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
+    images: [
+      "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
+    ],
     bio: "Born in Ericeira, surfing since age 5. Started competing at 11 — his entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
     instagram: "https://www.instagram.com/hugodsc/",
     handle: "@hugodsc",
@@ -12,12 +29,63 @@ const coaches = [
   {
     name: "Gabriel Ribeiro",
     role: "Coach",
-    image: "https://freight.cargo.site/w/1000/i/O1733496448574160066841008619977/F5B6F47B-F0DF-4975-BD41-687861DF8F40-4.png",
-    bio: "Born in Cascais, surfing since age 3. Moved to Ericeira young and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills.",
+    images: gabrielImages,
+    bio: "Born in Cascais, surfing since age 3. Moved to Ericeira young and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
     instagram: "https://www.instagram.com/_gabriel.ribeiro7/",
     handle: "@_gabriel.ribeiro7",
   },
 ];
+
+const ImageCarousel = ({ images }: { images: string[] }) => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (images.length <= 1) return;
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [images.length]);
+
+  if (images.length === 1) {
+    return (
+      <img
+        src={images[0]}
+        alt=""
+        className="w-full h-full object-cover object-top"
+        loading="lazy"
+      />
+    );
+  }
+
+  return (
+    <div className="relative w-full h-full">
+      {images.map((src, i) => (
+        <img
+          key={i}
+          src={src}
+          alt=""
+          className={`absolute inset-0 w-full h-full object-cover object-top transition-opacity duration-700 ${
+            i === current ? "opacity-100" : "opacity-0"
+          }`}
+          loading="lazy"
+        />
+      ))}
+      {/* Dots */}
+      <div className="absolute bottom-3 left-1/2 -translate-x-1/2 flex gap-1.5 z-10">
+        {images.map((_, i) => (
+          <button
+            key={i}
+            onClick={() => setCurrent(i)}
+            className={`w-2 h-2 rounded-full transition-all ${
+              i === current ? "bg-white scale-110" : "bg-white/50"
+            }`}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
 const TeamSection = () => {
   return (
@@ -43,12 +111,7 @@ const TeamSection = () => {
             >
               {/* Photo */}
               <div className="relative h-80 overflow-hidden">
-                <img
-                  src={coach.image}
-                  alt={coach.name}
-                  className="w-full h-full object-cover object-top transition-transform duration-700 group-hover:scale-105"
-                  loading="lazy"
-                />
+                <ImageCarousel images={coach.images} />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/30 to-transparent" />
               </div>
 
