@@ -4,12 +4,12 @@ import Footer from "@/components/Footer";
 const pricingData = [
   {
     title: "Group Surf Coaching w/ Video Analysis",
-    range: "37€ – 75€",
+    range: "From 37€",
     description: "Depending on your pack or monthly subscription.",
   },
   {
     title: "Private Surf Coaching / Video Analysis",
-    range: "100€ – 160€",
+    range: "From 100€",
     description: "Depending on your pack or monthly subscription.",
   },
   {
