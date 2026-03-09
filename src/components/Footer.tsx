@@ -10,7 +10,7 @@ const Footer = () => {
         </p>
         <div className="flex gap-4">
           <a
-            href="https://www.instagram.com/hugodsc/"
+            href="https://www.instagram.com/upgradesurfing/"
             target="_blank"
             rel="noopener noreferrer"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
@@ -18,12 +18,10 @@ const Footer = () => {
             Instagram
           </a>
           <a
-            href="https://www.youtube.com/watch?app=desktop&v=cZIjdCa-yJs"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="tel:+351912345678"
             className="text-sm text-muted-foreground hover:text-primary transition-colors"
           >
-            YouTube
+            Phone
           </a>
         </div>
       </div>
