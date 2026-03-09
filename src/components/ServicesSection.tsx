@@ -1,4 +1,5 @@
-import { Waves, Compass, Video } from "lucide-react";
+import { Waves, Compass, Video, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 import videoAnalysisImg from "@/assets/video-analysis.jpeg";
 import beachCoachingImg from "@/assets/beach-coaching.jpeg";
 
