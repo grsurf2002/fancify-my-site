@@ -3,14 +3,14 @@ import Footer from "@/components/Footer";
 
 const pricingData = [
   {
-    title: "Group Surf Coaching",
+    title: "Group Surf Coaching w/ Video Analysis",
     range: "37€ – 75€",
-    description: "Per session, depending on group size and duration.",
+    description: "Depending on your pack or monthly subscription.",
   },
   {
-    title: "Private Surf Coaching",
+    title: "Private Surf Coaching / Video Analysis",
     range: "100€ – 160€",
-    description: "One-on-one coaching tailored to your level.",
+    description: "Depending on your pack or monthly subscription.",
   },
   {
     title: "Group Surfskate Lesson",
