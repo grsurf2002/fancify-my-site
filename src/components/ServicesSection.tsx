@@ -19,7 +19,7 @@ const services = [
   },
   {
     icon: Video,
-    title: "Filming & Analysis",
+    title: "Video Analysis",
     description:
       "Video analysis is a key tool for improving technique. Break down your movements in detail, identify areas for improvement, and track your progress over time to stay motivated.",
     image: videoAnalysisImg,

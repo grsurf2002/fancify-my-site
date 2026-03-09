@@ -33,6 +33,17 @@ const ContactSection = () => {
               +351 911 001 039
             </span>
           </a>
+          <a
+            href="https://www.instagram.com/upgrade_surfcoaching"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 group"
+          >
+            <Instagram className="text-primary" size={20} />
+            <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+              @upgrade_surfcoaching
+            </span>
+          </a>
           <div className="flex items-center justify-center gap-3">
             <MapPin className="text-primary" size={20} />
             <span className="text-lg text-muted-foreground">
