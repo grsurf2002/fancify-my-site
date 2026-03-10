@@ -1,4 +1,5 @@
-import { Star } from "lucide-react";
+import { Star, ChevronDown, ChevronUp } from "lucide-react";
+import { useState } from "react";
 
 const reviews = [
   {
@@ -27,7 +28,33 @@ const reviews = [
   },
 ];
 
+const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
+  <div className="rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
+    <div className="flex items-center gap-1 mb-3">
+      {[...Array(5)].map((_, i) => (
+        <Star key={i} className="h-4 w-4 fill-primary text-primary" />
+      ))}
+    </div>
+    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+      "{review.text}"
+    </p>
+    <div className="flex items-center gap-3">
+      <div className="h-9 w-9 rounded-full bg-primary/20 flex items-center justify-center">
+        <span className="text-sm font-bold text-primary">
+          {review.name.charAt(0)}
+        </span>
+      </div>
+      <span className="font-heading text-sm font-semibold text-foreground">
+        {review.name}
+      </span>
+    </div>
+  </div>
+);
+
 const ReviewsSection = () => {
+  const [expanded, setExpanded] = useState(false);
+  const visibleReviews = expanded ? reviews : reviews.slice(0, 2);
+
   return (
     <section id="reviews" className="py-20 px-4">
       <div className="container">
@@ -38,33 +65,27 @@ const ReviewsSection = () => {
           Google Reviews — 5.0 ⭐
         </p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {reviews.map((review, index) => (
-            <div
-              key={index}
-              className="rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]"
-            >
-              <div className="flex items-center gap-1 mb-3">
-                {[...Array(5)].map((_, i) => (
-                  <Star key={i} className="h-4 w-4 fill-primary text-primary" />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-                "{review.text}"
-              </p>
-              <div className="flex items-center gap-3">
-                <div className="h-9 w-9 rounded-full bg-primary/20 flex items-center justify-center">
-                  <span className="text-sm font-bold text-primary">
-                    {review.name.charAt(0)}
-                  </span>
-                </div>
-                <span className="font-heading text-sm font-semibold text-foreground">
-                  {review.name}
-                </span>
-              </div>
-            </div>
+        <div className="mt-12 grid gap-6 md:grid-cols-2">
+          {visibleReviews.map((review, index) => (
+            <ReviewCard key={index} review={review} />
           ))}
         </div>
+
+        {reviews.length > 2 && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={() => setExpanded(!expanded)}
+              className="flex items-center gap-2 text-primary font-heading font-semibold tracking-wider uppercase text-sm hover:opacity-80 transition-opacity"
+            >
+              {expanded ? "Show less" : "Show more"}
+              {expanded ? (
+                <ChevronUp className="h-5 w-5" />
+              ) : (
+                <ChevronDown className="h-5 w-5" />
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </section>
   );
