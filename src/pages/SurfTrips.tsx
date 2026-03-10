@@ -34,7 +34,7 @@ const comingSoon = [
   {
     destination: "Marrocos",
     dates: "Fevereiro 2027",
-    emoji: "🇲🇦🌵",
+    emoji: "",
   },
   {
     destination: "Algarve",
