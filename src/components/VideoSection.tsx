@@ -6,7 +6,7 @@ const VideoSection = () => {
           <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
             Watch Us Surf
           </p>
-          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground">
+          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Latest Video
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto">

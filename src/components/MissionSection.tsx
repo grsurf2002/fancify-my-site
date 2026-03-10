@@ -18,7 +18,7 @@ const MissionSection = () => {
         <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3">
           Our Mission
         </p>
-        <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8">
+        <h2 className="font-heading text-4xl md:text-5xl font-bold text-foreground mb-8 uppercase">
           Surfing Made <span className="text-gradient-golden">Accessible</span>
         </h2>
         <p className="text-lg leading-relaxed text-secondary-foreground">

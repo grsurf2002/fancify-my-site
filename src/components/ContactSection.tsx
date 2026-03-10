@@ -7,7 +7,7 @@ const ContactSection = () => {
         <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
           Get Started
         </p>
-        <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6">
+        <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6 uppercase">
           Book Your Session
         </h2>
         <p className="text-muted-foreground mb-12">
