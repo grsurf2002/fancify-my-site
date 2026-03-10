@@ -113,8 +113,5 @@ const SurfTrips = () => {
   );
 };
 
-export default SurfTrips;
-  );
-};
 
 export default SurfTrips;
