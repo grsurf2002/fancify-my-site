@@ -62,6 +62,9 @@ const Navbar = () => {
           <a href="/#services" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Services
           </a>
+          <a href="/surf-trips" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+            Surf Trips
+          </a>
           <a href="/prices" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Prices
           </a>
