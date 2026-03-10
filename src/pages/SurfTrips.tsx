@@ -6,27 +6,27 @@ const trips = [
   {
     destination: "Maldivas",
     dates: "6 — 16 de Maio 2026",
-    emoji: "🇲🇻🏝️",
+    emoji: "",
   },
   {
     destination: "Maldivas",
     dates: "16 — 26 de Maio 2026",
-    emoji: "🇲🇻🏝️",
+    emoji: "",
   },
   {
     destination: "Algarve",
     dates: "16 — 19 de Outubro 2026",
-    emoji: "🇵🇹",
+    emoji: "",
   },
   {
     destination: "Algarve",
     dates: "12 — 15 de Novembro 2026",
-    emoji: "🇵🇹",
+    emoji: "",
   },
   {
     destination: "Algarve",
     dates: "17 — 20 de Dezembro 2026",
-    emoji: "🇵🇹",
+    emoji: "",
   },
 ];
 
@@ -34,17 +34,17 @@ const comingSoon = [
   {
     destination: "Marrocos",
     dates: "Fevereiro 2027",
-    emoji: "🇲🇦🌵",
+    emoji: "",
   },
   {
     destination: "Algarve",
     dates: "Fevereiro 2027",
-    emoji: "🇵🇹",
+    emoji: "",
   },
   {
     destination: "Maldivas",
     dates: "Maio 2027",
-    emoji: "🇲🇻🏝️",
+    emoji: "",
   },
 ];
 
@@ -67,7 +67,6 @@ const SurfTrips = () => {
                 key={index}
                 className="group relative rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]"
               >
-                <span className="text-4xl mb-4 block">{trip.emoji}</span>
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="h-4 w-4 text-primary" />
                   <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
@@ -92,7 +91,7 @@ const SurfTrips = () => {
                 key={index}
                 className="group relative rounded-xl border border-dashed border-border bg-card/50 p-6 transition-all duration-300 hover:border-primary/30"
               >
-                <span className="text-4xl mb-4 block">{trip.emoji}</span>
+                
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="h-4 w-4 text-primary/60" />
                   <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
