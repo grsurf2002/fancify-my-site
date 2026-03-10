@@ -6,14 +6,18 @@ import gabriel3 from "@/assets/gabriel-3.jpeg";
 import gabriel4 from "@/assets/gabriel-4.jpeg";
 import gabriel5 from "@/assets/gabriel-5.jpeg";
 import hugo1 from "@/assets/hugo-1.jpeg";
-import hugo2 from "@/assets/hugo-2.jpeg";
 import hugo3 from "@/assets/hugo-3.jpeg";
+import hugo4 from "@/assets/hugo-4.jpeg";
+import hugo5 from "@/assets/hugo-5.jpeg";
+import hugo6 from "@/assets/hugo-6.jpeg";
 
 const hugoImages = [
+  hugo4,
   "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
   hugo1,
-  hugo2,
   hugo3,
+  hugo5,
+  hugo6,
 ];
 
 const gabrielImages = [
