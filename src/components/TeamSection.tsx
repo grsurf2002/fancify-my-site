@@ -5,6 +5,16 @@ import gabriel2 from "@/assets/gabriel-2.jpeg";
 import gabriel3 from "@/assets/gabriel-3.jpeg";
 import gabriel4 from "@/assets/gabriel-4.jpeg";
 import gabriel5 from "@/assets/gabriel-5.jpeg";
+import hugo1 from "@/assets/hugo-1.jpeg";
+import hugo2 from "@/assets/hugo-2.jpeg";
+import hugo3 from "@/assets/hugo-3.jpeg";
+
+const hugoImages = [
+  "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
+  hugo1,
+  hugo2,
+  hugo3,
+];
 
 const gabrielImages = [
   "https://freight.cargo.site/w/1000/i/O1733496448574160066841008619977/F5B6F47B-F0DF-4975-BD41-687861DF8F40-4.png",
@@ -19,9 +29,7 @@ const coaches = [
   {
     name: "Hugo Cardoso",
     role: "Certified Coach",
-    images: [
-      "https://freight.cargo.site/w/1000/i/Y1733500838843909377493164573129/F5B6F47B-F0DF-4975-BD41-687861DF8F40-5.png",
-    ],
+    images: hugoImages,
     bio: "Born in Ericeira, surfing since age 5. Started competing at 11, with a full junior career and a couple years of QS (Qualifying Series) around Europe. His entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
     instagram: "https://www.instagram.com/hugodsc/",
     handle: "@hugodsc",
