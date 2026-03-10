@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SurfCoaching from "./pages/SurfCoaching";
 import Prices from "./pages/Prices";
+import SurfTrips from "./pages/SurfTrips";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
