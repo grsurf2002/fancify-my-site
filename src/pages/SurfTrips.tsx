@@ -81,10 +81,39 @@ const SurfTrips = () => {
               </div>
             ))}
           </div>
+
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mt-20 mb-10">
+            Coming Soon
+          </h2>
+
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {comingSoon.map((trip, index) => (
+              <div
+                key={index}
+                className="group relative rounded-xl border border-dashed border-border bg-card/50 p-6 transition-all duration-300 hover:border-primary/30"
+              >
+                <span className="text-4xl mb-4 block">{trip.emoji}</span>
+                <div className="flex items-center gap-2 mb-2">
+                  <MapPin className="h-4 w-4 text-primary/60" />
+                  <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
+                    {trip.destination}
+                  </h3>
+                </div>
+                <div className="flex items-center gap-2 text-muted-foreground">
+                  <Calendar className="h-4 w-4 text-accent/60" />
+                  <span className="font-body text-sm">{trip.dates}</span>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
       <Footer />
     </div>
+  );
+};
+
+export default SurfTrips;
   );
 };
 
