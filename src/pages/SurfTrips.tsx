@@ -6,7 +6,7 @@ const trips = [
   {
     destination: "Maldivas",
     dates: "6 — 16 de Maio 2026",
-    emoji: "🏝️",
+    emoji: "🇲🇻🏝️",
   },
   {
     destination: "Maldivas",
