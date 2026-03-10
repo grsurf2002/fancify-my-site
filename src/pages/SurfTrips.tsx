@@ -21,7 +21,7 @@ const trips = [
   {
     destination: "Algarve",
     dates: "12 — 15 de Novembro 2026",
-    emoji: "🇵🇹",
+    emoji: "",
   },
   {
     destination: "Algarve",
