@@ -82,7 +82,7 @@ const SurfTrips = () => {
           </div>
 
           <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mt-20 mb-10">
-            Coming Soon
+            Coming Soon 2027
           </h2>
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
