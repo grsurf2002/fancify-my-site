@@ -38,6 +38,21 @@ const trips: Trip[] = [
   {
     destination: "Maldivas",
     dates: "16 — 26 de Maio 2026",
+    details: {
+      tagline: "Surf – Learn – Evolve – Repeat",
+      location:
+        "Stay right in front of the world-class Jailbreaks wave, with easy access to nearby breaks Sultans, Cokes, and Chickens — perfect for every level of surfer looking to push their limits.",
+      price: "1600 € (double room) / 2150 € (private room) + flight",
+      duration: "9 full days of surf. Plenty of time to surf, learn, and unwind in paradise. Max 4 people.",
+      included: [
+        "18 Surf Coaching Sessions with personalized video analysis",
+        "2 surf transfers per day to the best spots for the conditions",
+        "Daily surf theory and feedback sessions",
+        "Double room accommodation",
+        "3 healthy meals per day (breakfast, lunch & dinner)",
+        "Access to multiple surf breaks right at your doorstep",
+      ],
+    },
   },
   {
     destination: "Algarve",
