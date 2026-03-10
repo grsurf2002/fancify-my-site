@@ -24,7 +24,7 @@ const trips: Trip[] = [
       location:
         "Stay right in front of the world-class Jailbreaks wave, with easy access to nearby breaks Sultans, Cokes, and Chickens — perfect for every level of surfer looking to push their limits.",
       price: "1400 € (double room) / 1950 € (private room) + flight",
-      duration: "9 full days of surf. Plenty of time to surf, learn, and unwind in paradise.",
+      duration: "9 full days of surf. Plenty of time to surf, learn, and unwind in paradise. Max 8 people.",
       included: [
         "18 Surf Coaching Sessions with personalized video analysis",
         "2 surf transfers per day to the best spots for the conditions",
