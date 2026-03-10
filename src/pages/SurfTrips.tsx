@@ -67,7 +67,6 @@ const SurfTrips = () => {
                 key={index}
                 className="group relative rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]"
               >
-                <span className="text-4xl mb-4 block">{trip.emoji}</span>
                 <div className="flex items-center gap-2 mb-2">
                   <MapPin className="h-4 w-4 text-primary" />
                   <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
