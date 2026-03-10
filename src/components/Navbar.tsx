@@ -29,6 +29,9 @@ const Navbar = () => {
           <a href="/#services" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Services
           </a>
+          <a href="/surf-trips" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+            Surf Trips
+          </a>
           <a href="/prices" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Prices
           </a>
