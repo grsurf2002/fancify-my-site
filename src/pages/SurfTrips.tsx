@@ -52,6 +52,7 @@ const trips: Trip[] = [
         "3 healthy meals per day (breakfast, lunch & dinner)",
         "Access to multiple surf breaks right at your doorstep",
       ],
+    },
   },
   {
     destination: "Algarve",
