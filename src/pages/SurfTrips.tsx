@@ -30,6 +30,24 @@ const trips = [
   },
 ];
 
+const comingSoon = [
+  {
+    destination: "Marrocos",
+    dates: "Fevereiro 2027",
+    emoji: "🇲🇦",
+  },
+  {
+    destination: "Algarve",
+    dates: "Fevereiro 2027",
+    emoji: "🇵🇹",
+  },
+  {
+    destination: "Maldivas",
+    dates: "Maio 2027",
+    emoji: "🏝️",
+  },
+];
+
 const SurfTrips = () => {
   return (
     <div className="min-h-screen bg-background">
