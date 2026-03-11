@@ -3,17 +3,45 @@ import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
 
+interface ScheduleDay {
+  day: string;
+  items: string[];
+}
+
 interface Trip {
   destination: string;
   dates: string;
   details?: {
     tagline: string;
-    location: string;
+    location?: string;
     price: string;
     duration: string;
     included: string[];
+    schedule?: ScheduleDay[];
+    reservation?: string;
   };
 }
+
+const algarveDetails = {
+  tagline: "Waves, Progress & Unforgettable Moments",
+  price: "€380 (shared room) / €420 (private room)",
+  duration: "3 nights, 4 days of surf. Max 6 people.",
+  reservation: "150€ deposit to secure your spot",
+  included: [
+    "🏠 3 nights accommodation",
+    "🚐 Transport during the trip",
+    "🥐 Daily breakfast",
+    "🏄‍♂️ 6 surf coaching sessions",
+    "🎥 3 video analysis sessions (reviewed at home)",
+    "😄 Lots of fun & good vibes",
+  ],
+  schedule: [
+    { day: "Thursday", items: ["17:00 – Meet-up", "Arrival in the Algarve around 20:00", "Dinner & settle into the house"] },
+    { day: "Friday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
+    { day: "Saturday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
+    { day: "Sunday", items: ["🏄‍♂️ 2 surf coaching sessions", "🚐 Head back home around 15:00 (±)"] },
+  ],
+};
 
 const trips: Trip[] = [
   {
@@ -57,14 +85,17 @@ const trips: Trip[] = [
   {
     destination: "Algarve",
     dates: "16 — 19 de Outubro 2026",
+    details: algarveDetails,
   },
   {
     destination: "Algarve",
     dates: "12 — 15 de Novembro 2026",
+    details: algarveDetails,
   },
   {
     destination: "Algarve",
     dates: "17 — 20 de Dezembro 2026",
+    details: algarveDetails,
   },
 ];
 
@@ -109,14 +140,16 @@ const TripCard = ({ trip }: { trip: Trip }) => {
             {trip.details.tagline}
           </p>
 
-          <div>
-            <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
-              📍 Location
-            </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {trip.details.location}
-            </p>
-          </div>
+          {trip.details.location && (
+            <div>
+              <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
+                📍 Location
+              </h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {trip.details.location}
+              </p>
+            </div>
+          )}
 
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
@@ -124,6 +157,9 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                 💸 Price
               </h4>
               <p className="text-lg font-bold text-primary">{trip.details.price}</p>
+              {trip.details.reservation && (
+                <p className="text-xs text-muted-foreground mt-1">Reservation: {trip.details.reservation}</p>
+              )}
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
@@ -137,7 +173,7 @@ const TripCard = ({ trip }: { trip: Trip }) => {
 
           <div>
             <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
-              🏄‍♂️ What's Included
+              ✅ What's Included
             </h4>
             <ul className="space-y-2">
               {trip.details.included.map((item, i) => (
@@ -148,6 +184,26 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               ))}
             </ul>
           </div>
+
+          {trip.details.schedule && (
+            <div>
+              <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
+                🗓 What's the Plan?
+              </h4>
+              <div className="space-y-4">
+                {trip.details.schedule.map((day, i) => (
+                  <div key={i}>
+                    <p className="font-heading text-sm font-bold text-foreground mb-1">{day.day}</p>
+                    <ul className="space-y-1 pl-4">
+                      {day.items.map((item, j) => (
+                        <li key={j} className="text-sm text-muted-foreground">• {item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
