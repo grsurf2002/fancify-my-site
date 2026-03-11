@@ -97,6 +97,34 @@ const trips: Trip[] = [
     dates: "17 — 20 de Dezembro 2026",
     details: algarveDetails,
   },
+  {
+    destination: "Pantín, Galicia",
+    dates: "14 — 19 de Julho 2026",
+    details: {
+      tagline: "An intensive training experience with technical coaching, video analysis, and team bonding.",
+      location: "Pantín, Valdoviño – Galicia, Spain (~640 km from Ericeira, ~6.5–7 hours drive)",
+      price: "€620 per person",
+      duration: "6 days, 9 training sessions. Round trip from Ericeira.",
+      included: [
+        "🚐 Transport (round trip) Ericeira → Pantín",
+        "⛽ Fuel",
+        "🛣️ Tolls",
+        "🏡 Accommodation",
+        "🥐 Breakfast",
+        "🥊 9 training sessions",
+        "🎥 Video analysis of the sessions",
+        "🎉 Team activities & fun time",
+      ],
+      schedule: [
+        { day: "Day 1 – 14", items: ["10:00 – Meet up in Ericeira", "Departure to Pantín", "Stops during the trip", "16:00 – Arrival in Pantín", "Accommodation check-in", "Settle in and rest"] },
+        { day: "Day 2 – 15", items: ["Breakfast", "Training Session 1", "Training Session 2", "Video analysis"] },
+        { day: "Day 3 – 16", items: ["Breakfast", "Training Session 3", "Training Session 4", "Video analysis"] },
+        { day: "Day 4 – 17", items: ["Breakfast", "Training Session 5", "Training Session 6", "Video analysis"] },
+        { day: "Day 5 – 18", items: ["Breakfast", "Training Session 7", "Training Session 8", "Video analysis", "Free time / group activities"] },
+        { day: "Day 6 – 19", items: ["Breakfast", "Training Session 9 (morning)", "Lunch", "Return to Portugal", "Expected arrival in Ericeira: 20:00"] },
+      ],
+    },
+  },
 ];
 
 const comingSoon: Trip[] = [
