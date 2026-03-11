@@ -100,9 +100,11 @@ const trips: Trip[] = [
 ];
 
 const comingSoon: Trip[] = [
-  { destination: "Marrocos", dates: "Fevereiro 2027" },
-  { destination: "Algarve", dates: "Fevereiro 2027" },
-  { destination: "Maldivas", dates: "Maio 2027" },
+  { destination: "Marrocos", dates: "2 — 7 de Fevereiro 2027" },
+  { destination: "Algarve", dates: "18 — 21 de Fevereiro 2027" },
+  { destination: "Sri Lanka", dates: "1 — 11 de Março 2027" },
+  { destination: "Algarve", dates: "18 — 21 de Abril 2027" },
+  { destination: "Maldivas", dates: "1 — 11 de Junho 2027" },
 ];
 
 const TripCard = ({ trip }: { trip: Trip }) => {
