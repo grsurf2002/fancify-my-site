@@ -140,14 +140,16 @@ const TripCard = ({ trip }: { trip: Trip }) => {
             {trip.details.tagline}
           </p>
 
-          <div>
-            <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
-              📍 Location
-            </h4>
-            <p className="text-sm text-muted-foreground leading-relaxed">
-              {trip.details.location}
-            </p>
-          </div>
+          {trip.details.location && (
+            <div>
+              <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
+                📍 Location
+              </h4>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                {trip.details.location}
+              </p>
+            </div>
+          )}
 
           <div className="grid gap-4 sm:grid-cols-2">
             <div>
@@ -155,6 +157,9 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                 💸 Price
               </h4>
               <p className="text-lg font-bold text-primary">{trip.details.price}</p>
+              {trip.details.reservation && (
+                <p className="text-xs text-muted-foreground mt-1">Reservation: {trip.details.reservation}</p>
+              )}
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
@@ -168,7 +173,7 @@ const TripCard = ({ trip }: { trip: Trip }) => {
 
           <div>
             <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
-              🏄‍♂️ What's Included
+              ✅ What's Included
             </h4>
             <ul className="space-y-2">
               {trip.details.included.map((item, i) => (
@@ -179,6 +184,26 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               ))}
             </ul>
           </div>
+
+          {trip.details.schedule && (
+            <div>
+              <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
+                🗓 What's the Plan?
+              </h4>
+              <div className="space-y-4">
+                {trip.details.schedule.map((day, i) => (
+                  <div key={i}>
+                    <p className="font-heading text-sm font-bold text-foreground mb-1">{day.day}</p>
+                    <ul className="space-y-1 pl-4">
+                      {day.items.map((item, j) => (
+                        <li key={j} className="text-sm text-muted-foreground">• {item}</li>
+                      ))}
+                    </ul>
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       )}
     </div>
