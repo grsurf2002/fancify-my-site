@@ -237,21 +237,7 @@ const SurfTrips = () => {
 
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
             {comingSoon.map((trip, index) => (
-              <div
-                key={index}
-                className="group relative rounded-xl border border-dashed border-border bg-card/50 p-6 transition-all duration-300 hover:border-primary/30"
-              >
-                <div className="flex items-center gap-2 mb-2">
-                  <MapPin className="h-4 w-4 text-primary/60" />
-                  <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
-                    {trip.destination}
-                  </h3>
-                </div>
-                <div className="flex items-center gap-2 text-muted-foreground">
-                  <Calendar className="h-4 w-4 text-accent/60" />
-                  <span className="font-body text-sm">{trip.dates}</span>
-                </div>
-              </div>
+              <TripCard key={index} trip={trip} />
             ))}
           </div>
         </div>
