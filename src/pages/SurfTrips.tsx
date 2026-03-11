@@ -3,17 +3,45 @@ import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
 
+interface ScheduleDay {
+  day: string;
+  items: string[];
+}
+
 interface Trip {
   destination: string;
   dates: string;
   details?: {
     tagline: string;
-    location: string;
+    location?: string;
     price: string;
     duration: string;
     included: string[];
+    schedule?: ScheduleDay[];
+    reservation?: string;
   };
 }
+
+const algarveDetails = {
+  tagline: "Waves, Progress & Unforgettable Moments",
+  price: "€380 (shared room) / €420 (private room)",
+  duration: "3 nights, 4 days of surf. Max 6 people.",
+  reservation: "150€ deposit to secure your spot",
+  included: [
+    "🏠 3 nights accommodation",
+    "🚐 Transport during the trip",
+    "🥐 Daily breakfast",
+    "🏄‍♂️ 6 surf coaching sessions",
+    "🎥 3 video analysis sessions (reviewed at home)",
+    "😄 Lots of fun & good vibes",
+  ],
+  schedule: [
+    { day: "Thursday", items: ["17:00 – Meet-up", "Arrival in the Algarve around 20:00", "Dinner & settle into the house"] },
+    { day: "Friday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
+    { day: "Saturday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
+    { day: "Sunday", items: ["🏄‍♂️ 2 surf coaching sessions", "🚐 Head back home around 15:00 (±)"] },
+  ],
+};
 
 const trips: Trip[] = [
   {
@@ -57,14 +85,17 @@ const trips: Trip[] = [
   {
     destination: "Algarve",
     dates: "16 — 19 de Outubro 2026",
+    details: algarveDetails,
   },
   {
     destination: "Algarve",
     dates: "12 — 15 de Novembro 2026",
+    details: algarveDetails,
   },
   {
     destination: "Algarve",
     dates: "17 — 20 de Dezembro 2026",
+    details: algarveDetails,
   },
 ];
 
