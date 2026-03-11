@@ -25,7 +25,7 @@ interface Trip {
 const algarveDetails = {
   tagline: "Waves, Progress & Unforgettable Moments",
   price: "€380 (shared room) / €420 (private room)",
-  duration: "3 nights, 4 days of surf. Max 6 people.",
+  duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
   included: [
     "🏠 3 nights accommodation",
@@ -39,7 +39,7 @@ const algarveDetails = {
     { day: "Thursday", items: ["17:00 – Meet-up", "Arrival in the Algarve around 20:00", "Dinner & settle into the house"] },
     { day: "Friday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
     { day: "Saturday", items: ["🏄‍♂️ Minimum 2 surf coaching sessions", "🎥 Video analysis in the evening"] },
-    { day: "Sunday", items: ["🏄‍♂️ 2 surf coaching sessions", "🚐 Head back home around 15:00 (±)"] },
+    { day: "Sunday", items: ["🏄‍♂️ 2 surf coaching sessions", "🎥 Video analysis in the evening", "🚐 Head back home around 17:00 (±)"] },
   ],
 };
 
