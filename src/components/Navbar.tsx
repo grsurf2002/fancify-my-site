@@ -19,7 +19,7 @@ const Navbar = () => {
       }`}
     >
       <div className="container flex items-center justify-between px-4">
-        <a href="#" className="flex items-center gap-2 shrink-0">
+        <a href="/" className="flex items-center gap-2 shrink-0">
           <img src={logo} alt="Upgrade Surfing" className="h-10 w-10 rounded-lg" />
           <span className="font-heading text-xl md:text-2xl font-bold tracking-wider text-foreground">UPGRADE</span>
         </a>
