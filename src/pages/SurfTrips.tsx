@@ -30,6 +30,7 @@ const algarveDetails = {
   price: "€380 (shared room) / €420 (private room)",
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
+  images: [algarveImg1, algarveImg2],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
