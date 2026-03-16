@@ -142,6 +142,7 @@ const comingSoon: Trip[] = [
 
 const TripCard = ({ trip }: { trip: Trip }) => {
   const [expanded, setExpanded] = useState(false);
+  const [stayOpen, setStayOpen] = useState(false);
   const hasDetails = !!trip.details;
 
   return (
