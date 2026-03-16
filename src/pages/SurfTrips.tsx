@@ -2,6 +2,8 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
+import algarveImg1 from "@/assets/algarve-1.jpeg";
+import algarveImg2 from "@/assets/algarve-2.jpeg";
 
 interface ScheduleDay {
   day: string;
@@ -19,6 +21,7 @@ interface Trip {
     included: string[];
     schedule?: ScheduleDay[];
     reservation?: string;
+    images?: string[];
   };
 }
 
@@ -27,6 +30,7 @@ const algarveDetails = {
   price: "€380 (shared room) / €420 (private room)",
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
+  images: [algarveImg1, algarveImg2],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
@@ -169,6 +173,19 @@ const TripCard = ({ trip }: { trip: Trip }) => {
           <p className="font-heading text-lg text-primary tracking-wider uppercase">
             {trip.details.tagline}
           </p>
+
+          {trip.details.images && trip.details.images.length > 0 && (
+            <div className="grid grid-cols-2 gap-3">
+              {trip.details.images.map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt={`${trip.destination} trip ${i + 1}`}
+                  className="rounded-lg w-full h-48 object-cover"
+                />
+              ))}
+            </div>
+          )}
 
           {trip.details.location && (
             <div>
