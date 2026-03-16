@@ -36,6 +36,7 @@ const algarveDetails = {
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
   stayImages: [algarveStay1, algarveStay2, algarveStay3],
+  momentsImages: [algarveMoments1, algarveMoments2, algarveMoments3],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
