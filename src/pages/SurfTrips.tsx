@@ -26,6 +26,7 @@ interface Trip {
     schedule?: ScheduleDay[];
     reservation?: string;
     stayImages?: string[];
+    momentsImages?: string[];
   };
 }
 
