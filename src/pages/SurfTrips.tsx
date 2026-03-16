@@ -4,6 +4,7 @@ import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
 import algarveImg1 from "@/assets/algarve-1.jpeg";
 import algarveImg2 from "@/assets/algarve-2.jpeg";
+import algarveImg3 from "@/assets/algarve-3.jpeg";
 
 interface ScheduleDay {
   day: string;
@@ -30,7 +31,7 @@ const algarveDetails = {
   price: "€380 (shared room) / €420 (private room)",
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
-  images: [algarveImg1, algarveImg2],
+  images: [algarveImg1, algarveImg2, algarveImg3],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
