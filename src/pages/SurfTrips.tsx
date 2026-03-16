@@ -313,7 +313,7 @@ const SurfTrips = () => {
             Upgrade Surf Trips
           </h1>
           <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-center">
-            Join us and live unforgettable surf experiences in the best destinations.
+            Join us and live unforgettable surf experiences in the best destinations. (for all levels)
           </p>
 
           <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
