@@ -64,7 +64,7 @@ const trips: Trip[] = [
     },
   },
   {
-    destination: "Maldivas",
+    destination: "Maldives",
     dates: "16 — 26 de Maio 2026",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
