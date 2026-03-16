@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Instagram } from "lucide-react";
+import { Mail, Phone, MapPin, Instagram, MessageCircle } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -31,6 +31,17 @@ const ContactSection = () => {
             <Phone className="text-primary" size={20} />
             <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
               +351 911 001 039
+            </span>
+          </a>
+          <a
+            href="https://wa.me/351911001039"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 group"
+          >
+            <MessageCircle className="text-primary" size={20} />
+            <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+              WhatsApp
             </span>
           </a>
           <a
