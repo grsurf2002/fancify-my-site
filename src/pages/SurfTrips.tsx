@@ -45,7 +45,7 @@ const algarveDetails = {
 
 const trips: Trip[] = [
   {
-    destination: "Maldivas",
+    destination: "Maldives",
     dates: "6 — 16 de Maio 2026",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
@@ -64,7 +64,7 @@ const trips: Trip[] = [
     },
   },
   {
-    destination: "Maldivas",
+    destination: "Maldives",
     dates: "16 — 26 de Maio 2026",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
@@ -132,7 +132,7 @@ const comingSoon: Trip[] = [
   { destination: "Algarve", dates: "18 — 21 de Fevereiro 2027", details: algarveDetails },
   { destination: "Sri Lanka", dates: "1 — 11 de Março 2027" },
   { destination: "Algarve", dates: "18 — 21 de Abril 2027", details: algarveDetails },
-  { destination: "Maldivas", dates: "1 — 11 de Junho 2027" },
+  { destination: "Maldives", dates: "1 — 11 de Junho 2027" },
 ];
 
 const TripCard = ({ trip }: { trip: Trip }) => {
