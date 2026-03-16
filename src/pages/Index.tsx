@@ -5,6 +5,7 @@ import ReviewsSection from "@/components/ReviewsSection";
 import TeamSection from "@/components/TeamSection";
 import VideoSection from "@/components/VideoSection";
 import MissionSection from "@/components/MissionSection";
+import FAQSection from "@/components/FAQSection";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
