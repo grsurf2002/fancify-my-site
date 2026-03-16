@@ -26,6 +26,22 @@ const reviews = [
     name: "Gonçalo Meneses",
     text: "Best coaching in town!! 💪💪💪",
   },
+  {
+    name: "Tommaso Pianta",
+    text: "Trained with Hugo and Gabriel for a few months. Seeing yourself on video and having immediate and good feedback is key to improve your surfing. If you're feeling stuck I would totally recommend Upgrade to step up your surfing skills",
+  },
+  {
+    name: "Mads Thiele",
+    text: "Gabriel and Hugo are really the best surf coaches in Ericeira. No matter your level they make you improve every session. And really awesome guys as well :)",
+  },
+  {
+    name: "Yevgeniy Polev",
+    text: "Have been training with Hugo and Gabriel for over a year now. I'm more than happy with the progress I've made with them. If you're ready to commit for at least a couple of months you'll see how your confidence and skills grow. Definitely recommend!",
+  },
+  {
+    name: "Leon Braun",
+    text: "I had many great surf sessions. Gabriel and Hugo have been a great help. The video analysis is a game changer.",
+  },
 ];
 
 const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
