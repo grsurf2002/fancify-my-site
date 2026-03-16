@@ -32,7 +32,7 @@ const faqs = [
 const FAQSection = () => {
   return (
     <section className="py-20 md:py-28 bg-card/50">
-      <div className="container px-4 max-w-3xl mx-auto">
+      <div className="container px-4 max-w-5xl mx-auto">
         <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3 text-center">
           FAQ
         </p>
