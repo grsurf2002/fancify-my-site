@@ -2,6 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
+import algarveStay1 from "@/assets/algarve-stay-1.png";
+import algarveStay2 from "@/assets/algarve-stay-2.png";
+import algarveStay3 from "@/assets/algarve-stay-3.png";
 
 interface ScheduleDay {
   day: string;
@@ -19,7 +22,7 @@ interface Trip {
     included: string[];
     schedule?: ScheduleDay[];
     reservation?: string;
-    
+    stayImages?: string[];
   };
 }
 
@@ -28,7 +31,7 @@ const algarveDetails = {
   price: "€380 (shared room) / €420 (private room)",
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
-  
+  stayImages: [algarveStay1, algarveStay2, algarveStay3],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
@@ -139,6 +142,7 @@ const comingSoon: Trip[] = [
 
 const TripCard = ({ trip }: { trip: Trip }) => {
   const [expanded, setExpanded] = useState(false);
+  const [stayOpen, setStayOpen] = useState(false);
   const hasDetails = !!trip.details;
 
   return (
@@ -192,6 +196,29 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               <p className="text-lg font-bold text-primary">{trip.details.price}</p>
               {trip.details.reservation && (
                 <p className="text-xs text-muted-foreground mt-1">Reservation: {trip.details.reservation}</p>
+              )}
+              {trip.details.stayImages && trip.details.stayImages.length > 0 && (
+                <div className="mt-3">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setStayOpen(!stayOpen); }}
+                    className="flex items-center gap-2 text-sm font-heading font-bold text-foreground uppercase tracking-wider hover:text-primary transition-colors"
+                  >
+                    🏠 Where do we stay?
+                    {stayOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  {stayOpen && (
+                    <div className="grid grid-cols-3 gap-3 mt-3">
+                      {trip.details.stayImages.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`Accommodation ${i + 1}`}
+                          className="rounded-lg w-full h-32 object-cover"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
               )}
             </div>
             <div>
