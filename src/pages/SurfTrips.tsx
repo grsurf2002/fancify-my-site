@@ -2,6 +2,9 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
 import { useState } from "react";
+import algarveStay1 from "@/assets/algarve-stay-1.png";
+import algarveStay2 from "@/assets/algarve-stay-2.png";
+import algarveStay3 from "@/assets/algarve-stay-3.png";
 
 interface ScheduleDay {
   day: string;
