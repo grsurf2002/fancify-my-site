@@ -5,6 +5,9 @@ import { useState } from "react";
 import algarveStay1 from "@/assets/algarve-stay-1.png";
 import algarveStay2 from "@/assets/algarve-stay-2.png";
 import algarveStay3 from "@/assets/algarve-stay-3.png";
+import algarveMoments1 from "@/assets/algarve-moments-1.png";
+import algarveMoments2 from "@/assets/algarve-moments-2.png";
+import algarveMoments3 from "@/assets/algarve-moments-3.png";
 
 interface ScheduleDay {
   day: string;
@@ -23,6 +26,7 @@ interface Trip {
     schedule?: ScheduleDay[];
     reservation?: string;
     stayImages?: string[];
+    momentsImages?: string[];
   };
 }
 
@@ -32,6 +36,7 @@ const algarveDetails = {
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
   stayImages: [algarveStay1, algarveStay2, algarveStay3],
+  momentsImages: [algarveMoments1, algarveMoments2, algarveMoments3],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
@@ -143,6 +148,7 @@ const comingSoon: Trip[] = [
 const TripCard = ({ trip }: { trip: Trip }) => {
   const [expanded, setExpanded] = useState(false);
   const [stayOpen, setStayOpen] = useState(false);
+  const [momentsOpen, setMomentsOpen] = useState(false);
   const hasDetails = !!trip.details;
 
   return (
@@ -213,6 +219,29 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                           key={i}
                           src={img}
                           alt={`Accommodation ${i + 1}`}
+                          className="rounded-lg w-full h-32 object-cover"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+              {trip.details.momentsImages && trip.details.momentsImages.length > 0 && (
+                <div className="mt-3">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setMomentsOpen(!momentsOpen); }}
+                    className="flex items-center gap-2 text-sm font-heading font-bold text-foreground uppercase tracking-wider hover:text-primary transition-colors"
+                  >
+                    📸 Moments from recent trips
+                    {momentsOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  {momentsOpen && (
+                    <div className="grid grid-cols-3 gap-3 mt-3">
+                      {trip.details.momentsImages.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`Moment ${i + 1}`}
                           className="rounded-lg w-full h-32 object-cover"
                         />
                       ))}
