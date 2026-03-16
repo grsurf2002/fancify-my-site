@@ -226,6 +226,31 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                   )}
                 </div>
               )}
+              {trip.details.momentsImages && trip.details.momentsImages.length > 0 && (
+                <div className="mt-3">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setMomentsOpen(!momentsOpen); }}
+                    className="flex items-center gap-2 text-sm font-heading font-bold text-foreground uppercase tracking-wider hover:text-primary transition-colors"
+                  >
+                    📸 Moments from recent trips
+                    {momentsOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  {momentsOpen && (
+                    <div className="grid grid-cols-3 gap-3 mt-3">
+                      {trip.details.momentsImages.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`Moment ${i + 1}`}
+                          className="rounded-lg w-full h-32 object-cover"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
+                </div>
+              )}
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
