@@ -9,7 +9,7 @@ const HeroSection = () => {
         <img
           src={heroImg}
           alt="Surfer riding a massive wave in Ericeira"
-          className="w-full h-full object-cover object-[center_60%]"
+          className="w-full h-full object-cover object-[center_40%]"
           loading="eager"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/40 via-background/20 to-background" />
