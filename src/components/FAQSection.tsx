@@ -41,14 +41,14 @@ const FAQSection = () => {
           <span className="text-gradient-golden">Questions</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-3 items-stretch">
           {faqs.map((faq, i) => (
-            <Accordion key={i} type="single" collapsible className="w-full">
+            <Accordion key={i} type="single" collapsible className="w-full h-full">
               <AccordionItem
                 value={`faq-${i}`}
-                className="border border-border/50 rounded-lg px-5 bg-card"
+                className="border border-border/50 rounded-lg px-5 bg-card h-full flex flex-col"
               >
-                <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:no-underline">
+                <AccordionTrigger className="text-left text-base font-semibold text-foreground hover:no-underline min-h-[72px] items-center">
                   {faq.question}
                 </AccordionTrigger>
                 <AccordionContent className="text-secondary-foreground leading-relaxed">
