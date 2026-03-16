@@ -197,6 +197,29 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               {trip.details.reservation && (
                 <p className="text-xs text-muted-foreground mt-1">Reservation: {trip.details.reservation}</p>
               )}
+              {trip.details.stayImages && trip.details.stayImages.length > 0 && (
+                <div className="mt-3">
+                  <button
+                    onClick={(e) => { e.stopPropagation(); setStayOpen(!stayOpen); }}
+                    className="flex items-center gap-2 text-sm font-heading font-bold text-foreground uppercase tracking-wider hover:text-primary transition-colors"
+                  >
+                    🏠 Where do we stay?
+                    {stayOpen ? <ChevronUp className="h-4 w-4" /> : <ChevronDown className="h-4 w-4" />}
+                  </button>
+                  {stayOpen && (
+                    <div className="grid grid-cols-3 gap-3 mt-3">
+                      {trip.details.stayImages.map((img, i) => (
+                        <img
+                          key={i}
+                          src={img}
+                          alt={`Accommodation ${i + 1}`}
+                          className="rounded-lg w-full h-32 object-cover"
+                        />
+                      ))}
+                    </div>
+                  )}
+                </div>
+              )}
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
