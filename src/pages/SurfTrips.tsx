@@ -8,6 +8,9 @@ import algarveStay3 from "@/assets/algarve-stay-3.png";
 import algarveMoments1 from "@/assets/algarve-moments-1.png";
 import algarveMoments2 from "@/assets/algarve-moments-2.png";
 import algarveMoments3 from "@/assets/algarve-moments-3.png";
+import algarveMoments4 from "@/assets/algarve-moments-4.png";
+import algarveMoments5 from "@/assets/algarve-moments-5.png";
+import algarveMoments6 from "@/assets/algarve-moments-6.png";
 
 interface ScheduleDay {
   day: string;
