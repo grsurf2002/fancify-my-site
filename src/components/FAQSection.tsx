@@ -7,25 +7,25 @@ import {
 
 const faqs = [
   {
-    question: "How long does the training last?",
+    question: "How long does the surf coaching last?",
     answer:
-      "Each surf coaching session lasts between 2.5 to 3 hours, including warm-up, water time, and video analysis feedback.",
+      "Each surf coaching session lasts between 2.5 to 3 hours, including warm-up, water time, and video analysis feedback. But if your question is how much time inside the water, it's around 1h30.",
   },
   {
     question:
       "How do you decide if you film or go in the water during coaching?",
     answer:
-      "It depends on your level and goals. For intermediate and advanced surfers, filming from the outside allows detailed video analysis. For beginners, we go in the water with you to provide real-time guidance and safety.",
+      "Group surf coaching is mainly filming with video analysis, but it will always depend on your level. Private surf coaching — we might have some sessions inside the water so we extract the most of the conditions and the session itself for your progression.",
   },
   {
     question: "How do you decide the surf spot, or is there a fixed one?",
     answer:
-      "We choose the best spot each day based on swell, wind, tide, and your skill level. We operate mainly in Ericeira, Peniche, and Carcavelos — flexibility is key to finding the best waves for your session.",
+      "No, we don't have a fixed spot for the trainings. We choose the best spot each day based on swell, wind, tide, and your skill level. We operate mainly in Ericeira, Peniche, and Carcavelos — flexibility is key to finding the best waves for your session.",
   },
   {
     question: "Is there material included?",
     answer:
-      "Surf equipment is not included by default, but we can help arrange board and wetsuit rental at partner shops with special rates. Just let us know when booking!",
+      "Material is not included but we charge just 10€ for board and wetsuit for the session (hardtop and softboard).",
   },
 ];
 
