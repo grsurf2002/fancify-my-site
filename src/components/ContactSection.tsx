@@ -34,6 +34,17 @@ const ContactSection = () => {
             </span>
           </a>
           <a
+            href="https://wa.me/351911001039"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center justify-center gap-3 group"
+          >
+            <MessageCircle className="text-primary" size={20} />
+            <span className="text-lg font-medium text-foreground group-hover:text-primary transition-colors">
+              WhatsApp
+            </span>
+          </a>
+          <a
             href="https://www.instagram.com/upgrade_surfcoaching"
             target="_blank"
             rel="noopener noreferrer"
