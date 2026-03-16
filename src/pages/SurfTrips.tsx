@@ -175,18 +175,6 @@ const TripCard = ({ trip }: { trip: Trip }) => {
             {trip.details.tagline}
           </p>
 
-          {trip.details.images && trip.details.images.length > 0 && (
-            <div className="grid grid-cols-2 gap-3">
-              {trip.details.images.map((img, i) => (
-                <img
-                  key={i}
-                  src={img}
-                  alt={`${trip.destination} trip ${i + 1}`}
-                  className="rounded-lg w-full h-48 object-cover"
-                />
-              ))}
-            </div>
-          )}
 
           {trip.details.location && (
             <div>
@@ -218,6 +206,19 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               </p>
             </div>
           </div>
+
+          {trip.details.images && trip.details.images.length > 0 && (
+            <div className="grid grid-cols-3 gap-3">
+              {trip.details.images.map((img, i) => (
+                <img
+                  key={i}
+                  src={img}
+                  alt={`${trip.destination} trip ${i + 1}`}
+                  className="rounded-lg w-full h-48 object-cover"
+                />
+              ))}
+            </div>
+          )}
 
           <div>
             <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
