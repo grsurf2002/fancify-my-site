@@ -249,8 +249,6 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                   )}
                 </div>
               )}
-                </div>
-              )}
             </div>
             <div>
               <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-2">
