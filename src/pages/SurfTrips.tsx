@@ -45,7 +45,7 @@ const algarveDetails = {
 
 const trips: Trip[] = [
   {
-    destination: "Maldivas",
+    destination: "Maldives",
     dates: "6 — 16 de Maio 2026",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
