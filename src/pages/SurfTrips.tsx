@@ -19,7 +19,7 @@ interface Trip {
     included: string[];
     schedule?: ScheduleDay[];
     reservation?: string;
-    images?: string[];
+    
   };
 }
 
