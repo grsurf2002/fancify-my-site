@@ -8,6 +8,9 @@ import algarveStay3 from "@/assets/algarve-stay-3.png";
 import algarveMoments1 from "@/assets/algarve-moments-1.png";
 import algarveMoments2 from "@/assets/algarve-moments-2.png";
 import algarveMoments3 from "@/assets/algarve-moments-3.png";
+import algarveMoments4 from "@/assets/algarve-moments-4.png";
+import algarveMoments5 from "@/assets/algarve-moments-5.png";
+import algarveMoments6 from "@/assets/algarve-moments-6.png";
 
 interface ScheduleDay {
   day: string;
@@ -36,7 +39,7 @@ const algarveDetails = {
   duration: "3 nights, 3 days of surf. Max 6 people.",
   reservation: "150€ deposit to secure your spot",
   stayImages: [algarveStay1, algarveStay2, algarveStay3],
-  momentsImages: [algarveMoments1, algarveMoments2, algarveMoments3],
+  momentsImages: [algarveMoments1, algarveMoments2, algarveMoments3, algarveMoments4, algarveMoments5, algarveMoments6],
   included: [
     "🏠 3 nights accommodation",
     "🚐 Transport during the trip",
