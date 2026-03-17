@@ -33,12 +33,6 @@ const HeroSection = () => {
           </span>
         </h1>
 
-        <p
-          className="mt-5 sm:mt-8 text-sm sm:text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
-          style={{ animationDelay: "0.5s" }}
-        >
-          Personal coaching, measurable progress, real waves — for adults who want to surf better fast.
-        </p>
 
         {/* Quick bullets */}
         <div
