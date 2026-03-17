@@ -14,12 +14,20 @@ import pedroPhoto2 from "@/assets/review-pedro-2.jpeg";
 import pedroPhoto3 from "@/assets/review-pedro-3.jpeg";
 import marinaPhoto1 from "@/assets/review-marina-1.jpeg";
 import nickPhoto1 from "@/assets/review-nick-1.jpeg";
+import romanPhoto1 from "@/assets/review-roman-1.jpeg";
+import romanPhoto2 from "@/assets/review-roman-2.png";
+import romanPhoto3 from "@/assets/review-roman-3.jpeg";
+import martijnPhoto1 from "@/assets/review-martijn-1.jpeg";
+import martijnPhoto2 from "@/assets/review-martijn-2.png";
+import martijnPhoto3 from "@/assets/review-martijn-3.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
 const pedroPhotos = [pedroPhoto1, pedroPhoto2, pedroPhoto3];
 const marinaPhotos = [marinaPhoto1];
 const nickPhotos = [nickPhoto1];
+const romanPhotos = [romanPhoto2, romanPhoto1, romanPhoto3];
+const martijnPhotos = [martijnPhoto1, martijnPhoto2, martijnPhoto3];
 
 const reviews = [
   {
@@ -44,6 +52,7 @@ const reviews = [
   {
     name: "Roman Van Loo",
     text: "Joined their coaching about half a year ago and it's been a very pleasant experience. The vibe is great, the tips they give are very helpful and I'm happy with the progress I've made with them. Definitely recommend!",
+    photos: romanPhotos,
   },
   {
     name: "Gonçalo Meneses",
