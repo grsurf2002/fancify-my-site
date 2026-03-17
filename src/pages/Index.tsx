@@ -25,7 +25,7 @@ const Index = () => {
       <WhyChooseUsSection />
       <WhatToExpectSection />
       <WhoWeCoachSection />
-      <OurMethodSection />
+      
       <ResultsSection />
       <SessionTypesSection />
       <ReviewsSection />
