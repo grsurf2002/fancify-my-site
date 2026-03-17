@@ -35,6 +35,7 @@ const reviews = [
   {
     name: "Marina Dias",
     text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
+    photos: marinaPhotos,
   },
   {
     name: "Rory White",
