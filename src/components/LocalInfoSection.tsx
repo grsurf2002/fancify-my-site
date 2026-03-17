@@ -23,7 +23,7 @@ const LocalInfoSection = () => {
               Meeting Points
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Ribeira d'Ilhas, Praia Grande, local surf house pickup available.
+              Ericeira, Lisbon area and Peniche.
             </p>
           </div>
           <div className="rounded-2xl border border-border/50 bg-card p-6">
@@ -32,7 +32,7 @@ const LocalInfoSection = () => {
               Best Time to Visit
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Autumn and winter for bigger swells; spring and summer for calmer progression sessions.
+              Autumn and winter for more powerful waves, but always with the option to drive and find easy waves.
             </p>
           </div>
           <div className="rounded-2xl border border-border/50 bg-card p-6">
@@ -41,7 +41,7 @@ const LocalInfoSection = () => {
               Directions & Parking
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Easy access from Lisbon (40 min). Free parking available at most surf spots.
+              Free parking available at most surf spots.
             </p>
           </div>
         </div>

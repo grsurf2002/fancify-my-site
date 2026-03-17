@@ -1,5 +1,4 @@
 import coachingImg from "@/assets/coaching-2.jpeg";
-import coachingImg2 from "@/assets/coaching-3.jpeg";
 
 const WhatToExpectSection = () => {
   return (
@@ -41,7 +40,7 @@ const WhatToExpectSection = () => {
                 Local Conditions We Use to Accelerate Learning
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ericeira offers varied breaks — sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. We leverage the right spot for your stage.
+                Ericeira offers varied breaks — sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
               </p>
             </div>
 
@@ -53,21 +52,13 @@ const WhatToExpectSection = () => {
             </a>
           </div>
 
-          {/* Right - Images */}
-          <div className="space-y-6">
+          {/* Right - Image */}
+          <div>
             <div className="rounded-2xl overflow-hidden shadow-card">
               <img
                 src={coachingImg}
                 alt="On-beach surf coaching session in Ericeira"
-                className="w-full h-64 object-cover"
-                loading="lazy"
-              />
-            </div>
-            <div className="rounded-2xl overflow-hidden shadow-card">
-              <img
-                src={coachingImg2}
-                alt="In-water surf coaching at Ribeira d'Ilhas"
-                className="w-full h-64 object-cover"
+                className="w-full h-80 object-cover"
                 loading="lazy"
               />
             </div>

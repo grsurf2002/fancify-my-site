@@ -1,4 +1,4 @@
-import { Target, MapPin, Zap, Users, ShieldCheck } from "lucide-react";
+import { Target, MapPin, Zap, Users, ShieldCheck, Baby } from "lucide-react";
 
 const reasons = [
   {
@@ -11,19 +11,25 @@ const reasons = [
     icon: MapPin,
     title: "Local expertise",
     description:
-      "Based in Ericeira, we know tides, wind windows and the best spots for each level.",
+      "Based in Ericeira, but we also do sessions in Peniche or Lisbon area. We know tides, wind windows and the best spots for each level.",
   },
   {
     icon: Zap,
     title: "Proven method",
     description:
-      "Movement fundamentals + surf-specific drills + in-water guidance + video analysis when needed.",
+      "Movement fundamentals + surf-specific drills + in-water guidance + video analysis.",
   },
   {
     icon: Users,
     title: "Adult-focused",
     description:
       "Coaching designed for busy adults — efficient sessions that accelerate improvement.",
+  },
+  {
+    icon: Baby,
+    title: "Kids 8+",
+    description:
+      "We also do kids 8+ that want to progress while having fun or take a competitive career.",
   },
   {
     icon: ShieldCheck,

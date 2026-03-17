@@ -1,4 +1,4 @@
-import { ClipboardCheck, Dumbbell, Waves, MessageCircle, NotebookPen } from "lucide-react";
+import { ClipboardCheck, Dumbbell, Waves, MessageCircle, NotebookPen, Wrench } from "lucide-react";
 
 const steps = [
   {
@@ -23,13 +23,19 @@ const steps = [
     icon: MessageCircle,
     step: "4",
     title: "Feedback Loop",
-    description: "Immediate verbal feedback + optional video analysis to speed corrections.",
+    description: "Immediate verbal feedback + video analysis to speed corrections.",
   },
   {
     icon: NotebookPen,
     step: "5",
     title: "Home Practice Plan",
     description: "You leave with 3–5 clear actions to practice between sessions for real progress.",
+  },
+  {
+    icon: Wrench,
+    step: "6",
+    title: "Equipment Help",
+    description: "We help with board choice to make your progression smoother.",
   },
 ];
 
@@ -46,7 +52,7 @@ const OurMethodSection = () => {
           </h2>
         </div>
 
-        <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-6 max-w-6xl mx-auto">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {steps.map((s) => (
             <div
               key={s.step}
