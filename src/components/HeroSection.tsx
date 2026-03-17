@@ -26,8 +26,8 @@ const HeroSection = () => {
           style={{ animationDelay: "0.2s" }}
         >
           SURF COACHING
-          <br />
-          IN ERICEIRA
+          <br className="sm:hidden" />
+          {" "}IN ERICEIRA
           <span className="text-gradient-teal text-lg sm:text-2xl md:text-3xl lg:text-4xl block mt-3 sm:mt-6">
             IMPROVE FASTER, SURF SMARTER
           </span>
