@@ -54,7 +54,7 @@ const HeroSection = () => {
 
         {/* CTAs */}
         <div
-          className="mt-8 sm:mt-14 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 opacity-0 animate-fade-up"
+          className="mt-8 sm:mt-20 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
           <a
