@@ -27,14 +27,14 @@ const HeroSection = () => {
         >
           SURF COACHING IN ERICEIRA
           <br />
-          <span className="text-gradient-teal text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <span className="text-gradient-teal text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-6">
             IMPROVE FASTER, SURF SMARTER
           </span>
         </h1>
 
 
         <p
-          className="mt-4 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
+          className="mt-8 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
           style={{ animationDelay: "0.5s" }}
         >
           Personal coaching, measurable progress, real waves — for adults who want to surf better fast.
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         {/* Quick bullets */}
         <div
-          className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
+          className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           <span>Tailored progression plans</span>
@@ -54,7 +54,7 @@ const HeroSection = () => {
 
         {/* CTAs */}
         <div
-          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
+          className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
           <a
