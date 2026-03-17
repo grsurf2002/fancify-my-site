@@ -27,7 +27,7 @@ const HeroSection = () => {
         >
           SURF COACHING IN ERICEIRA
           <br />
-          <span className="text-gradient-teal text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+          <span className="text-gradient-teal text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-6">
             IMPROVE FASTER, SURF SMARTER
           </span>
         </h1>
