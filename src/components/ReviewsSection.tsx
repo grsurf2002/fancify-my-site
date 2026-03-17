@@ -1,6 +1,13 @@
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
+import reviewPhoto1 from "@/assets/review-photo-1.jpeg";
+import reviewPhoto2 from "@/assets/review-photo-2.jpeg";
+import reviewPhoto3 from "@/assets/review-photo-3.jpeg";
+import reviewPhoto4 from "@/assets/review-photo-4.jpeg";
+
+const photos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
+
 const reviews = [
   {
     name: "Paul Tavares",
