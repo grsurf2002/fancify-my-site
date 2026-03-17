@@ -16,6 +16,9 @@ const HeroSection = () => {
         <div className="absolute inset-0 bg-gradient-to-b from-background/30 via-transparent to-background" />
       </div>
 
+      {/* Hidden SEO text */}
+      <p className="sr-only">Progress Focused Surf Coaching in Ericeira</p>
+
       {/* Content */}
       <div className="relative z-10 container text-center px-4">
         <h1
