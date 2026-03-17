@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import videoAnalysisImg from "@/assets/video-analysis.jpeg";
 import beachCoachingImg from "@/assets/beach-coaching.jpeg";
 import surfCoachingImg from "@/assets/coaching-1.jpeg";
-import algarveImg from "@/assets/algarve-1.jpeg";
+import surfTripsImg from "@/assets/surf-trips-main.png";
 
 const services = [
   {
@@ -19,7 +19,7 @@ const services = [
     title: "Surf Trips",
     description:
       "Join us on unforgettable surf adventures around the world. From the Algarve to Sri Lanka and Morocco, we organize trips for all levels — combining great waves, coaching and good vibes.",
-    image: algarveImg,
+    image: surfTripsImg,
     link: "/surf-trips",
   },
   {
