@@ -20,6 +20,7 @@ const services = [
     description:
       "Join us on unforgettable surf adventures around the world. From the Algarve to Sri Lanka and Morocco, we organize trips for all levels — combining great waves, coaching and good vibes.",
     image: surfTripsImg,
+    imagePosition: "center 80%",
     link: "/surf-trips",
   },
   {
