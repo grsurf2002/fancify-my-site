@@ -25,7 +25,7 @@ const HeroSection = () => {
           className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Surf Coaching in Ericeira
+          SURF COACHING IN ERICEIRA
           <br />
           <span className="text-gradient-teal text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             Improve Faster, Surf Smarter
