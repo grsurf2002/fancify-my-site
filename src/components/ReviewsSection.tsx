@@ -15,7 +15,7 @@ import pedroPhoto3 from "@/assets/review-pedro-3.jpeg";
 import marinaPhoto1 from "@/assets/review-marina-1.jpeg";
 import nickPhoto1 from "@/assets/review-nick-1.jpeg";
 import romanPhoto1 from "@/assets/review-roman-1.jpeg";
-import romanPhoto2 from "@/assets/review-roman-2.png";
+import romanPhoto2 from "@/assets/review-roman-2.jpeg";
 import romanPhoto3 from "@/assets/review-roman-3.jpeg";
 import martijnPhoto1 from "@/assets/review-martijn-1.jpeg";
 import martijnPhoto2 from "@/assets/review-martijn-2.png";
