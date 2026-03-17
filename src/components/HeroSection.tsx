@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         {/* Quick bullets */}
         <div
-          className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
+          className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           <span>Tailored progression plans</span>
@@ -51,13 +51,6 @@ const HeroSection = () => {
           <span className="text-muted-foreground">•</span>
           <span>Local wave knowledge</span>
         </div>
-
-        <p
-          className="mt-2 text-xs text-muted-foreground opacity-0 animate-fade-up"
-          style={{ animationDelay: "0.65s" }}
-        >
-          Ribeira d'Ilhas · Praia dos Coxos · São Julião
-        </p>
 
         {/* CTAs */}
         <div
