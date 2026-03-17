@@ -1,6 +1,13 @@
 import { Star, ChevronLeft, ChevronRight } from "lucide-react";
 import { useRef, useState, useEffect } from "react";
 
+import reviewPhoto1 from "@/assets/review-photo-1.jpeg";
+import reviewPhoto2 from "@/assets/review-photo-2.jpeg";
+import reviewPhoto3 from "@/assets/review-photo-3.jpeg";
+import reviewPhoto4 from "@/assets/review-photo-4.jpeg";
+
+const photos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
+
 const reviews = [
   {
     name: "Paul Tavares",
@@ -76,6 +83,24 @@ const ReviewsSection = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
+  const photoScrollRef = useRef<HTMLDivElement>(null);
+  const [canPhotoLeft, setCanPhotoLeft] = useState(false);
+  const [canPhotoRight, setCanPhotoRight] = useState(true);
+
+  const checkPhotoScroll = () => {
+    const el = photoScrollRef.current;
+    if (!el) return;
+    setCanPhotoLeft(el.scrollLeft > 0);
+    setCanPhotoRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  };
+
+  const scrollPhotos = (direction: "left" | "right") => {
+    const el = photoScrollRef.current;
+    if (!el) return;
+    const amount = direction === "left" ? -320 : 320;
+    el.scrollBy({ left: amount, behavior: "smooth" });
+  };
+
   const checkScroll = () => {
     const el = scrollRef.current;
     if (!el) return;
@@ -85,6 +110,7 @@ const ReviewsSection = () => {
 
   useEffect(() => {
     checkScroll();
+    checkPhotoScroll();
   }, []);
 
   const scroll = (direction: "left" | "right") => {
@@ -104,7 +130,39 @@ const ReviewsSection = () => {
           Google Reviews — 5.0 ⭐
         </p>
 
-        <div className="relative mt-12">
+        {/* Photo Gallery Carousel */}
+        <div className="relative mt-12 mb-10">
+          <button
+            onClick={() => scrollPhotos("left")}
+            className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll photos left"
+          >
+            <ChevronLeft className="h-5 w-5 text-foreground" />
+          </button>
+
+          <div
+            ref={photoScrollRef}
+            onScroll={checkPhotoScroll}
+            className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {photos.map((photo, i) => (
+              <div key={i} className="min-w-[280px] md:min-w-[300px] h-[350px] md:h-[400px] shrink-0 rounded-xl overflow-hidden">
+                <img src={photo} alt={`Surf coaching moment ${i + 1}`} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => scrollPhotos("right")}
+            className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll photos right"
+          >
+            <ChevronRight className="h-5 w-5 text-foreground" />
+          </button>
+        </div>
+
+        <div className="relative">
           {/* Left arrow */}
           <button
             onClick={() => scroll("left")}
