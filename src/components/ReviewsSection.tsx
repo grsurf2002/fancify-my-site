@@ -83,6 +83,24 @@ const ReviewsSection = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
+  const photoScrollRef = useRef<HTMLDivElement>(null);
+  const [canPhotoLeft, setCanPhotoLeft] = useState(false);
+  const [canPhotoRight, setCanPhotoRight] = useState(true);
+
+  const checkPhotoScroll = () => {
+    const el = photoScrollRef.current;
+    if (!el) return;
+    setCanPhotoLeft(el.scrollLeft > 0);
+    setCanPhotoRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  };
+
+  const scrollPhotos = (direction: "left" | "right") => {
+    const el = photoScrollRef.current;
+    if (!el) return;
+    const amount = direction === "left" ? -320 : 320;
+    el.scrollBy({ left: amount, behavior: "smooth" });
+  };
+
   const checkScroll = () => {
     const el = scrollRef.current;
     if (!el) return;
@@ -92,6 +110,7 @@ const ReviewsSection = () => {
 
   useEffect(() => {
     checkScroll();
+    checkPhotoScroll();
   }, []);
 
   const scroll = (direction: "left" | "right") => {
