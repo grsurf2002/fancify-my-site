@@ -20,21 +20,21 @@ const HeroSection = () => {
       <p className="sr-only">Progress Focused Surf Coaching in Ericeira</p>
 
       {/* Content */}
-      <div className="relative z-10 container text-center px-4">
+      <div className="relative z-10 container text-center px-6 pt-20 sm:pt-0">
         <h1
-          className="font-heading text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
+          className="font-heading text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight sm:leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          SURF COACHING IN ERICEIRA
+          SURF COACHING
           <br />
-          <span className="text-gradient-teal text-2xl sm:text-3xl md:text-4xl lg:text-5xl block mt-6">
+          IN ERICEIRA
+          <span className="text-gradient-teal text-lg sm:text-3xl md:text-4xl lg:text-5xl block mt-3 sm:mt-6">
             IMPROVE FASTER, SURF SMARTER
           </span>
         </h1>
 
-
         <p
-          className="mt-8 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
+          className="mt-5 sm:mt-8 text-sm sm:text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
           style={{ animationDelay: "0.5s" }}
         >
           Personal coaching, measurable progress, real waves — for adults who want to surf better fast.
@@ -42,30 +42,30 @@ const HeroSection = () => {
 
         {/* Quick bullets */}
         <div
-          className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
+          className="mt-6 sm:mt-12 flex flex-col sm:flex-row flex-wrap justify-center gap-x-6 gap-y-1 sm:gap-y-2 text-xs sm:text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           <span>Tailored progression plans</span>
-          <span className="text-muted-foreground">•</span>
+          <span className="hidden sm:inline text-muted-foreground">•</span>
           <span>Video feedback</span>
-          <span className="text-muted-foreground">•</span>
+          <span className="hidden sm:inline text-muted-foreground">•</span>
           <span>Local wave knowledge</span>
         </div>
 
         {/* CTAs */}
         <div
-          className="mt-14 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
+          className="mt-8 sm:mt-14 flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
           <a
             href="#contact"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-xs sm:text-sm hover:shadow-glow transition-all duration-300"
           >
             Book a Lesson
           </a>
           <a
             href="mailto:upgradesurfing@gmail.com?subject=Free%20Assessment"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-sm hover:border-primary hover:text-primary transition-all duration-300"
+            className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-xs sm:text-sm hover:border-primary hover:text-primary transition-all duration-300"
           >
             Get a Free Assessment
           </a>
