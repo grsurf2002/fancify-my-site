@@ -5,8 +5,13 @@ import reviewPhoto1 from "@/assets/review-photo-1.jpeg";
 import reviewPhoto2 from "@/assets/review-photo-2.jpeg";
 import reviewPhoto3 from "@/assets/review-photo-3.jpeg";
 import reviewPhoto4 from "@/assets/review-photo-4.jpeg";
+import yaelPhoto1 from "@/assets/review-yael-1.jpeg";
+import yaelPhoto2 from "@/assets/review-yael-2.jpeg";
+import yaelPhoto3 from "@/assets/review-yael-3.jpeg";
+import yaelPhoto4 from "@/assets/review-yael-4.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
+const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
 
 const reviews = [
   {
@@ -15,12 +20,13 @@ const reviews = [
     photos: paulPhotos,
   },
   {
-    name: "Marina Dias",
-    text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
-  },
-  {
     name: "Yael Manor",
     text: "Surfing is definitely challenging (especially in mid 40s) but these guys make super exciting, and fun. They have plenty of experience and genuinely love what they're doing, which makes every lesson both professional and personal. They are great surfers themselves, and tailor the technical feedback to each student and the day's conditions. Between the on-beach instruction and the detailed video analysis, they're 100% invested in your progress. Thanks to them, I'm catching epic waves and loving every minute of it.",
+    photos: yaelPhotos,
+  },
+  {
+    name: "Marina Dias",
+    text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
   },
   {
     name: "Rory White",
