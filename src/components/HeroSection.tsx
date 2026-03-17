@@ -22,7 +22,7 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-10 container text-center px-6 pt-20 sm:pt-0">
         <h1
-          className="font-heading text-2xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-tight sm:leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
+          className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight sm:leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
           SURF COACHING
