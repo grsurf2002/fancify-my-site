@@ -106,7 +106,7 @@ const PhotoCarousel = ({ photos }: { photos: string[] }) => {
 };
 
 const ReviewCard = ({ review }: { review: { name: string; text: string; photos?: string[] } }) => (
-  <div className="min-w-[calc(100vw-4rem)] md:min-w-[400px] max-w-[calc(100vw-4rem)] md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
+  <div className="min-w-[calc(100vw-2rem)] md:min-w-[400px] max-w-[calc(100vw-2rem)] md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] snap-center">
     {review.photos && <PhotoCarousel photos={review.photos} />}
     <div className="flex items-center gap-1 mb-3">
       {[...Array(5)].map((_, i) => (
