@@ -1,5 +1,5 @@
-import { Star, ChevronDown, ChevronUp } from "lucide-react";
-import { useState } from "react";
+import { Star, ChevronLeft, ChevronRight } from "lucide-react";
+import { useRef, useState, useEffect } from "react";
 
 const reviews = [
   {
@@ -49,7 +49,7 @@ const reviews = [
 ];
 
 const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
-  <div className="rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
+  <div className="min-w-[300px] md:min-w-[400px] max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
     <div className="flex items-center gap-1 mb-3">
       {[...Array(5)].map((_, i) => (
         <Star key={i} className="h-4 w-4 fill-primary text-primary" />
@@ -72,8 +72,27 @@ const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
 );
 
 const ReviewsSection = () => {
-  const [expanded, setExpanded] = useState(false);
-  const visibleReviews = expanded ? reviews : reviews.slice(0, 2);
+  const scrollRef = useRef<HTMLDivElement>(null);
+  const [canScrollLeft, setCanScrollLeft] = useState(false);
+  const [canScrollRight, setCanScrollRight] = useState(true);
+
+  const checkScroll = () => {
+    const el = scrollRef.current;
+    if (!el) return;
+    setCanScrollLeft(el.scrollLeft > 0);
+    setCanScrollRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
+  };
+
+  useEffect(() => {
+    checkScroll();
+  }, []);
+
+  const scroll = (direction: "left" | "right") => {
+    const el = scrollRef.current;
+    if (!el) return;
+    const amount = direction === "left" ? -420 : 420;
+    el.scrollBy({ left: amount, behavior: "smooth" });
+  };
 
   return (
     <section id="reviews" className="py-20 px-4">
@@ -85,27 +104,37 @@ const ReviewsSection = () => {
           Google Reviews — 5.0 ⭐
         </p>
 
-        <div className="mt-12 grid gap-6 md:grid-cols-2">
-          {visibleReviews.map((review, index) => (
-            <ReviewCard key={index} review={review} />
-          ))}
-        </div>
+        <div className="relative mt-12">
+          {/* Left arrow */}
+          <button
+            onClick={() => scroll("left")}
+            className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll left"
+          >
+            <ChevronLeft className="h-5 w-5 text-foreground" />
+          </button>
 
-        {reviews.length > 2 && (
-          <div className="flex justify-center mt-8">
-            <button
-              onClick={() => setExpanded(!expanded)}
-              className="flex items-center gap-2 text-primary font-heading font-semibold tracking-wider uppercase text-sm hover:opacity-80 transition-opacity"
-            >
-              {expanded ? "Show less" : "Show more"}
-              {expanded ? (
-                <ChevronUp className="h-5 w-5" />
-              ) : (
-                <ChevronDown className="h-5 w-5" />
-              )}
-            </button>
+          {/* Carousel */}
+          <div
+            ref={scrollRef}
+            onScroll={checkScroll}
+            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {reviews.map((review, index) => (
+              <ReviewCard key={index} review={review} />
+            ))}
           </div>
-        )}
+
+          {/* Right arrow */}
+          <button
+            onClick={() => scroll("right")}
+            className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll right"
+          >
+            <ChevronRight className="h-5 w-5 text-foreground" />
+          </button>
+        </div>
       </div>
     </section>
   );
