@@ -20,7 +20,7 @@ const HeroSection = () => {
       <p className="sr-only">Progress Focused Surf Coaching in Ericeira</p>
 
       {/* Content */}
-      <div className="relative z-10 container text-center px-6 pt-20 sm:pt-0">
+      <div className="relative z-10 container text-center px-6 pt-20 sm:pt-0 -mt-20 sm:-mt-32">
         <h1
           className="font-heading text-2xl sm:text-4xl md:text-5xl lg:text-6xl font-black leading-tight sm:leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
