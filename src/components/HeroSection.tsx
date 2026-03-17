@@ -32,12 +32,6 @@ const HeroSection = () => {
           </span>
         </h1>
 
-        <h2
-          className="mt-6 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto font-medium opacity-0 animate-fade-up"
-          style={{ animationDelay: "0.4s" }}
-        >
-          Progress-focused surf coaching in Ericeira
-        </h2>
 
         <p
           className="mt-4 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
