@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         {/* Quick bullets */}
         <div
-          className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
+          className="mt-12 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           <span>Tailored progression plans</span>
