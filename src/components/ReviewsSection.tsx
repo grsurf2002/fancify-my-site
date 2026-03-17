@@ -52,6 +52,7 @@ const reviews = [
   {
     name: "Roman Van Loo",
     text: "Joined their coaching about half a year ago and it's been a very pleasant experience. The vibe is great, the tips they give are very helpful and I'm happy with the progress I've made with them. Definitely recommend!",
+    photos: romanPhotos,
   },
   {
     name: "Gonçalo Meneses",
