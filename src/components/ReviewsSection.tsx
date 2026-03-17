@@ -106,14 +106,14 @@ const PhotoCarousel = ({ photos }: { photos: string[] }) => {
 };
 
 const ReviewCard = ({ review }: { review: { name: string; text: string; photos?: string[] } }) => (
-  <div className="min-w-[calc(100vw-2rem)] md:min-w-[400px] max-w-[calc(100vw-2rem)] md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] snap-center">
+  <div className="w-full min-w-full md:min-w-[400px] max-w-full md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] snap-start">
     {review.photos && <PhotoCarousel photos={review.photos} />}
     <div className="flex items-center gap-1 mb-3">
       {[...Array(5)].map((_, i) => (
         <Star key={i} className="h-4 w-4 fill-primary text-primary" />
       ))}
     </div>
-    <p className="text-sm text-muted-foreground leading-relaxed mb-4">
+    <p className="text-sm text-muted-foreground leading-relaxed mb-4 break-words">
       "{review.text}"
     </p>
     <div className="flex items-center gap-3">
@@ -165,7 +165,7 @@ const ReviewsSection = () => {
         <div className="relative mt-12">
           <button
             onClick={() => scroll("left")}
-            className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            className={`hidden md:flex absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border items-center justify-center shadow-lg transition-opacity ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
             aria-label="Scroll left"
           >
             <ChevronLeft className="h-5 w-5 text-foreground" />
@@ -174,7 +174,7 @@ const ReviewsSection = () => {
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2 snap-x snap-mandatory md:snap-none px-0 md:px-0"
+            className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2 snap-x snap-mandatory md:snap-none"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review, index) => (
@@ -184,7 +184,7 @@ const ReviewsSection = () => {
 
           <button
             onClick={() => scroll("right")}
-            className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            className={`hidden md:flex absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border items-center justify-center shadow-lg transition-opacity ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
             aria-label="Scroll right"
           >
             <ChevronRight className="h-5 w-5 text-foreground" />
