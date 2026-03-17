@@ -68,6 +68,7 @@ const reviews = [
   {
     name: "Pedro Henrique Nascimento e Silva",
     text: "Treinos de surf com vídeo analise, os treinadores são super profissionais e confiáveis. Os treinos com an Upgrade me estão a levar a outro nível, com feedbacks precisos e boas ondas. Recomendo!",
+    photos: pedroPhotos,
   },
 ];
 
