@@ -83,7 +83,7 @@ const PhotoCarousel = ({ photos }: { photos: string[] }) => {
       <img
         src={photos[current]}
         alt="Surf coaching moment"
-        className="w-full h-full object-cover object-top transition-opacity duration-300"
+        className="w-full h-full object-cover transition-opacity duration-300"
       />
       {photos.length > 1 && (
         <>
