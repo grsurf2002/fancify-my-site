@@ -32,7 +32,7 @@ const HeroSection = () => {
           <span className="text-gradient-teal">YOUR SURF</span>
         </h1>
         <p
-          className="mt-6 text-lg md:text-xl text-muted-foreground max-w-xl mx-auto opacity-0 animate-fade-up"
+          className="mt-10 text-lg md:text-xl text-foreground/80 max-w-xl mx-auto opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           Personalized coaching to unlock your full potential in the water
