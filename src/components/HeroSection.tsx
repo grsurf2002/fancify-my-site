@@ -34,7 +34,7 @@ const HeroSection = () => {
 
 
         <p
-          className="mt-4 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
+          className="mt-8 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
           style={{ animationDelay: "0.5s" }}
         >
           Personal coaching, measurable progress, real waves — for adults who want to surf better fast.
