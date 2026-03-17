@@ -1,12 +1,17 @@
 import Navbar from "@/components/Navbar";
 import HeroSection from "@/components/HeroSection";
-import ServicesSection from "@/components/ServicesSection";
-import ReviewsSection from "@/components/ReviewsSection";
+import WhyChooseUsSection from "@/components/WhyChooseUsSection";
+import WhatToExpectSection from "@/components/WhatToExpectSection";
+import WhoWeCoachSection from "@/components/WhoWeCoachSection";
+import OurMethodSection from "@/components/OurMethodSection";
+import ResultsSection from "@/components/ResultsSection";
 import TeamSection from "@/components/TeamSection";
-import VideoSection from "@/components/VideoSection";
-import MissionSection from "@/components/MissionSection";
-import FAQSection from "@/components/FAQSection";
+import SessionTypesSection from "@/components/SessionTypesSection";
+import ReviewsSection from "@/components/ReviewsSection";
+import LocalInfoSection from "@/components/LocalInfoSection";
+import FinalCTASection from "@/components/FinalCTASection";
 import ContactSection from "@/components/ContactSection";
+import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -14,12 +19,17 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
       <HeroSection />
-      <ServicesSection />
+      <WhyChooseUsSection />
+      <WhatToExpectSection />
+      <WhoWeCoachSection />
+      <OurMethodSection />
+      <ResultsSection />
       <TeamSection />
-      <VideoSection />
-      <MissionSection />
-      <FAQSection />
+      <SessionTypesSection />
       <ReviewsSection />
+      <FAQSection />
+      <LocalInfoSection />
+      <FinalCTASection />
       <ContactSection />
       <Footer />
     </div>

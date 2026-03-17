@@ -8,7 +8,7 @@ const HeroSection = () => {
       <div className="absolute inset-0">
         <img
           src={heroImg}
-          alt="Surfer riding a massive wave in Ericeira"
+          alt="Surf coaching session at Ribeira d'Ilhas, Ericeira"
           className="w-full h-full object-cover object-[center_40%]"
           loading="eager"
         />
@@ -18,33 +18,68 @@ const HeroSection = () => {
 
       {/* Content */}
       <div className="relative z-10 container text-center px-4">
-        <p
-          className="text-sm md:text-base tracking-[0.4em] uppercase text-primary font-medium mb-6 opacity-0 animate-fade-up"
+        <h1
+          className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Ericeira, Portugal
-        </p>
-        <h1
-          className="font-heading text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
+          Surf Coaching in Ericeira
+          <br />
+          <span className="text-gradient-teal text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
+            Improve Faster, Surf Smarter
+          </span>
+        </h1>
+
+        <h2
+          className="mt-6 text-lg md:text-xl text-foreground/90 max-w-2xl mx-auto font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.4s" }}
         >
-          UPGRADE
-          <br />
-          <span className="text-gradient-teal">YOUR SURF</span>
-        </h1>
+          Progress-focused surf coaching in Ericeira
+        </h2>
+
         <p
-          className="mt-10 text-lg md:text-xl text-foreground/80 max-w-xl mx-auto opacity-0 animate-fade-up"
+          className="mt-4 text-base md:text-lg text-foreground/70 max-w-xl mx-auto opacity-0 animate-fade-up"
+          style={{ animationDelay: "0.5s" }}
+        >
+          Personal coaching, measurable progress, real waves — for adults who want to surf better fast.
+        </p>
+
+        {/* Quick bullets */}
+        <div
+          className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
-          Personalized coaching to unlock your full potential in the water
+          <span>Tailored progression plans</span>
+          <span className="text-muted-foreground">•</span>
+          <span>Video feedback</span>
+          <span className="text-muted-foreground">•</span>
+          <span>Local wave knowledge</span>
+        </div>
+
+        <p
+          className="mt-2 text-xs text-muted-foreground opacity-0 animate-fade-up"
+          style={{ animationDelay: "0.65s" }}
+        >
+          Ribeira d'Ilhas · Praia dos Coxos · São Julião
         </p>
-        <a
-          href="#services"
-          className="inline-flex items-center gap-2 mt-10 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300 opacity-0 animate-fade-up"
+
+        {/* CTAs */}
+        <div
+          className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-4 opacity-0 animate-fade-up"
           style={{ animationDelay: "0.8s" }}
         >
-          Explore Services
-        </a>
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
+          >
+            Book a Lesson
+          </a>
+          <a
+            href="mailto:upgradesurfing@gmail.com?subject=Free%20Assessment"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-sm hover:border-primary hover:text-primary transition-all duration-300"
+          >
+            Get a Free Assessment
+          </a>
+        </div>
       </div>
 
       {/* Scroll indicator */}
