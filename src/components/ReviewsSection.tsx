@@ -9,9 +9,17 @@ import yaelPhoto1 from "@/assets/review-yael-1.jpeg";
 import yaelPhoto2 from "@/assets/review-yael-2.jpeg";
 import yaelPhoto3 from "@/assets/review-yael-3.jpeg";
 import yaelPhoto4 from "@/assets/review-yael-4.jpeg";
+import pedroPhoto1 from "@/assets/review-pedro-1.jpeg";
+import pedroPhoto2 from "@/assets/review-pedro-2.jpeg";
+import pedroPhoto3 from "@/assets/review-pedro-3.jpeg";
+import marinaPhoto1 from "@/assets/review-marina-1.jpeg";
+import nickPhoto1 from "@/assets/review-nick-1.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
+const pedroPhotos = [pedroPhoto1, pedroPhoto2, pedroPhoto3];
+const marinaPhotos = [marinaPhoto1];
+const nickPhotos = [nickPhoto1];
 
 const reviews = [
   {
@@ -27,6 +35,7 @@ const reviews = [
   {
     name: "Marina Dias",
     text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
+    photos: marinaPhotos,
   },
   {
     name: "Rory White",
@@ -59,6 +68,7 @@ const reviews = [
   {
     name: "Pedro Henrique Nascimento e Silva",
     text: "Treinos de surf com vídeo analise, os treinadores são super profissionais e confiáveis. Os treinos com an Upgrade me estão a levar a outro nível, com feedbacks precisos e boas ondas. Recomendo!",
+    photos: pedroPhotos,
   },
 ];
 
