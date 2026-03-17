@@ -58,10 +58,10 @@ const HeroSection = () => {
             Book a Lesson
           </a>
           <a
-            href="#contact"
+            href="#reviews"
             className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-xs sm:text-sm hover:border-primary hover:text-primary transition-all duration-300"
           >
-            Get a Free Assessment
+            What Do People Say
           </a>
         </div>
       </div>
