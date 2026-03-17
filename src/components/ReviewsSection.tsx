@@ -130,7 +130,39 @@ const ReviewsSection = () => {
           Google Reviews — 5.0 ⭐
         </p>
 
-        <div className="relative mt-12">
+        {/* Photo Gallery Carousel */}
+        <div className="relative mt-12 mb-10">
+          <button
+            onClick={() => scrollPhotos("left")}
+            className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll photos left"
+          >
+            <ChevronLeft className="h-5 w-5 text-foreground" />
+          </button>
+
+          <div
+            ref={photoScrollRef}
+            onScroll={checkPhotoScroll}
+            className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth"
+            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
+          >
+            {photos.map((photo, i) => (
+              <div key={i} className="min-w-[280px] md:min-w-[300px] h-[350px] md:h-[400px] shrink-0 rounded-xl overflow-hidden">
+                <img src={photo} alt={`Surf coaching moment ${i + 1}`} className="w-full h-full object-cover" />
+              </div>
+            ))}
+          </div>
+
+          <button
+            onClick={() => scrollPhotos("right")}
+            className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
+            aria-label="Scroll photos right"
+          >
+            <ChevronRight className="h-5 w-5 text-foreground" />
+          </button>
+        </div>
+
+        <div className="relative">
           {/* Left arrow */}
           <button
             onClick={() => scroll("left")}
