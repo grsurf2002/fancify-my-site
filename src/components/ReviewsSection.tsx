@@ -6,12 +6,13 @@ import reviewPhoto2 from "@/assets/review-photo-2.jpeg";
 import reviewPhoto3 from "@/assets/review-photo-3.jpeg";
 import reviewPhoto4 from "@/assets/review-photo-4.jpeg";
 
-const photos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
+const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 
 const reviews = [
   {
     name: "Paul Tavares",
     text: "Started training last year with Gabriel and Hugo and improved more in a year than in the last 10 surfing by myself! These guys are amazing and they push you with knowledge and experience to give you the confidence you need to get a bit better every session 👍👍",
+    photos: paulPhotos,
   },
   {
     name: "Marina Dias",
@@ -55,8 +56,52 @@ const reviews = [
   },
 ];
 
-const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
+const PhotoCarousel = ({ photos }: { photos: string[] }) => {
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => setCurrent((c) => (c === 0 ? photos.length - 1 : c - 1));
+  const next = () => setCurrent((c) => (c === photos.length - 1 ? 0 : c + 1));
+
+  return (
+    <div className="relative w-full h-[220px] md:h-[280px] rounded-lg overflow-hidden mb-4">
+      <img
+        src={photos[current]}
+        alt="Surf coaching moment"
+        className="w-full h-full object-cover transition-opacity duration-300"
+      />
+      {photos.length > 1 && (
+        <>
+          <button
+            onClick={prev}
+            className="absolute left-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-background/80 border border-border flex items-center justify-center backdrop-blur-sm"
+            aria-label="Previous photo"
+          >
+            <ChevronLeft className="h-4 w-4 text-foreground" />
+          </button>
+          <button
+            onClick={next}
+            className="absolute right-2 top-1/2 -translate-y-1/2 h-8 w-8 rounded-full bg-background/80 border border-border flex items-center justify-center backdrop-blur-sm"
+            aria-label="Next photo"
+          >
+            <ChevronRight className="h-4 w-4 text-foreground" />
+          </button>
+          <div className="absolute bottom-2 left-1/2 -translate-x-1/2 flex gap-1.5">
+            {photos.map((_, i) => (
+              <div
+                key={i}
+                className={`h-1.5 w-1.5 rounded-full transition-colors ${i === current ? "bg-primary" : "bg-foreground/40"}`}
+              />
+            ))}
+          </div>
+        </>
+      )}
+    </div>
+  );
+};
+
+const ReviewCard = ({ review }: { review: { name: string; text: string; photos?: string[] } }) => (
   <div className="min-w-[300px] md:min-w-[400px] max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
+    {review.photos && <PhotoCarousel photos={review.photos} />}
     <div className="flex items-center gap-1 mb-3">
       {[...Array(5)].map((_, i) => (
         <Star key={i} className="h-4 w-4 fill-primary text-primary" />
@@ -83,24 +128,6 @@ const ReviewsSection = () => {
   const [canScrollLeft, setCanScrollLeft] = useState(false);
   const [canScrollRight, setCanScrollRight] = useState(true);
 
-  const photoScrollRef = useRef<HTMLDivElement>(null);
-  const [canPhotoLeft, setCanPhotoLeft] = useState(false);
-  const [canPhotoRight, setCanPhotoRight] = useState(true);
-
-  const checkPhotoScroll = () => {
-    const el = photoScrollRef.current;
-    if (!el) return;
-    setCanPhotoLeft(el.scrollLeft > 0);
-    setCanPhotoRight(el.scrollLeft < el.scrollWidth - el.clientWidth - 1);
-  };
-
-  const scrollPhotos = (direction: "left" | "right") => {
-    const el = photoScrollRef.current;
-    if (!el) return;
-    const amount = direction === "left" ? -320 : 320;
-    el.scrollBy({ left: amount, behavior: "smooth" });
-  };
-
   const checkScroll = () => {
     const el = scrollRef.current;
     if (!el) return;
@@ -110,7 +137,6 @@ const ReviewsSection = () => {
 
   useEffect(() => {
     checkScroll();
-    checkPhotoScroll();
   }, []);
 
   const scroll = (direction: "left" | "right") => {
@@ -130,40 +156,7 @@ const ReviewsSection = () => {
           Google Reviews — 5.0 ⭐
         </p>
 
-        {/* Photo Gallery Carousel */}
-        <div className="relative mt-12 mb-10">
-          <button
-            onClick={() => scrollPhotos("left")}
-            className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-            aria-label="Scroll photos left"
-          >
-            <ChevronLeft className="h-5 w-5 text-foreground" />
-          </button>
-
-          <div
-            ref={photoScrollRef}
-            onScroll={checkPhotoScroll}
-            className="flex gap-4 overflow-x-auto scrollbar-hide scroll-smooth"
-            style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-          >
-            {photos.map((photo, i) => (
-              <div key={i} className="min-w-[280px] md:min-w-[300px] h-[350px] md:h-[400px] shrink-0 rounded-xl overflow-hidden">
-                <img src={photo} alt={`Surf coaching moment ${i + 1}`} className="w-full h-full object-cover" />
-              </div>
-            ))}
-          </div>
-
-          <button
-            onClick={() => scrollPhotos("right")}
-            className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canPhotoRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
-            aria-label="Scroll photos right"
-          >
-            <ChevronRight className="h-5 w-5 text-foreground" />
-          </button>
-        </div>
-
-        <div className="relative">
-          {/* Left arrow */}
+        <div className="relative mt-12">
           <button
             onClick={() => scroll("left")}
             className={`absolute -left-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollLeft ? "opacity-100" : "opacity-0 pointer-events-none"}`}
@@ -172,7 +165,6 @@ const ReviewsSection = () => {
             <ChevronLeft className="h-5 w-5 text-foreground" />
           </button>
 
-          {/* Carousel */}
           <div
             ref={scrollRef}
             onScroll={checkScroll}
@@ -184,7 +176,6 @@ const ReviewsSection = () => {
             ))}
           </div>
 
-          {/* Right arrow */}
           <button
             onClick={() => scroll("right")}
             className={`absolute -right-4 top-1/2 -translate-y-1/2 z-10 h-10 w-10 rounded-full bg-card border border-border flex items-center justify-center shadow-lg transition-opacity ${canScrollRight ? "opacity-100" : "opacity-0 pointer-events-none"}`}
