@@ -153,7 +153,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <section id="reviews" className="py-20 px-4">
+    <section id="reviews" className="py-20 px-2 md:px-4">
       <div className="container">
         <h2 className="font-heading text-3xl md:text-5xl font-bold tracking-wider text-foreground text-center uppercase">
           Reviews
