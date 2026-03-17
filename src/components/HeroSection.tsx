@@ -43,7 +43,7 @@ const HeroSection = () => {
           <span className="hidden sm:inline text-muted-foreground">•</span>
           <span>Video feedback</span>
           <span className="hidden sm:inline text-muted-foreground">•</span>
-          <span>Local wave knowledge</span>
+          <span>Local expert surfers</span>
         </div>
 
         {/* CTAs */}
