@@ -1,14 +1,14 @@
 import { CheckCircle, XCircle } from "lucide-react";
 
 const idealFor = [
-  "Ambitious beginners who want to progress beyond \"first wave\" basics.",
+  "Feeling stuck with your progression, and not knowing what to work on.",
+  "People that want to progress smarter while having fun.",
   "Intermediate surfers stuck on small improvements (turns, timing, confidence).",
   "Travellers who want effective coaching during a short trip to Ericeira.",
   "Adults returning to surfing after a break.",
 ];
 
 const notAFit = [
-  "Casual \"beach day\" experience without coaching goals.",
   "Large-group party lessons.",
   "Complete beginner playtime without structure.",
 ];
@@ -27,7 +27,6 @@ const WhoWeCoachSection = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {/* Ideal for */}
           <div className="rounded-2xl border border-border/50 bg-card p-8">
             <h3 className="font-heading text-xl font-bold text-foreground mb-6">
               Ideal For
@@ -42,7 +41,6 @@ const WhoWeCoachSection = () => {
             </ul>
           </div>
 
-          {/* Not a fit */}
           <div className="rounded-2xl border border-border/50 bg-card p-8">
             <h3 className="font-heading text-xl font-bold text-foreground mb-6">
               Not a Fit

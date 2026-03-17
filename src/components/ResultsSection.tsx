@@ -9,7 +9,7 @@ const outcomes = [
   {
     icon: RotateCcw,
     title: "Cleaner turns & speed generation",
-    description: "Surf more powerful sections.",
+    description: "Surf smarter with more technique and applying more powerful turns.",
   },
   {
     icon: Eye,
