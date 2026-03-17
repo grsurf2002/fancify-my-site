@@ -7,25 +7,100 @@ import {
 
 const faqs = [
   {
-    question: "How long does the surf coaching last?",
-    answer:
-      "Each surf coaching session lasts between 2.5 to 3 hours, including warm-up, water time, and video analysis feedback. But if your question is how much time inside the water, it's around 1h30.",
+    question: "What is the difference between surf lessons and surf coaching at Upgrade Surf Coaching?",
+    answer: "Surf lessons Ericeira focus on safe, structured learning of fundamentals (pop-up, paddling, water safety) typically in small groups, while surf coaching Ericeira is progression-driven with individualised plans, targeted drills and measurable goals to accelerate skill development.",
   },
   {
-    question:
-      "How do you decide if you film or go in the water during coaching?",
-    answer:
-      "Group surf coaching is mainly filming with video analysis, but it will always depend on your level. Private surf coaching — we might have some sessions inside the water so we extract the most of the conditions and the session itself for your progression.",
+    question: "Is Upgrade Surf Coaching a surf school in Ericeira or a private coaching service?",
+    answer: "We operate as a performance-focused surf school Ericeira that offers both small-group lessons and private one-to-one surf coaching Ericeira, so you can choose a lesson format based on your goals and time available.",
   },
   {
-    question: "How do you decide the surf spot, or is there a fixed one?",
-    answer:
-      "No, we don't have a fixed spot for the trainings. We choose the best spot each day based on swell, wind, tide, and your skill level. We operate mainly in Ericeira, Peniche, and Carcavelos — flexibility is key to finding the best waves for your session.",
+    question: "Who are your surf lessons and coaching best suited for?",
+    answer: "We coach motivated adults from beginner to intermediate level — complete beginners wanting a structured start, intermediates aiming to break plateaus, and travellers seeking rapid improvement during a short stay in Ericeira.",
   },
   {
-    question: "Is there material included?",
-    answer:
-      "Material is not included but we charge just 10€ for board and wetsuit for the session (hardtop and softboard).",
+    question: "How does progression work in your surf coaching programs?",
+    answer: "Progression is structured around an initial assessment, clear short- and medium-term goals, drill-based sessions, in-water repetition and optional video analysis; we track milestones and adapt sessions as you improve.",
+  },
+  {
+    question: "Why should I choose Ericeira for surf lessons and coaching?",
+    answer: "Ericeira offers a unique mix of beach, point and reef breaks within short distances, providing ideal, varied conditions for staged progression and consistent learning opportunities year-round.",
+  },
+  {
+    question: "When is the best time of year to book surf lessons in Ericeira?",
+    answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression — we tailor sessions to match your level and the seasonal conditions.",
+  },
+  {
+    question: "Where do lessons and coaching sessions meet in Ericeira?",
+    answer: "We meet at carefully chosen local breaks such as Ribeira d'Ilhas, Praia dos Coxos and Praia Grande depending on skill level, swell and wind; exact meeting points are confirmed at booking.",
+  },
+  {
+    question: "How do I book surf lessons Ericeira or surf coaching Ericeira?",
+    answer: "Book online via the upgradesurfericeira.com booking widget or contact us by phone/WhatsApp to check availability and arrange private sessions or packages.",
+  },
+  {
+    question: "How long is a typical lesson or coaching session?",
+    answer: "Most single sessions run 60–90 minutes in the water, with a 15–20 minute on-land briefing and debrief included; intensive or private sessions can be extended on request.",
+  },
+  {
+    question: "What's included in a standard surf lesson or coaching session?",
+    answer: "Sessions include coach-led instruction, equipment (board and wetsuit options), safety briefing, targeted drills, in-water coaching and a short take-home plan; video analysis is available as an add-on.",
+  },
+  {
+    question: "Do you provide surfboards and wetsuits in Ericeira?",
+    answer: "Yes — we supply a range of soft-top and performance boards plus wetsuits suitable for local water temperatures; for private coaching we can adjust equipment to match your progression goals.",
+  },
+  {
+    question: "What should I bring to my surf lesson in Ericeira?",
+    answer: "Bring a towel, swimwear, sunscreen rated for water sports, a water bottle, and any personal items; we recommend arriving 15 minutes early for check-in and preparation.",
+  },
+  {
+    question: "What happens if weather or swell is bad on the day of my lesson?",
+    answer: "We monitor local conditions and will reschedule or move to a safer, more suitable break if necessary; for severe conditions we offer refunds or alternative dates per our booking policy.",
+  },
+  {
+    question: "How quickly will I see improvement with surf coaching Ericeira?",
+    answer: "Most clients notice tangible improvements within 2–4 sessions when following the coach's drills and home practice plan; consistent repetition, focused feedback and video review accelerate results.",
+  },
+  {
+    question: "Can beginners go from lessons to coaching programs?",
+    answer: "Yes — our structured surf lessons Ericeira are designed to transition clients into ongoing surf coaching Ericeira or improvement programs as their skills and confidence grow.",
+  },
+  {
+    question: "Are your coaches certified and experienced in Ericeira conditions?",
+    answer: "Yes — our coaches are certified, have years of local experience in Ericeira and use a proven methodology combining ocean knowledge, biomechanics and surf-specific drills to deliver results.",
+  },
+  {
+    question: "Do you offer video analysis for surfing in Ericeira?",
+    answer: "Yes — video analysis is available as an add-on or part of progression packages; footage is reviewed in slow motion for clear technical feedback and targeted drills to implement in the next session.",
+  },
+  {
+    question: "What are the group sizes for surf lessons and coaching?",
+    answer: "Group lessons are small (max 6) to maintain quality; semi-private sessions are typically 2–3, and private coaching is 1:1 to maximise focused progress.",
+  },
+  {
+    question: "How are surf trips and retreats different from regular coaching sessions?",
+    answer: "Surf trips & retreats combine daily coached sessions, video review, and curated local spot selection over multiple days, providing concentrated repetition and environmental variety for faster skill gains while travelling.",
+  },
+  {
+    question: "Who should join a surf trip or retreat with Upgrade Surf Coaching?",
+    answer: "Our trips suit motivated surfers who want structured coaching while travelling — intermediates aiming to step up and adults who want efficient, coach-led progression in a short timeframe.",
+  },
+  {
+    question: "Which destinations do you run surf trips to besides Ericeira?",
+    answer: "We run Portugal-based micro-retreats centred on Ericeira and seasonal international trips to destinations like Morocco and the Canary Islands, chosen for consistent swell and coaching-friendly conditions.",
+  },
+  {
+    question: "What level of experience is required for your Morocco or international trips?",
+    answer: "Trip level requirements vary by itinerary; some Morocco trips suit intermediate surfers comfortable in longer, more powerful point waves, while Portugal retreats can accommodate a broader range of levels.",
+  },
+  {
+    question: "Do you offer pick-up or transport to surf spots around Ericeira?",
+    answer: "Yes — we offer local pickups from central Ericeira meeting points or partner accommodations when requested; pickup details are confirmed at booking and subject to availability.",
+  },
+  {
+    question: "Can I book multiple sessions as a progression package in Ericeira?",
+    answer: "Absolutely — we offer single sessions, 5- and 10-session progression packages and tailored improvement programs with tracking and optional video analysis to ensure measurable progress.",
   },
 ];
 
