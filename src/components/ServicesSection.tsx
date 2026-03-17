@@ -1,8 +1,9 @@
-import { Waves, Compass, Video, ArrowRight } from "lucide-react";
+import { Waves, Compass, Video, Plane, ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
 import videoAnalysisImg from "@/assets/video-analysis.jpeg";
 import beachCoachingImg from "@/assets/beach-coaching.jpeg";
 import surfCoachingImg from "@/assets/coaching-1.jpeg";
+import algarveImg from "@/assets/algarve-1.jpeg";
 
 const services = [
   {
@@ -12,6 +13,14 @@ const services = [
       "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
     image: surfCoachingImg,
     link: "/surf-coaching",
+  },
+  {
+    icon: Plane,
+    title: "Surf Trips",
+    description:
+      "Join us on unforgettable surf adventures around the world. From the Algarve to the Maldives, we organize trips for all levels — combining great waves, coaching and good vibes.",
+    image: algarveImg,
+    link: "/surf-trips",
   },
   {
     icon: Compass,
