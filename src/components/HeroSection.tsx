@@ -25,7 +25,7 @@ const HeroSection = () => {
           className="font-heading text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black leading-[0.9] tracking-tight text-foreground opacity-0 animate-fade-up"
           style={{ animationDelay: "0.2s" }}
         >
-          Surf Coaching in Ericeira
+          SURF COACHING IN ERICEIRA
           <br />
           <span className="text-gradient-teal text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
             Improve Faster, Surf Smarter
@@ -42,7 +42,7 @@ const HeroSection = () => {
 
         {/* Quick bullets */}
         <div
-          className="mt-6 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
+          className="mt-10 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-primary font-medium opacity-0 animate-fade-up"
           style={{ animationDelay: "0.6s" }}
         >
           <span>Tailored progression plans</span>
@@ -51,13 +51,6 @@ const HeroSection = () => {
           <span className="text-muted-foreground">•</span>
           <span>Local wave knowledge</span>
         </div>
-
-        <p
-          className="mt-2 text-xs text-muted-foreground opacity-0 animate-fade-up"
-          style={{ animationDelay: "0.65s" }}
-        >
-          Ribeira d'Ilhas · Praia dos Coxos · São Julião
-        </p>
 
         {/* CTAs */}
         <div
