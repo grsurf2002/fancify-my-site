@@ -42,6 +42,10 @@ const reviews = [
     name: "Leon Braun",
     text: "I had many great surf sessions. Gabriel and Hugo have been a great help. The video analysis is a game changer.",
   },
+  {
+    name: "Pedro Henrique Nascimento e Silva",
+    text: "Treinos de surf com vídeo analise, os treinadores são super profissionais e confiáveis. Os treinos com an Upgrade me estão a levar a outro nível, com feedbacks precisos e boas ondas. Recomendo!",
+  },
 ];
 
 const ReviewCard = ({ review }: { review: { name: string; text: string } }) => (
