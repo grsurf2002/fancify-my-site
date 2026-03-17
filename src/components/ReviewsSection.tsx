@@ -106,7 +106,7 @@ const PhotoCarousel = ({ photos }: { photos: string[] }) => {
 };
 
 const ReviewCard = ({ review }: { review: { name: string; text: string; photos?: string[] } }) => (
-  <div className="min-w-[calc(100vw-4rem)] md:min-w-[400px] max-w-[calc(100vw-4rem)] md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)]">
+  <div className="min-w-[calc(100vw-2rem)] md:min-w-[400px] max-w-[calc(100vw-2rem)] md:max-w-[400px] shrink-0 rounded-xl border border-border bg-card p-4 md:p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] snap-center">
     {review.photos && <PhotoCarousel photos={review.photos} />}
     <div className="flex items-center gap-1 mb-3">
       {[...Array(5)].map((_, i) => (
@@ -153,7 +153,7 @@ const ReviewsSection = () => {
   };
 
   return (
-    <section id="reviews" className="py-20 px-4">
+    <section id="reviews" className="py-20 px-2 md:px-4">
       <div className="container">
         <h2 className="font-heading text-3xl md:text-5xl font-bold tracking-wider text-foreground text-center uppercase">
           Reviews
@@ -174,7 +174,7 @@ const ReviewsSection = () => {
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2"
+            className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2 snap-x snap-mandatory md:snap-none px-0 md:px-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review, index) => (
