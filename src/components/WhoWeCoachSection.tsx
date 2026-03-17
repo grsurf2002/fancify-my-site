@@ -6,6 +6,7 @@ const idealFor = [
   "Intermediate surfers stuck on small improvements (turns, timing, confidence).",
   "Travellers who want effective coaching during a short trip to Ericeira.",
   "Adults returning to surfing after a break.",
+  "Advanced surfers who want to take the next step.",
 ];
 
 const notAFit = [
