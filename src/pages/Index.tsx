@@ -4,7 +4,7 @@ import ServicesSection from "@/components/ServicesSection";
 import WhyChooseUsSection from "@/components/WhyChooseUsSection";
 import WhatToExpectSection from "@/components/WhatToExpectSection";
 import WhoWeCoachSection from "@/components/WhoWeCoachSection";
-import OurMethodSection from "@/components/OurMethodSection";
+
 import ResultsSection from "@/components/ResultsSection";
 import TeamSection from "@/components/TeamSection";
 import SessionTypesSection from "@/components/SessionTypesSection";
@@ -25,7 +25,7 @@ const Index = () => {
       <WhyChooseUsSection />
       <WhatToExpectSection />
       <WhoWeCoachSection />
-      <OurMethodSection />
+      
       <ResultsSection />
       <SessionTypesSection />
       <ReviewsSection />
