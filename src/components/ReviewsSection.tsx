@@ -9,9 +9,17 @@ import yaelPhoto1 from "@/assets/review-yael-1.jpeg";
 import yaelPhoto2 from "@/assets/review-yael-2.jpeg";
 import yaelPhoto3 from "@/assets/review-yael-3.jpeg";
 import yaelPhoto4 from "@/assets/review-yael-4.jpeg";
+import pedroPhoto1 from "@/assets/review-pedro-1.jpeg";
+import pedroPhoto2 from "@/assets/review-pedro-2.jpeg";
+import pedroPhoto3 from "@/assets/review-pedro-3.jpeg";
+import marinaPhoto1 from "@/assets/review-marina-1.jpeg";
+import nickPhoto1 from "@/assets/review-nick-1.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
+const pedroPhotos = [pedroPhoto1, pedroPhoto2, pedroPhoto3];
+const marinaPhotos = [marinaPhoto1];
+const nickPhotos = [nickPhoto1];
 
 const reviews = [
   {
