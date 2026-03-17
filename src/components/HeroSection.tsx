@@ -67,9 +67,10 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-bounce text-muted-foreground">
-        <ChevronDown size={28} />
-      </div>
+      <a href="#services" className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1 text-muted-foreground hover:text-primary transition-colors duration-300 cursor-pointer">
+        <span className="text-xs font-semibold tracking-widest uppercase">Our Services</span>
+        <ChevronDown size={28} className="animate-bounce" />
+      </a>
     </section>
   );
 };
