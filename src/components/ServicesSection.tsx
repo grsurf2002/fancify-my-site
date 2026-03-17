@@ -20,6 +20,7 @@ const services = [
     description:
       "Join us on unforgettable surf adventures around the world. From the Algarve to Sri Lanka and Morocco, we organize trips for all levels — combining great waves, coaching and good vibes.",
     image: surfTripsImg,
+    imagePosition: "center 80%",
     link: "/surf-trips",
   },
   {
@@ -64,6 +65,7 @@ const ServicesSection = () => {
                   src={service.image}
                   alt={service.title}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  style={service.imagePosition ? { objectPosition: service.imagePosition } : undefined}
                   loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-card via-card/40 to-transparent" />
