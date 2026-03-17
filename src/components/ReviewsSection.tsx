@@ -174,7 +174,7 @@ const ReviewsSection = () => {
           <div
             ref={scrollRef}
             onScroll={checkScroll}
-            className="flex gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2"
+            className="flex gap-4 md:gap-6 overflow-x-auto scrollbar-hide scroll-smooth pb-2 snap-x snap-mandatory md:snap-none px-0 md:px-0"
             style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
           >
             {reviews.map((review, index) => (
