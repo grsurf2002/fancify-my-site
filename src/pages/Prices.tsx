@@ -9,7 +9,7 @@ const pricingData = [
   },
   {
     title: "Private Surf Coaching / Video Analysis",
-    range: "From 100€",
+    range: "From 110€",
     description: "Depending on your pack or monthly subscription.",
   },
   {
