@@ -175,7 +175,7 @@ const Prices = () => {
                 </h3>
                 <p className="text-3xl font-bold text-primary mb-1">€{plan.price}</p>
                 <p className="text-lg font-semibold text-accent mb-2">€{plan.perSession}/session</p>
-                <p className="text-sm text-green-400 font-medium">Save €{plan.save}</p>
+                <p className="text-sm text-accent font-medium">Save €{plan.save}</p>
               </div>
             ))}
           </div>
