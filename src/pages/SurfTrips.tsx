@@ -1,7 +1,8 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { MapPin, Calendar, ChevronDown, ChevronUp, Check } from "lucide-react";
-import { useState } from "react";
+import { MapPin, Calendar, ChevronDown, ChevronUp, Check, Globe, Video, Users, Target, Heart, ArrowRight } from "lucide-react";
+import { useState, useEffect } from "react";
+import surfTripsMain from "@/assets/surf-trips-main.png";
 import algarveStay1 from "@/assets/algarve-stay-1.png";
 import algarveStay2 from "@/assets/algarve-stay-2.png";
 import algarveStay3 from "@/assets/algarve-stay-3.png";
@@ -20,6 +21,8 @@ interface ScheduleDay {
 interface Trip {
   destination: string;
   dates: string;
+  flag: string;
+  taglineShort: string;
   details?: {
     tagline: string;
     location?: string;
@@ -56,10 +59,12 @@ const algarveDetails = {
   ],
 };
 
-const trips: Trip[] = [
+const trips2026: Trip[] = [
   {
-    destination: "Maldives",
-    dates: "6 — 16 de Maio 2026",
+    destination: "Maldives Surf Camp",
+    dates: "6 — 16 May 2026",
+    flag: "🌴",
+    taglineShort: "Tropical reef waves & high-performance coaching",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
       location:
@@ -77,8 +82,10 @@ const trips: Trip[] = [
     },
   },
   {
-    destination: "Maldives",
-    dates: "16 — 26 de Maio 2026",
+    destination: "Maldives Surf Trip",
+    dates: "16 — 26 May 2026",
+    flag: "🌴",
+    taglineShort: "Perfect for intermediate & advanced surfers",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
       location:
@@ -96,23 +103,31 @@ const trips: Trip[] = [
     },
   },
   {
-    destination: "Algarve",
-    dates: "16 — 19 de Outubro 2026",
+    destination: "Algarve Surf Trip",
+    dates: "16 — 19 October 2026",
+    flag: "🇵🇹",
+    taglineShort: "Warm water & consistent waves",
     details: algarveDetails,
   },
   {
-    destination: "Algarve",
-    dates: "12 — 15 de Novembro 2026",
+    destination: "Algarve Surf Camp",
+    dates: "12 — 15 November 2026",
+    flag: "🇵🇹",
+    taglineShort: "Waves, coaching & team vibes in the Algarve",
     details: algarveDetails,
   },
   {
-    destination: "Algarve",
-    dates: "17 — 20 de Dezembro 2026",
+    destination: "Algarve Surf Trip",
+    dates: "17 — 20 December 2026",
+    flag: "🇵🇹",
+    taglineShort: "End the year surfing in the Algarve",
     details: algarveDetails,
   },
   {
-    destination: "Pantín, Galicia",
-    dates: "14 — 19 de Julho 2026",
+    destination: "Pantín Surf Trip Galicia",
+    dates: "14 — 19 July 2026",
+    flag: "🇪🇸",
+    taglineShort: "Powerful Atlantic waves & coaching focus",
     details: {
       tagline: "An intensive training experience with technical coaching, video analysis, and team bonding.",
       location: "Pantín, Valdoviño – Galicia, Spain (~640 km from Ericeira, ~6.5–7 hours drive)",
@@ -140,12 +155,20 @@ const trips: Trip[] = [
   },
 ];
 
-const comingSoon: Trip[] = [
-  { destination: "Marrocos", dates: "2 — 7 de Fevereiro 2027" },
-  { destination: "Algarve", dates: "18 — 21 de Fevereiro 2027", details: algarveDetails },
-  { destination: "Sri Lanka", dates: "1 — 11 de Março 2027" },
-  { destination: "Algarve", dates: "18 — 21 de Abril 2027", details: algarveDetails },
-  { destination: "Maldives", dates: "1 — 11 de Junho 2027" },
+const trips2027: Trip[] = [
+  { destination: "Morocco Surf Trip", dates: "2 — 7 February 2027", flag: "🇲🇦", taglineShort: "Perfect winter surf escape close to Europe" },
+  { destination: "Algarve Surf Trip", dates: "18 — 21 February 2027", flag: "🇵🇹", taglineShort: "Warm water & consistent waves", details: algarveDetails },
+  { destination: "Sri Lanka Surf Camp", dates: "1 — 11 March 2027", flag: "🌴", taglineShort: "Warm water, long waves & progression-focused coaching" },
+  { destination: "Algarve Surf Trip", dates: "18 — 21 April 2027", flag: "🇵🇹", taglineShort: "Spring surf in the Algarve", details: algarveDetails },
+  { destination: "Maldives Surf Trip", dates: "1 — 11 June 2027", flag: "🌴", taglineShort: "Premium surf coaching in paradise" },
+];
+
+const whyJoinReasons = [
+  { icon: Globe, text: "Surf the best waves worldwide" },
+  { icon: Video, text: "Video analysis & coaching included" },
+  { icon: Users, text: "Small groups for better progression" },
+  { icon: Target, text: "Trips adapted to all levels" },
+  { icon: Heart, text: "Meet like-minded surfers" },
 ];
 
 const TripCard = ({ trip }: { trip: Trip }) => {
@@ -156,21 +179,30 @@ const TripCard = ({ trip }: { trip: Trip }) => {
 
   return (
     <div
-      className={`group relative rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] ${hasDetails ? "cursor-pointer" : ""} ${hasDetails && !expanded ? "md:col-span-1" : ""} ${expanded ? "md:col-span-2 lg:col-span-3" : ""}`}
+      className={`group relative rounded-xl border border-border bg-card p-6 transition-all duration-300 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] ${hasDetails ? "cursor-pointer" : ""} ${expanded ? "md:col-span-2 lg:col-span-3" : ""}`}
       onClick={() => hasDetails && setExpanded(!expanded)}
     >
       <div className="flex items-center justify-between">
         <div>
-          <div className="flex items-center gap-2 mb-2">
-            <MapPin className="h-4 w-4 text-primary" />
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xl">{trip.flag}</span>
             <h3 className="font-heading text-xl font-bold text-foreground uppercase tracking-wide">
               {trip.destination}
             </h3>
           </div>
-          <div className="flex items-center gap-2 text-muted-foreground">
+          <div className="flex items-center gap-2 text-muted-foreground mb-2">
             <Calendar className="h-4 w-4 text-accent" />
             <span className="font-body text-sm">{trip.dates}</span>
           </div>
+          <p className="text-sm text-muted-foreground/80">{trip.taglineShort}</p>
+          {!hasDetails && (
+            <span className="inline-block mt-2 text-xs font-heading uppercase tracking-wider text-primary/70">Coming soon</span>
+          )}
+          {hasDetails && !expanded && (
+            <span className="inline-block mt-2 text-xs font-heading uppercase tracking-wider text-primary">
+              Limited spots available — Click for details
+            </span>
+          )}
         </div>
         {hasDetails && (
           <div className="text-primary">
@@ -180,11 +212,10 @@ const TripCard = ({ trip }: { trip: Trip }) => {
       </div>
 
       {expanded && trip.details && (
-        <div className="mt-6 border-t border-border pt-6 space-y-6">
+        <div className="mt-6 border-t border-border pt-6 space-y-6" onClick={(e) => e.stopPropagation()}>
           <p className="font-heading text-lg text-primary tracking-wider uppercase">
             {trip.details.tagline}
           </p>
-
 
           {trip.details.location && (
             <div>
@@ -221,7 +252,7 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                         <img
                           key={i}
                           src={img}
-                          alt={`Accommodation ${i + 1}`}
+                          alt={`Surf trip accommodation ${trip.destination} ${i + 1}`}
                           className="rounded-lg w-full h-32 object-cover"
                         />
                       ))}
@@ -244,7 +275,7 @@ const TripCard = ({ trip }: { trip: Trip }) => {
                         <img
                           key={i}
                           src={img}
-                          alt={`Moment ${i + 1}`}
+                          alt={`Surf trip moment ${trip.destination} ${i + 1}`}
                           className="rounded-lg w-full h-32 object-cover"
                         />
                       ))}
@@ -262,7 +293,6 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               </p>
             </div>
           </div>
-
 
           <div>
             <h4 className="font-heading text-sm font-bold text-foreground uppercase tracking-wider mb-3">
@@ -297,6 +327,17 @@ const TripCard = ({ trip }: { trip: Trip }) => {
               </div>
             </div>
           )}
+
+          <div className="pt-4 border-t border-border">
+            <a
+              href="https://wa.me/351920459122"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-6 py-3 rounded-lg font-heading uppercase tracking-wider text-sm hover:bg-primary/90 transition-colors"
+            >
+              Reserve Your Spot <ArrowRight className="h-4 w-4" />
+            </a>
+          </div>
         </div>
       )}
     </div>
@@ -304,35 +345,137 @@ const TripCard = ({ trip }: { trip: Trip }) => {
 };
 
 const SurfTrips = () => {
+  useEffect(() => {
+    document.title = "Surf Trips & Surf Camps 2026–2027 | Upgrade Surf Coaching";
+    const metaDesc = document.querySelector('meta[name="description"]');
+    if (metaDesc) {
+      metaDesc.setAttribute("content", "Join premium surf trips and surf camps from Ericeira, Portugal. Maldives, Algarve, Sri Lanka, Morocco — coaching, video analysis & adventure for all levels.");
+    }
+  }, []);
+
   return (
     <div className="min-h-screen bg-background">
       <Navbar />
-      <section className="pt-32 pb-20 px-4">
-        <div className="container">
-          <h1 className="font-heading text-4xl md:text-6xl font-bold tracking-wider text-foreground uppercase text-center">
-            Upgrade Surf Trips
-          </h1>
-          <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto text-center">
-            Join us and live unforgettable surf experiences in the best destinations. (for all levels)
-          </p>
 
-          <div className="mt-16 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {trips.map((trip, index) => (
-              <TripCard key={index} trip={trip} />
-            ))}
-          </div>
-
-          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mt-20 mb-10">
-            Coming Soon 2027
+      {/* Hero */}
+      <section className="relative pt-32 pb-20 px-4">
+        <div className="container text-center">
+          <h1 className="sr-only">Surf Trips & Surf Camps 2026–2027 | Upgrade Surf Coaching</h1>
+          <h2 className="font-heading text-4xl md:text-6xl font-bold tracking-wider text-foreground uppercase">
+            Join Unforgettable Surf Trips Around the World
           </h2>
+          <p className="mt-6 text-lg text-muted-foreground max-w-3xl mx-auto">
+            Travel with Upgrade Surf Coaching and experience premium surf trips and surf camps in some of the best surfing destinations in the world. From the Maldives to Portugal and Sri Lanka, our trips are designed for all levels, combining coaching, adventure, and progression.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-4">
+            <a
+              href="https://wa.me/351920459122"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-heading uppercase tracking-wider hover:bg-primary/90 transition-colors"
+            >
+              Reserve Your Spot <ArrowRight className="h-5 w-5" />
+            </a>
+          </div>
+        </div>
+      </section>
 
+      {/* SEO Boost Section */}
+      <section className="py-16 px-4 border-t border-border">
+        <div className="container max-w-4xl mx-auto text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase mb-6">
+            Surf Trips for All Levels — From Portugal to Exotic Destinations
+          </h2>
+          <p className="text-muted-foreground text-lg leading-relaxed">
+            Our surf trips from Ericeira, Portugal take you to world-class waves with expert coaching, video analysis, and a structured training approach. Whether you're looking for a surf camp in the Maldives, a surf trip in Algarve, or a coaching retreat in Sri Lanka, we've got you covered.
+          </p>
+        </div>
+      </section>
+
+      {/* 2026 Trips */}
+      <section className="py-16 px-4 border-t border-border">
+        <div className="container">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mb-4">
+            Upcoming Surf Trips 2026
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-sm font-heading uppercase tracking-wider">
+            Limited spots (max 4–8 surfers) · Early booking recommended
+          </p>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {comingSoon.map((trip, index) => (
+            {trips2026.map((trip, index) => (
               <TripCard key={index} trip={trip} />
             ))}
           </div>
         </div>
       </section>
+
+      {/* 2027 Trips */}
+      <section className="py-16 px-4 border-t border-border">
+        <div className="container">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mb-4">
+            Upcoming Surf Trips 2027
+          </h2>
+          <p className="text-center text-muted-foreground mb-12 text-sm font-heading uppercase tracking-wider">
+            New destinations · Reserve early
+          </p>
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+            {trips2027.map((trip, index) => (
+              <TripCard key={index} trip={trip} />
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Join */}
+      <section className="py-20 px-4 border-t border-border">
+        <div className="container max-w-4xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase text-center mb-12">
+            Why Join Our Surf Trips
+          </h2>
+          <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
+            {whyJoinReasons.map((reason, i) => (
+              <div key={i} className="flex items-center gap-3 p-4 rounded-lg border border-border bg-card">
+                <reason.icon className="h-6 w-6 text-primary shrink-0" />
+                <span className="text-foreground font-body">{reason.text}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-20 px-4 border-t border-border bg-card">
+        <div className="container text-center max-w-3xl mx-auto">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold tracking-wider text-foreground uppercase mb-6">
+            Reserve Your Spot on a Surf Trip
+          </h2>
+          <p className="text-muted-foreground text-lg mb-4">
+            Limited spots available. Join our next surf trip from Ericeira and surf the best waves with professional coaching.
+          </p>
+          <p className="text-sm text-muted-foreground/70 mb-8">
+            Max 4–8 surfers per trip · Video analysis included · All levels welcome
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <a
+              href="https://wa.me/351920459122"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-8 py-4 rounded-lg font-heading uppercase tracking-wider hover:bg-primary/90 transition-colors"
+            >
+              Book Now <ArrowRight className="h-5 w-5" />
+            </a>
+            <a
+              href="https://wa.me/351920459122"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 border border-primary text-primary px-8 py-4 rounded-lg font-heading uppercase tracking-wider hover:bg-primary/10 transition-colors"
+            >
+              Message on WhatsApp
+            </a>
+          </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
