@@ -2,7 +2,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { MapPin, Calendar, ChevronDown, ChevronUp, Check, Globe, Video, Users, Target, Heart, ArrowRight } from "lucide-react";
 import { useState, useEffect } from "react";
-import surfTripsMain from "@/assets/surf-trips-main.png";
+import surfTripsHero from "@/assets/surf-trips-hero.png";
 import algarveStay1 from "@/assets/algarve-stay-1.png";
 import algarveStay2 from "@/assets/algarve-stay-2.png";
 import algarveStay3 from "@/assets/algarve-stay-3.png";
