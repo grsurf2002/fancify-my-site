@@ -1,30 +1,19 @@
 import { useEffect } from "react";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Check, Star, Flame, Award, Gift, ArrowRight } from "lucide-react";
+import { Check, Star, Flame, Award, ArrowRight, Users, Video, FileText, Wrench, ShoppingBag, Phone, ChevronRight } from "lucide-react";
+
+const monthlyPlans = [
+  { months: 1, price: "€270", perSession: 68, bestFor: "Trying coaching", badge: null, highlight: false },
+  { months: 3, price: "€610", perSession: 51, bestFor: "Real progression", badge: "Most Popular", highlight: true },
+  { months: 6, price: "€1130", perSession: 47, bestFor: "Serious surfers", badge: null, highlight: false },
+  { months: 12, price: "€1760", perSession: 37, bestFor: "Maximum results", badge: "Best Value", highlight: true },
+];
 
 const lessonPacks = [
   { sessions: 5, price: 340, perSession: 68, validity: "3 months", badge: null },
-  { sessions: 12, price: 750, perSession: 62.5, validity: "6 months", badge: "Most Popular" },
+  { sessions: 12, price: 750, perSession: 62.5, validity: "6 months", badge: null },
   { sessions: 24, price: 1320, perSession: 55, validity: "12 months", badge: "Best Value" },
-];
-
-const monthlyPlans = [
-  { months: 1, monthly: 270, perSession: 68, total: 270, payFull: null, payFullPerSession: null },
-  { months: 2, monthly: 260, perSession: 65, total: 520, payFull: 460, payFullPerSession: 58 },
-  { months: 3, monthly: 250, perSession: 63, total: 750, payFull: 610, payFullPerSession: 51 },
-  { months: 4, monthly: 245, perSession: 61, total: 980, payFull: 770, payFullPerSession: 48 },
-  { months: 5, monthly: 240, perSession: 60, total: 1200, payFull: 930, payFullPerSession: 47 },
-  { months: 6, monthly: 235, perSession: 59, total: 1410, payFull: 1130, payFullPerSession: 47 },
-];
-
-const longTermPlans = [
-  { months: 7, price: 1260, save: 350, perSession: 45 },
-  { months: 8, price: 1380, save: 420, perSession: 43 },
-  { months: 9, price: 1490, save: 490, perSession: 41 },
-  { months: 10, price: 1590, save: 560, perSession: 40 },
-  { months: 11, price: 1680, save: 630, perSession: 38 },
-  { months: 12, price: 1760, save: 700, perSession: 37, badge: "Best Value" },
 ];
 
 const privatePacks = [
@@ -35,12 +24,20 @@ const privatePacks = [
 ];
 
 const inclusions = [
-  "Private progress document with personal goals",
-  "Detailed session notes & performance metrics",
-  "Waves caught analysis & video feedback",
-  "10% discount at EFIX Ericeira (board repair)",
-  "15% discount at Boardculture Surf Store",
-  "Ongoing support with board selection & adjustments",
+  { icon: Users, label: "Max 4 surfers" },
+  { icon: Video, label: "Video analysis" },
+  { icon: FileText, label: "Progress tracking" },
+  { icon: Wrench, label: "EFIX discount" },
+  { icon: ShoppingBag, label: "Boardculture discount" },
+  { icon: Phone, label: "Coaching support" },
+];
+
+const quizOptions = [
+  { profile: "I'm just visiting Ericeira", recommendation: "5 or 12 Lesson Pack", emoji: "✈️" },
+  { profile: "I want to improve consistently", recommendation: "3-Month Plan ⭐", emoji: "📈" },
+  { profile: "I'm serious about progressing fast", recommendation: "6-Month Plan", emoji: "🚀" },
+  { profile: "I want the best results possible", recommendation: "12-Month Plan 🏆", emoji: "🏆" },
+  { profile: "I want full attention (1:1)", recommendation: "Private Coaching", emoji: "👤" },
 ];
 
 const Prices = () => {
@@ -59,20 +56,100 @@ const Prices = () => {
       <h1 className="sr-only">Surf Coaching Prices Ericeira | Packages & Monthly Plans</h1>
 
       {/* Hero */}
-      <section className="pt-32 pb-16 md:pt-40 md:pb-24 bg-ocean">
+      <section className="pt-32 pb-16 md:pt-40 md:pb-20 bg-ocean">
         <div className="container px-4 text-center">
           <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">Pricing</p>
-          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6">
+          <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-4">
             Choose Your Surf Coaching Plan
           </h2>
-          <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
+          <p className="text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed mb-6">
             Flexible surf coaching packages in Ericeira designed for all levels — from single sessions to full progression programs. The longer you train, the faster you improve and the more you save.
+          </p>
+          <p className="text-3xl md:text-4xl font-bold text-primary">
+            From €37<span className="text-lg font-normal text-muted-foreground">/session</span>
           </p>
         </div>
       </section>
 
-      {/* Lesson Packs */}
+      {/* Top Banner */}
+      <section className="py-8 bg-primary">
+        <div className="container px-4 text-center">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold text-primary-foreground mb-2">
+            Train in Small Groups (Max 4 Surfers per Coach)
+          </h2>
+          <p className="text-primary-foreground/80 text-lg">
+            More waves. More feedback. Faster progression.
+          </p>
+        </div>
+      </section>
+
+      {/* Included Icons Row */}
+      <section className="py-10 bg-secondary/30">
+        <div className="container px-4 max-w-5xl">
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
+            {inclusions.map((item) => (
+              <div key={item.label} className="flex flex-col items-center gap-2 text-center">
+                <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
+                  <item.icon className="w-5 h-5 text-primary" />
+                </div>
+                <p className="text-xs font-medium text-muted-foreground">{item.label}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Monthly Coaching (Recommended) */}
       <section className="py-16 md:py-24">
+        <div className="container px-4 max-w-6xl">
+          <div className="flex items-center justify-center gap-2 mb-2">
+            <Star className="w-6 h-6 text-primary" />
+            <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium">Recommended</p>
+          </div>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
+            Monthly Coaching Plans
+          </h2>
+          <p className="text-muted-foreground text-center mb-12 text-lg max-w-2xl mx-auto">
+            Structured Surf Coaching in Ericeira — commit to consistent training and see real results.
+          </p>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+            {monthlyPlans.map((plan) => (
+              <div
+                key={plan.months}
+                className={`relative rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-500 ${
+                  plan.badge === "Best Value"
+                    ? "bg-gradient-to-b from-primary/15 to-card border-2 border-primary shadow-glow scale-[1.03]"
+                    : plan.badge === "Most Popular"
+                    ? "bg-gradient-to-b from-accent/10 to-card border-2 border-accent shadow-glow"
+                    : "bg-card shadow-card hover:shadow-glow"
+                }`}
+              >
+                {plan.badge && (
+                  <span className={`absolute -top-3 left-1/2 -translate-x-1/2 text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1 whitespace-nowrap ${
+                    plan.badge === "Best Value"
+                      ? "bg-primary text-primary-foreground"
+                      : "bg-accent text-accent-foreground"
+                  }`}>
+                    {plan.badge === "Best Value" ? <Flame className="w-3 h-3" /> : <Star className="w-3 h-3" />}
+                    {plan.badge}
+                  </span>
+                )}
+                <h3 className="font-heading text-xl font-bold text-foreground mb-4 mt-2">
+                  {plan.months} Month{plan.months > 1 ? "s" : ""}
+                </h3>
+                <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{plan.perSession}</p>
+                <p className="text-sm text-muted-foreground mb-4">per session</p>
+                <p className="text-lg font-semibold text-foreground mb-2">{plan.price}</p>
+                <p className="text-sm text-muted-foreground italic">{plan.bestFor}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Surf Packs */}
+      <section className="py-16 md:py-24 bg-secondary/30">
         <div className="container px-4 max-w-6xl">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
             Surf Lesson Packages
@@ -84,7 +161,7 @@ const Prices = () => {
               <div
                 key={pack.sessions}
                 className={`relative rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-500 ${
-                  pack.badge === "Best Value"
+                  pack.badge
                     ? "bg-gradient-to-b from-primary/10 to-card border-2 border-primary shadow-glow scale-105"
                     : "bg-card shadow-card hover:shadow-glow"
                 }`}
@@ -94,11 +171,12 @@ const Prices = () => {
                     <Flame className="w-3 h-3" /> {pack.badge}
                   </span>
                 )}
-                <h3 className="font-heading text-xl font-bold text-foreground mb-2">
+                <h3 className="font-heading text-xl font-bold text-foreground mb-4">
                   {pack.sessions}-Lesson Pack
                 </h3>
-                <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{pack.price}</p>
-                <p className="text-2xl font-semibold text-accent mb-3">€{pack.perSession}/session</p>
+                <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{pack.perSession}</p>
+                <p className="text-sm text-muted-foreground mb-4">per session</p>
+                <p className="text-lg font-semibold text-foreground mb-2">€{pack.price}</p>
                 <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
               </div>
             ))}
@@ -106,84 +184,8 @@ const Prices = () => {
         </div>
       </section>
 
-      {/* Monthly Plans */}
-      <section className="py-16 md:py-24 bg-secondary/30">
-        <div className="container px-4 max-w-6xl">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Star className="w-6 h-6 text-primary" />
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center">
-              Monthly Coaching Plans
-            </h2>
-          </div>
-          <p className="text-muted-foreground text-center mb-4 text-lg">Best for Progression 🔥</p>
-          <p className="text-center text-sm text-muted-foreground mb-12 max-w-2xl mx-auto">
-            Structured Surf Coaching in Ericeira — commit to consistent training and see real results.
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {monthlyPlans.map((plan) => (
-              <div key={plan.months} className="rounded-2xl bg-card shadow-card p-6 hover:shadow-glow transition-shadow duration-500">
-                <h3 className="font-heading text-lg font-bold text-foreground mb-4">
-                  {plan.months}-Month{plan.months > 1 ? "s" : ""}
-                </h3>
-                <p className="text-3xl font-bold text-primary mb-1">€{plan.monthly}<span className="text-base font-normal text-muted-foreground">/month</span></p>
-                <p className="text-lg font-semibold text-accent mb-2">€{plan.perSession}/session</p>
-                {plan.months > 1 && (
-                  <p className="text-sm text-muted-foreground mb-2">Total: €{plan.total}</p>
-                )}
-                {plan.payFull && (
-                  <div className="mt-3 pt-3 border-t border-border">
-                    <p className="text-sm text-muted-foreground">Pay in full:</p>
-                    <p className="text-xl font-bold text-foreground">€{plan.payFull}</p>
-                    <p className="text-sm font-semibold text-accent">€{plan.payFullPerSession}/session</p>
-                  </div>
-                )}
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Long-Term Plans */}
-      <section className="py-16 md:py-24">
-        <div className="container px-4 max-w-6xl">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Award className="w-6 h-6 text-primary" />
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center">
-              Long-Term Coaching
-            </h2>
-          </div>
-          <p className="text-muted-foreground text-center mb-12 text-lg">Best Results + Best Value</p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {longTermPlans.map((plan) => (
-              <div
-                key={plan.months}
-                className={`relative rounded-2xl p-6 flex flex-col transition-all duration-500 ${
-                  plan.badge
-                    ? "bg-gradient-to-b from-primary/10 to-card border-2 border-primary shadow-glow"
-                    : "bg-card shadow-card hover:shadow-glow"
-                }`}
-              >
-                {plan.badge && (
-                  <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-xs font-bold px-4 py-1 rounded-full flex items-center gap-1">
-                    <Flame className="w-3 h-3" /> {plan.badge}
-                  </span>
-                )}
-                <h3 className="font-heading text-lg font-bold text-foreground mb-3">
-                  {plan.months}-Month{plan.months > 1 ? "s" : ""}
-                </h3>
-                <p className="text-3xl font-bold text-primary mb-1">€{plan.price}</p>
-                <p className="text-lg font-semibold text-accent mb-2">€{plan.perSession}/session</p>
-                <p className="text-sm text-accent font-medium">Save €{plan.save}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* Private Coaching */}
-      <section className="py-16 md:py-24 bg-secondary/30">
+      <section className="py-16 md:py-24">
         <div className="container px-4 max-w-6xl">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
             Private Surf Lessons Ericeira
@@ -205,11 +207,12 @@ const Prices = () => {
                     {pack.badge}
                   </span>
                 )}
-                <h3 className="font-heading text-lg font-bold text-foreground mb-2">
+                <h3 className="font-heading text-lg font-bold text-foreground mb-3">
                   {pack.sessions} Session{pack.sessions > 1 ? "s" : ""}
                 </h3>
-                <p className="text-3xl font-bold text-primary mb-1">€{pack.price}</p>
-                <p className="text-lg font-semibold text-accent mb-2">€{pack.perSession}/session</p>
+                <p className="text-3xl font-bold text-primary mb-1">€{pack.perSession}</p>
+                <p className="text-sm text-muted-foreground mb-3">per session</p>
+                <p className="text-lg font-semibold text-foreground mb-1">€{pack.price}</p>
                 {pack.validity && (
                   <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
                 )}
@@ -219,20 +222,28 @@ const Prices = () => {
         </div>
       </section>
 
-      {/* What's Included */}
-      <section className="py-16 md:py-24">
-        <div className="container px-4 max-w-4xl">
-          <div className="flex items-center justify-center gap-2 mb-4">
-            <Gift className="w-6 h-6 text-primary" />
-            <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center">
-              All Surf Coaching Plans Include
-            </h2>
-          </div>
-          <div className="mt-10 grid sm:grid-cols-2 gap-4">
-            {inclusions.map((item) => (
-              <div key={item} className="flex items-start gap-3 bg-card rounded-xl p-4 shadow-card">
-                <Check className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
-                <p className="text-foreground">{item}</p>
+      {/* Which Plan Quiz */}
+      <section className="py-16 md:py-24 bg-ocean">
+        <div className="container px-4 max-w-3xl">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
+            Which Plan is Right for You?
+          </h2>
+          <p className="text-muted-foreground text-center mb-10 text-lg">Not sure where to start?</p>
+
+          <div className="space-y-4">
+            {quizOptions.map((option) => (
+              <div
+                key={option.profile}
+                className="flex items-center justify-between bg-card rounded-xl p-5 shadow-card hover:shadow-glow transition-all duration-300 group"
+              >
+                <div className="flex items-center gap-4">
+                  <span className="text-2xl">{option.emoji}</span>
+                  <p className="text-foreground font-medium">{option.profile}</p>
+                </div>
+                <div className="flex items-center gap-2">
+                  <span className="text-primary font-bold text-sm md:text-base">{option.recommendation}</span>
+                  <ChevronRight className="w-4 h-4 text-primary group-hover:translate-x-1 transition-transform" />
+                </div>
               </div>
             ))}
           </div>
@@ -240,13 +251,13 @@ const Prices = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 md:py-24 bg-ocean">
+      <section className="py-16 md:py-24">
         <div className="container px-4 text-center max-w-3xl">
           <h2 className="font-heading text-3xl md:text-5xl font-bold text-foreground mb-6">
-            Start Your Surf Progression Today
+            Start Improving Your Surfing Today
           </h2>
           <p className="text-muted-foreground text-lg leading-relaxed mb-8">
-            Book your surf coaching in Ericeira. Choose your plan and start improving faster with professional coaching and video analysis.
+            Train smarter with Upgrade Surf Coaching in Ericeira. Choose your plan and start progressing faster.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
