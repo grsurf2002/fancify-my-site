@@ -358,8 +358,16 @@ const SurfTrips = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-4">
-        <div className="container text-center">
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+        <div className="absolute inset-0">
+          <img
+            src={surfTripsHero}
+            alt="Tropical surf trip destination with perfect waves"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-background/75" />
+        </div>
+        <div className="container text-center relative z-10">
           <h1 className="sr-only">Surf Trips & Surf Camps 2026–2027 | Upgrade Surf Coaching</h1>
           <h2 className="font-heading text-4xl md:text-6xl font-bold tracking-wider text-foreground uppercase">
             Join Unforgettable Surf Trips Around the World
