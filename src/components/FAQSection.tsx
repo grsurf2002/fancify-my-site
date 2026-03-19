@@ -68,7 +68,7 @@ const faqs = [
   },
   {
     question: "Are your coaches certified and experienced in Ericeira conditions?",
-    answer: "Yes — our coaches are certified, have years of local experience in Ericeira and use a proven methodology combining ocean knowledge, biomechanics and surf-specific drills to deliver results.",
+    answer: "Yes — our coaches are certified, have years of local experience in Ericeira and use a proven methodology combining ocean knowledge, biomechanics and surf-specific drills to deliver results. Gabriel, Hugo and Afonso are experienced surfers and ex-competitors.",
   },
   {
     question: "Do you offer video analysis for surfing in Ericeira?",
