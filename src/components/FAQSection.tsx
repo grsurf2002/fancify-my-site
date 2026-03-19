@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "How long is a typical lesson or coaching session?",
-    answer: "Around 90 minutes.",
+    answer: "Around 2.5 to 3 hours — with 90 minutes in the water.",
   },
   {
     question: "What's included in a standard surf lesson or coaching session?",
