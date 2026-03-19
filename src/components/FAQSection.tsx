@@ -31,8 +31,8 @@ const faqs = [
     answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression — we tailor sessions to match your level and the seasonal conditions.",
   },
   {
-    question: "Where do lessons and coaching sessions meet in Ericeira?",
-    answer: "We meet at carefully chosen local breaks such as Ribeira d'Ilhas, Praia dos Coxos and Praia Grande depending on skill level, swell and wind; exact meeting points are confirmed at booking.",
+    question: "Where is the meet up point?",
+    answer: "We meet at the beach — we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
   },
   {
     question: "How do I book surf lessons Ericeira or surf coaching Ericeira?",
