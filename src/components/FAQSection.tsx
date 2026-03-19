@@ -91,8 +91,8 @@ const faqs = [
     answer: "We run Portugal-based micro-retreats centred on Ericeira and seasonal international trips to destinations like Morocco, the Maldives and the Algarve, chosen for consistent swell and coaching-friendly conditions.",
   },
   {
-    question: "What level of experience is required for your Morocco or international trips?",
-    answer: "Trip level requirements vary by itinerary; some Morocco trips suit intermediate surfers comfortable in longer, more powerful point waves, while Portugal retreats can accommodate a broader range of levels.",
+    question: "What level of experience is required for your surf trips?",
+    answer: "Trip level requirements vary by itinerary and will require an evaluation before joining.",
   },
   {
     question: "Do you offer pick-up or transport to surf spots around Ericeira?",
