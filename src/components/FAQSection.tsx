@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     question: "What's included in a standard surf lesson or coaching session?",
-    answer: "Sessions include coach-led instruction, equipment (board and wetsuit options), safety briefing, targeted drills, in-water coaching and a short take-home plan; video analysis is available as an add-on.",
+    answer: "If you book with equipment: board and wetsuit, safety briefing, goals, in-water coaching, and after — video analysis with a detailed review and a plan to work on until next session.",
   },
   {
     question: "Do you provide surfboards and wetsuits in Ericeira?",
