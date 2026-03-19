@@ -76,7 +76,7 @@ const faqs = [
   },
   {
     question: "What are the group sizes for surf lessons and coaching?",
-    answer: "Group lessons are small (max 6) to maintain quality; semi-private sessions are typically 2–3, and private coaching is 1:1 to maximise focused progress.",
+    answer: "Group lessons are small (max 4) to maintain quality, and private coaching is 1:1 to maximise focused progress.",
   },
   {
     question: "How are surf trips and retreats different from regular coaching sessions?",
