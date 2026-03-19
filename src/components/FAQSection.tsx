@@ -35,8 +35,8 @@ const faqs = [
     answer: "We meet at the beach — we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
   },
   {
-    question: "How do I book surf lessons Ericeira or surf coaching Ericeira?",
-    answer: "Book online via the upgradesurfericeira.com booking widget or contact us by phone/WhatsApp to check availability and arrange private sessions or packages.",
+    question: "How do I book with Upgrade Surf Coaching?",
+    answer: "Book via Gmail, Instagram or WhatsApp — check availability and arrange your sessions or packages.",
   },
   {
     question: "How long is a typical lesson or coaching session?",
