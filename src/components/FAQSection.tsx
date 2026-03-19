@@ -20,7 +20,7 @@ const faqs = [
   },
   {
     question: "How does progression work in your surf coaching programs?",
-    answer: "Progression is structured around an initial assessment, clear short- and medium-term goals, drill-based sessions, in-water repetition and optional video analysis; we track milestones and adapt sessions as you improve.",
+    answer: "Progression is structured around an initial assessment, clear short- and medium-term goals, drill-based sessions, in-water repetition and video analysis; we track milestones and adapt sessions as you improve.",
   },
   {
     question: "Why should I choose Ericeira for surf lessons and coaching?",
