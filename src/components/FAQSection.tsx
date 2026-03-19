@@ -88,7 +88,7 @@ const faqs = [
   },
   {
     question: "Which destinations do you run surf trips to besides Ericeira?",
-    answer: "We run Portugal-based micro-retreats centred on Ericeira and seasonal international trips to destinations like Morocco and the Canary Islands, chosen for consistent swell and coaching-friendly conditions.",
+    answer: "We run Portugal-based micro-retreats centred on Ericeira and seasonal international trips to destinations like Morocco, the Maldives and the Algarve, chosen for consistent swell and coaching-friendly conditions.",
   },
   {
     question: "What level of experience is required for your Morocco or international trips?",
