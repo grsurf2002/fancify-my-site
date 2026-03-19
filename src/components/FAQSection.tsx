@@ -40,7 +40,7 @@ const faqs = [
   },
   {
     question: "How long is a typical lesson or coaching session?",
-    answer: "Most single sessions run 60–90 minutes in the water, with a 15–20 minute on-land briefing and debrief included; intensive or private sessions can be extended on request.",
+    answer: "Around 90 minutes.",
   },
   {
     question: "What's included in a standard surf lesson or coaching session?",
