@@ -32,7 +32,7 @@ const faqs = [
   },
   {
     question: "Where is the meet up point?",
-    answer: "We meet at the beach — we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
+    answer: "We meet at the beach, we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
   },
   {
     question: "How do I book with Upgrade Surf Coaching?",
