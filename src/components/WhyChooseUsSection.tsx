@@ -23,7 +23,7 @@ const reasons = [
     icon: Users,
     title: "Adult-focused",
     description:
-      "Coaching designed for busy adults — efficient sessions that accelerate improvement.",
+      "Coaching designed for busy adults, efficient sessions that accelerate improvement.",
   },
   {
     icon: Baby,
