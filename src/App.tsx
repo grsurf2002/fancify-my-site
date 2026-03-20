@@ -8,6 +8,9 @@ import SurfCoaching from "./pages/SurfCoaching";
 import Prices from "./pages/Prices";
 import SurfTrips from "./pages/SurfTrips";
 import SurfSkate from "./pages/SurfSkate";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
+import Terms from "./pages/Terms";
+import CookiePolicy from "./pages/CookiePolicy";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -24,6 +27,9 @@ const App = () => (
           <Route path="/prices" element={<Prices />} />
           <Route path="/surf-trips" element={<SurfTrips />} />
           <Route path="/surfskate" element={<SurfSkate />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+          <Route path="/terms" element={<Terms />} />
+          <Route path="/cookie-policy" element={<CookiePolicy />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
