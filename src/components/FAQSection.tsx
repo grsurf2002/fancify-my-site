@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     question: "What's included in a standard surf lesson or coaching session?",
-    answer: "If you book with equipment: board and wetsuit, safety briefing, goals, in-water coaching, and after — video analysis with a detailed review and a plan to work on until next session.",
+    answer: "If you book with equipment: board and wetsuit, safety briefing, goals, in-water coaching, and after, video analysis with a detailed review and a plan to work on until next session.",
   },
   {
     question: "Do you provide surfboards and wetsuits in Ericeira?",
