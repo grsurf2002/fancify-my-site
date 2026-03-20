@@ -5,7 +5,7 @@ const reasons = [
     icon: Target,
     title: "Performance-first coaching",
     description:
-      "We structure sessions around clear progression goals — not just \"have fun.\"",
+      "We structure sessions around clear progression goals, not just \"have fun.\"",
   },
   {
     icon: MapPin,
