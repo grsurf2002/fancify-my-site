@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     question: "Can beginners go from lessons to coaching programs?",
-    answer: "Yes — our structured surf lessons Ericeira are designed to transition clients into ongoing surf coaching Ericeira or improvement programs as their skills and confidence grow.",
+    answer: "Yes, our structured surf lessons Ericeira are designed to transition clients into ongoing surf coaching Ericeira or improvement programs as their skills and confidence grow.",
   },
   {
     question: "Are your coaches certified and experienced in Ericeira conditions?",
