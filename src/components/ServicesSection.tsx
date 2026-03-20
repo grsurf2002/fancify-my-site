@@ -10,7 +10,7 @@ const services = [
     icon: Waves,
     title: "Surf Coaching / Lesson",
     description:
-      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
+      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence, making you a more capable surfer who truly enjoys every session.",
     image: surfCoachingImg,
     link: "/surf-coaching",
   },
