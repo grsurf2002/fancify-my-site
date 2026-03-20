@@ -28,7 +28,7 @@ const faqs = [
   },
   {
     question: "When is the best time of year to book surf lessons in Ericeira?",
-    answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression — we tailor sessions to match your level and the seasonal conditions.",
+    answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression. We tailor sessions to match your level and the seasonal conditions.",
   },
   {
     question: "Where is the meet up point?",
