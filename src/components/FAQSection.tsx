@@ -48,7 +48,7 @@ const faqs = [
   },
   {
     question: "Do you provide surfboards and wetsuits in Ericeira?",
-    answer: "Yes — we supply a range of soft-top and performance boards plus wetsuits suitable for local water temperatures; for private coaching we can adjust equipment to match your progression goals.",
+    answer: "Yes, we supply a range of soft-top and performance boards plus wetsuits suitable for local water temperatures; for private coaching we can adjust equipment to match your progression goals.",
   },
   {
     question: "What should I bring to my surf lesson in Ericeira?",
