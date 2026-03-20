@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Who are your surf lessons and coaching best suited for?",
-    answer: "We coach motivated adults from beginner to intermediate level — complete beginners wanting a structured start, intermediates aiming to break plateaus, and travellers seeking rapid improvement during a short stay in Ericeira.",
+    answer: "We coach motivated adults from beginner to intermediate level - complete beginners wanting a structured start, intermediates aiming to break plateaus, and travellers seeking rapid improvement during a short stay in Ericeira.",
   },
   {
     question: "How does progression work in your surf coaching programs?",
