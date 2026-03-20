@@ -5,7 +5,7 @@ const WhatToExpectSection = () => {
     <section className="py-24 md:py-32">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3">
+          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
             What to Expect
           </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
