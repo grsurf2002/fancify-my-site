@@ -19,9 +19,8 @@ const WhoWeCoachSection = () => {
     <section className="py-24 md:py-32 bg-ocean">
       <div className="container px-4 max-w-4xl mx-auto">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
-            For You?
-          </p>
+
+
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Who We <span className="text-gradient-golden">Coach</span>
           </h2>
