@@ -73,11 +73,11 @@ const ServicesSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="text-sm leading-relaxed text-muted-foreground flex-1">
                   {service.description}
                 </p>
                 {service.link && (
