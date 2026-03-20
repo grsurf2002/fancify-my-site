@@ -42,10 +42,10 @@ const PrivacyPolicy = () => {
           <p>We retain your personal data for as long as necessary to provide our services and comply with legal obligations. You may request deletion of your data at any time.</p>
 
           <h2 className="font-heading text-xl font-semibold text-foreground">6. Your Rights</h2>
-          <p>Under GDPR, you have the right to access, correct, delete or restrict the processing of your personal data. Contact us at info@upgradesurfing.com to exercise your rights.</p>
+          <p>Under GDPR, you have the right to access, correct, delete or restrict the processing of your personal data. Contact us at upgradesurfing@gmail.com to exercise your rights.</p>
 
           <h2 className="font-heading text-xl font-semibold text-foreground">7. Contact</h2>
-          <p>For any privacy-related questions, please contact us at info@upgradesurfing.com.</p>
+          <p>For any privacy-related questions, please contact us at upgradesurfing@gmail.com.</p>
         </div>
       </div>
       <Footer />

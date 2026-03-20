@@ -45,7 +45,7 @@ const Terms = () => {
           </ul>
 
           <h2 className="font-heading text-xl font-semibold text-foreground">7. Contact</h2>
-          <p>For any questions about these terms, please contact us at info@upgradesurfing.com.</p>
+          <p>For any questions about these terms, please contact us at upgradesurfing@gmail.com.</p>
         </div>
       </div>
       <Footer />

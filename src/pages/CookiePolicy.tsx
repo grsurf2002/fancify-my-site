@@ -30,7 +30,7 @@ const CookiePolicy = () => {
           <p>You can control and delete cookies through your browser settings. Please note that disabling certain cookies may affect the functionality of our website.</p>
 
           <h2 className="font-heading text-xl font-semibold text-foreground">5. Contact</h2>
-          <p>If you have questions about our use of cookies, please contact us at info@upgradesurfing.com.</p>
+          <p>If you have questions about our use of cookies, please contact us at upgradesurfing@gmail.com.</p>
         </div>
       </div>
       <Footer />
