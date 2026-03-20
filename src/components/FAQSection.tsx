@@ -36,7 +36,7 @@ const faqs = [
   },
   {
     question: "How do I book with Upgrade Surf Coaching?",
-    answer: "Book via Gmail, Instagram or WhatsApp — check availability and arrange your sessions or packages.",
+    answer: "Book via Gmail, Instagram or WhatsApp, check availability and arrange your sessions or packages.",
   },
   {
     question: "How long is a typical lesson or coaching session?",
