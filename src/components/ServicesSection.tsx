@@ -18,7 +18,7 @@ const services = [
     icon: Plane,
     title: "Surf Trips",
     description:
-      "Join us on unforgettable surf adventures around the world. From Algarve to Sri Lanka, Morocco and Maldives, we organize trips for all levels — combining great waves, coaching and good vibes.",
+      "Join us on unforgettable surf adventures around the world. From Algarve to Sri Lanka, Morocco and Maldives, we organize trips for all levels, combining great waves, coaching and good vibes.",
     image: surfTripsImg,
     imagePosition: "center 65%",
     link: "/surf-trips",
