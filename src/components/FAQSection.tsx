@@ -108,9 +108,8 @@ const FAQSection = () => {
   return (
     <section className="py-20 md:py-28 bg-card/50">
       <div className="container px-4 max-w-5xl mx-auto">
-        <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3 text-center">
-          FAQ
-        </p>
+
+
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-10 uppercase text-center">
           Frequently Asked{" "}
           <span className="text-gradient-golden">Questions</span>
