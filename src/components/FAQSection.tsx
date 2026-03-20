@@ -16,7 +16,7 @@ const faqs = [
   },
   {
     question: "Who are your surf lessons and coaching best suited for?",
-    answer: "We coach motivated adults from beginner to intermediate level — complete beginners wanting a structured start, intermediates aiming to break plateaus, and travellers seeking rapid improvement during a short stay in Ericeira.",
+    answer: "We coach motivated adults from beginner to intermediate level - complete beginners wanting a structured start, intermediates aiming to break plateaus, and travellers seeking rapid improvement during a short stay in Ericeira.",
   },
   {
     question: "How does progression work in your surf coaching programs?",
@@ -28,27 +28,27 @@ const faqs = [
   },
   {
     question: "When is the best time of year to book surf lessons in Ericeira?",
-    answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression — we tailor sessions to match your level and the seasonal conditions.",
+    answer: "For gentle progression sessions, late spring to early autumn offers milder conditions; autumn and winter provide more powerful swell for intermediate progression. We tailor sessions to match your level and the seasonal conditions.",
   },
   {
     question: "Where is the meet up point?",
-    answer: "We meet at the beach — we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
+    answer: "We meet at the beach, we decide the day before after reviewing conditions. If there is a need, we change the meeting point or do a pick-up.",
   },
   {
     question: "How do I book with Upgrade Surf Coaching?",
-    answer: "Book via Gmail, Instagram or WhatsApp — check availability and arrange your sessions or packages.",
+    answer: "Book via Gmail, Instagram or WhatsApp, check availability and arrange your sessions or packages.",
   },
   {
     question: "How long is a typical lesson or coaching session?",
-    answer: "Around 2.5 to 3 hours — with 90 minutes in the water and 45 minutes for video analysis.",
+    answer: "Around 2.5 to 3 hours, with 90 minutes in the water and 45 minutes for video analysis.",
   },
   {
     question: "What's included in a standard surf lesson or coaching session?",
-    answer: "If you book with equipment: board and wetsuit, safety briefing, goals, in-water coaching, and after — video analysis with a detailed review and a plan to work on until next session.",
+    answer: "If you book with equipment: board and wetsuit, safety briefing, goals, in-water coaching, and after, video analysis with a detailed review and a plan to work on until next session.",
   },
   {
     question: "Do you provide surfboards and wetsuits in Ericeira?",
-    answer: "Yes — we supply a range of soft-top and performance boards plus wetsuits suitable for local water temperatures; for private coaching we can adjust equipment to match your progression goals.",
+    answer: "Yes, we supply a range of soft-top and performance boards plus wetsuits suitable for local water temperatures; for private coaching we can adjust equipment to match your progression goals.",
   },
   {
     question: "What should I bring to my surf lesson in Ericeira?",
@@ -64,7 +64,7 @@ const faqs = [
   },
   {
     question: "Can beginners go from lessons to coaching programs?",
-    answer: "Yes — our structured surf lessons Ericeira are designed to transition clients into ongoing surf coaching Ericeira or improvement programs as their skills and confidence grow.",
+    answer: "Yes, our structured surf lessons Ericeira are designed to transition clients into ongoing surf coaching Ericeira or improvement programs as their skills and confidence grow.",
   },
   {
     question: "Are your coaches certified and experienced in Ericeira conditions?",
@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     question: "Do you offer video analysis for surfing in Ericeira?",
-    answer: "Yes — video analysis is available as an add-on or part of progression packages; footage is reviewed for clear technical feedback and targeted drills to implement in the next session.",
+    answer: "Yes, video analysis is available as an add-on or part of progression packages; footage is reviewed for clear technical feedback and targeted drills to implement in the next session.",
   },
   {
     question: "What are the group sizes for surf lessons and coaching?",
@@ -108,9 +108,8 @@ const FAQSection = () => {
   return (
     <section className="py-20 md:py-28 bg-card/50">
       <div className="container px-4 max-w-5xl mx-auto">
-        <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3 text-center">
-          FAQ
-        </p>
+
+
         <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground mb-10 uppercase text-center">
           Frequently Asked{" "}
           <span className="text-gradient-golden">Questions</span>

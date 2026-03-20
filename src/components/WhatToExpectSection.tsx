@@ -5,7 +5,7 @@ const WhatToExpectSection = () => {
     <section className="py-24 md:py-32">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3">
+          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
             What to Expect
           </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
@@ -40,7 +40,7 @@ const WhatToExpectSection = () => {
                 Local Conditions We Use to Accelerate Learning
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ericeira offers varied breaks — sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
+                Ericeira offers varied breaks - sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
               </p>
             </div>
 
@@ -48,7 +48,7 @@ const WhatToExpectSection = () => {
               href="#contact"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
             >
-              Book Now — Surf Lessons Ericeira
+              Book Now - Surf Lessons Ericeira
             </a>
           </div>
 

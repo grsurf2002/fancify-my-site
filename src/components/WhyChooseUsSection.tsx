@@ -5,7 +5,7 @@ const reasons = [
     icon: Target,
     title: "Performance-first coaching",
     description:
-      "We structure sessions around clear progression goals — not just \"have fun.\"",
+      "We structure sessions around clear progression goals, not just \"have fun.\"",
   },
   {
     icon: MapPin,
@@ -23,7 +23,7 @@ const reasons = [
     icon: Users,
     title: "Adult-focused",
     description:
-      "Coaching designed for busy adults — efficient sessions that accelerate improvement.",
+      "Coaching designed for busy adults, efficient sessions that accelerate improvement.",
   },
   {
     icon: Baby,
@@ -44,9 +44,6 @@ const WhyChooseUsSection = () => {
     <section className="py-24 md:py-32 bg-ocean">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
-            Why Us
-          </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Why Upgrade Your Surfing{" "}
             <span className="text-gradient-golden">With Us?</span>

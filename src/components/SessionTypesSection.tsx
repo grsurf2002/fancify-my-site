@@ -5,6 +5,7 @@ const sessionTypes = [
     icon: User,
     title: "Private Coaching (1:1)",
     description: "Focused, fast progress. Ideal for targeted skill work.",
+
     cta: "Book Private",
     link: "#contact",
   },
@@ -29,9 +30,8 @@ const SessionTypesSection = () => {
     <section className="py-24 md:py-32">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-accent font-medium mb-3">
-            Options
-          </p>
+
+
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Session <span className="text-gradient-teal">Types</span>
           </h2>

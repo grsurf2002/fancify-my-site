@@ -10,7 +10,7 @@ const services = [
     icon: Waves,
     title: "Surf Coaching / Lesson",
     description:
-      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence — making you a more capable surfer who truly enjoys every session.",
+      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence, making you a more capable surfer who truly enjoys every session.",
     image: surfCoachingImg,
     link: "/surf-coaching",
   },
@@ -18,7 +18,7 @@ const services = [
     icon: Plane,
     title: "Surf Trips",
     description:
-      "Join us on unforgettable surf adventures around the world. From Algarve to Sri Lanka, Morocco and Maldives, we organize trips for all levels — combining great waves, coaching and good vibes.",
+      "Join us on unforgettable surf adventures around the world. From Algarve to Sri Lanka, Morocco and Maldives, we organize trips for all levels, combining great waves, coaching and good vibes.",
     image: surfTripsImg,
     imagePosition: "center 65%",
     link: "/surf-trips",
@@ -27,7 +27,7 @@ const services = [
     icon: Compass,
     title: "Surf Skate Lessons",
     description:
-      "We use surfskating to upgrade surf skills quicker — work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
+      "We use surfskating to upgrade surf skills quicker - work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
     image: "https://freight.cargo.site/w/750/i/B1733479139200985709999216607689/F5B6F47B-F0DF-4975-BD41-687861DF8F40-2.png",
     link: "/surfskate",
   },
@@ -45,9 +45,6 @@ const ServicesSection = () => {
     <section id="services" className="py-24 md:py-32 bg-ocean">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
-            What We Offer
-          </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Our Services
           </h2>
@@ -76,11 +73,11 @@ const ServicesSection = () => {
               </div>
 
               {/* Content */}
-              <div className="p-6">
+              <div className="p-6 flex flex-col flex-1">
                 <h3 className="font-heading text-xl font-bold text-foreground mb-3">
                   {service.title}
                 </h3>
-                <p className="text-sm leading-relaxed text-muted-foreground">
+                <p className="text-sm leading-relaxed text-muted-foreground flex-1">
                   {service.description}
                 </p>
                 {service.link && (
