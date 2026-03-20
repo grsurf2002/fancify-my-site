@@ -40,7 +40,7 @@ const WhatToExpectSection = () => {
                 Local Conditions We Use to Accelerate Learning
               </h3>
               <p className="text-muted-foreground leading-relaxed">
-                Ericeira offers varied breaks — sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
+                Ericeira offers varied breaks - sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
               </p>
             </div>
 
