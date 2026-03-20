@@ -27,7 +27,7 @@ const services = [
     icon: Compass,
     title: "Surf Skate Lessons",
     description:
-      "We use surfskating to upgrade surf skills quicker — work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
+      "We use surfskating to upgrade surf skills quicker - work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
     image: "https://freight.cargo.site/w/750/i/B1733479139200985709999216607689/F5B6F47B-F0DF-4975-BD41-687861DF8F40-2.png",
     link: "/surfskate",
   },

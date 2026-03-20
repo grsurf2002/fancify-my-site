@@ -5,6 +5,7 @@ const sessionTypes = [
     icon: User,
     title: "Private Coaching (1:1)",
     description: "Focused, fast progress. Ideal for targeted skill work.",
+
     cta: "Book Private",
     link: "#contact",
   },

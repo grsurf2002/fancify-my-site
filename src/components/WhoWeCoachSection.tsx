@@ -64,7 +64,7 @@ const WhoWeCoachSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
-            Contact Us — Find the Right Session
+            Contact Us - Find the Right Session
           </a>
         </div>
       </div>

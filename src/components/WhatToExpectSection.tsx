@@ -48,7 +48,7 @@ const WhatToExpectSection = () => {
               href="#contact"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
             >
-              Book Now — Surf Lessons Ericeira
+              Book Now - Surf Lessons Ericeira
             </a>
           </div>
 

@@ -72,7 +72,7 @@ const faqs = [
   },
   {
     question: "Do you offer video analysis for surfing in Ericeira?",
-    answer: "Yes — video analysis is available as an add-on or part of progression packages; footage is reviewed for clear technical feedback and targeted drills to implement in the next session.",
+    answer: "Yes, video analysis is available as an add-on or part of progression packages; footage is reviewed for clear technical feedback and targeted drills to implement in the next session.",
   },
   {
     question: "What are the group sizes for surf lessons and coaching?",

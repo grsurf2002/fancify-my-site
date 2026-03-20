@@ -28,9 +28,8 @@ const ResultsSection = () => {
     <section className="py-24 md:py-32 bg-ocean">
       <div className="container px-4">
         <div className="text-center mb-16">
-          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
-            Outcomes
-          </p>
+
+
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Real Progress, <span className="text-gradient-golden">Real Outcomes</span>
           </h2>
