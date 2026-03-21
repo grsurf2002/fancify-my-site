@@ -21,77 +21,165 @@
     <link rel="icon" type="image/x-icon" href="/favicon.ico">
 
     <!-- JSON-LD Structured Data -->
+    <!-- JSON-LD Structured Data -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": ["SportsActivityLocation", "LocalBusiness"],
-      "name": "Upgrade Surf Coaching",
-      "description": "Progress-focused surf coaching in Ericeira, Portugal. Personal lessons, video analysis, and structured progression plans for all levels.",
-      "url": "https://upgradesurfericeira.com",
-      "telephone": "+351911001039",
-      "email": "upgradesurfing@gmail.com",
-      "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ee2828e-ec6e-4436-bd5e-7a1d7ba079af/id-preview-da125f6f--b1610726-132d-4267-8165-4a6b7c6f611f.lovable.app-1773051082871.png",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Ericeira",
-        "addressLocality": "Ericeira",
-        "addressRegion": "Lisboa",
-        "postalCode": "2655",
-        "addressCountry": "PT"
-      },
-      "geo": {
-        "@type": "GeoCoordinates",
-        "latitude": 38.97018,
-        "longitude": -9.41961
-      },
-      "openingHoursSpecification": [
+      "@graph": [
         {
-          "@type": "OpeningHoursSpecification",
-          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
-          "opens": "07:00",
-          "closes": "19:00"
+          "@type": ["SportsActivityLocation", "LocalBusiness"],
+          "name": "Upgrade Surf Coaching",
+          "description": "Surf coaching and surf lessons in Ericeira, Portugal focused on progression, technique, and performance.",
+          "url": "https://upgradesurfericeira.com",
+          "telephone": "+351911001039",
+          "email": "upgradesurfing@gmail.com",
+          "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ee2828e-ec6e-4436-bd5e-7a1d7ba079af/id-preview-da125f6f--b1610726-132d-4267-8165-4a6b7c6f611f.lovable.app-1773051082871.png",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Ericeira",
+            "addressLocality": "Ericeira",
+            "addressRegion": "Lisboa",
+            "postalCode": "2655",
+            "addressCountry": "PT"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": 38.97018,
+            "longitude": -9.41961
+          },
+          "areaServed": {
+            "@type": "Place",
+            "name": "Ericeira, Portugal"
+          },
+          "openingHoursSpecification": [
+            {
+              "@type": "OpeningHoursSpecification",
+              "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+              "opens": "07:00",
+              "closes": "19:00"
+            }
+          ],
+          "priceRange": "€€",
+          "currenciesAccepted": "EUR",
+          "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+          "hasOfferCatalog": {
+            "@type": "OfferCatalog",
+            "name": "Surf Coaching Services",
+            "itemListElement": [
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "Service", "name": "Group Surf Coaching", "description": "Small group surf coaching sessions with max 4 surfers per coach, video analysis and progress tracking."},
+                "priceCurrency": "EUR",
+                "price": "68.00"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "Service", "name": "Private Surf Coaching", "description": "1-on-1 private surf lessons with personalised coaching, video analysis and detailed feedback."},
+                "priceCurrency": "EUR",
+                "price": "150.00"
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {"@type": "Service", "name": "Surfskate Coaching", "description": "Surfskate training sessions to improve surf technique on land."},
+                "priceCurrency": "EUR"
+              }
+            ]
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "5.0",
+            "reviewCount": "11",
+            "bestRating": "5"
+          },
+          "sameAs": [
+            "https://www.instagram.com/upgrade_surfcoaching"
+          ]
+        },
+        {
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "What is the difference between surf lessons and surf coaching at Upgrade Surf Coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Surf lessons focus on building fundamental skills and confidence in the water, while surf coaching is more progression-based and designed to improve technique, decision-making, and performance over time."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Is Upgrade Surf Coaching a surf school in Ericeira or a private coaching service?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Upgrade Surf Coaching offers surf lessons in Ericeira with a more personalized, coaching-focused approach. It is designed for surfers who want more individual attention and faster progression than a traditional surf school format."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Who are your surf lessons and coaching best suited for?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Our surf lessons and coaching in Ericeira are best suited for adults, travelers, beginners, and intermediate surfers who want to improve their skills, confidence, and understanding of the ocean."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Why should I choose Ericeira for surf lessons and coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Ericeira is one of Europe's top surf destinations, offering a wide variety of waves for different levels. It is an ideal place for surf lessons and surf coaching thanks to its consistent swell, beautiful coastline, and range of breaks."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I book with Upgrade Surf Coaching?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "You can book surf lessons and coaching by contacting Upgrade Surf Coaching directly through the website, phone, WhatsApp, or the contact form. We will help match you with the right session or progression package."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How long is a typical lesson or coaching session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A typical surf lesson or coaching session usually lasts around one and a half to two hours, depending on the format, conditions, and coaching plan."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What's included in a standard surf lesson or coaching session?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A standard surf lesson or coaching session typically includes guidance in the water, coaching feedback, and use of surf equipment when needed. Sessions are adapted to the surfer's level and the daily conditions in Ericeira."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Do you provide surfboards and wetsuits in Ericeira?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, surfboards and wetsuits can be provided for surf lessons and coaching in Ericeira when needed. This makes it easy for travelers and visiting surfers to join sessions."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How quickly will I see improvement with surf coaching Ericeira?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Improvement depends on your starting level, consistency, and goals, but many surfers notice progress quickly with focused surf coaching in Ericeira. Regular sessions usually lead to better technique, confidence, and wave selection."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can I book multiple sessions as a progression package in Ericeira?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes, multiple sessions can be booked as a progression package in Ericeira. This is a great option for surfers who want more consistent coaching and faster improvement over time."
+              }
+            }
+          ]
         }
-      ],
-      "priceRange": "€€",
-      "currenciesAccepted": "EUR",
-      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
-      "areaServed": [
-        {"@type": "City", "name": "Ericeira"},
-        {"@type": "City", "name": "Peniche"},
-        {"@type": "City", "name": "Carcavelos"},
-        {"@type": "City", "name": "Lisboa"}
-      ],
-      "hasOfferCatalog": {
-        "@type": "OfferCatalog",
-        "name": "Surf Coaching Services",
-        "itemListElement": [
-          {
-            "@type": "Offer",
-            "itemOffered": {"@type": "Service", "name": "Group Surf Coaching", "description": "Small group surf coaching sessions with max 4 surfers per coach, video analysis and progress tracking."},
-            "priceCurrency": "EUR",
-            "price": "68.00"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {"@type": "Service", "name": "Private Surf Coaching", "description": "1-on-1 private surf lessons with personalised coaching, video analysis and detailed feedback."},
-            "priceCurrency": "EUR",
-            "price": "150.00"
-          },
-          {
-            "@type": "Offer",
-            "itemOffered": {"@type": "Service", "name": "Surfskate Coaching", "description": "Surfskate training sessions to improve surf technique on land."},
-            "priceCurrency": "EUR"
-          }
-        ]
-      },
-      "aggregateRating": {
-        "@type": "AggregateRating",
-        "ratingValue": "5.0",
-        "reviewCount": "11",
-        "bestRating": "5"
-      },
-      "sameAs": [
-        "https://www.instagram.com/upgrade_surfcoaching"
       ]
     }
     </script>
