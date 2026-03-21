@@ -24,23 +24,66 @@
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "SportsActivityLocation",
+      "@type": ["SportsActivityLocation", "LocalBusiness"],
       "name": "Upgrade Surf Coaching",
-      "description": "Progress-focused surf coaching in Ericeira, Portugal. Personal lessons, video analysis, and structured progression plans.",
-      "url": "https://fancify-my-site.lovable.app",
+      "description": "Progress-focused surf coaching in Ericeira, Portugal. Personal lessons, video analysis, and structured progression plans for all levels.",
+      "url": "https://upgradesurfericeira.com",
       "telephone": "+351911001039",
       "email": "upgradesurfing@gmail.com",
+      "image": "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/0ee2828e-ec6e-4436-bd5e-7a1d7ba079af/id-preview-da125f6f--b1610726-132d-4267-8165-4a6b7c6f611f.lovable.app-1773051082871.png",
       "address": {
         "@type": "PostalAddress",
+        "streetAddress": "Ericeira",
         "addressLocality": "Ericeira",
+        "addressRegion": "Lisboa",
+        "postalCode": "2655",
         "addressCountry": "PT"
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": 38.9631,
-        "longitude": -9.4159
+        "latitude": 38.97018,
+        "longitude": -9.41961
       },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+          "opens": "07:00",
+          "closes": "19:00"
+        }
+      ],
       "priceRange": "€€",
+      "currenciesAccepted": "EUR",
+      "paymentAccepted": "Cash, Credit Card, Bank Transfer",
+      "areaServed": [
+        {"@type": "City", "name": "Ericeira"},
+        {"@type": "City", "name": "Peniche"},
+        {"@type": "City", "name": "Carcavelos"},
+        {"@type": "City", "name": "Lisboa"}
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Surf Coaching Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {"@type": "Service", "name": "Group Surf Coaching", "description": "Small group surf coaching sessions with max 4 surfers per coach, video analysis and progress tracking."},
+            "priceCurrency": "EUR",
+            "price": "68.00"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {"@type": "Service", "name": "Private Surf Coaching", "description": "1-on-1 private surf lessons with personalised coaching, video analysis and detailed feedback."},
+            "priceCurrency": "EUR",
+            "price": "150.00"
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {"@type": "Service", "name": "Surfskate Coaching", "description": "Surfskate training sessions to improve surf technique on land."},
+            "priceCurrency": "EUR"
+          }
+        ]
+      },
       "aggregateRating": {
         "@type": "AggregateRating",
         "ratingValue": "5.0",
