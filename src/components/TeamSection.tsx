@@ -178,29 +178,39 @@ const TeamSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        {/* Desktop: 3 columns with all coaches */}
+        <div className="hidden md:grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {coaches.map((coach) => (
             <CoachCard key={coach.name} coach={coach} />
           ))}
+          <CoachCard coach={afonsoCoach} />
         </div>
 
-        {/* Show more / Afonso */}
-        <div className="mt-8 flex flex-col items-center">
-          {!showAfonso && (
-            <button
-              onClick={() => setShowAfonso(true)}
-              className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 font-medium text-sm tracking-wider uppercase transition-all duration-300 active:scale-[0.97]"
-            >
-              Show More
-              <ChevronDown size={18} />
-            </button>
-          )}
+        {/* Mobile: 2 coaches + Show More for Afonso */}
+        <div className="md:hidden">
+          <div className="grid grid-cols-1 gap-8 max-w-md mx-auto">
+            {coaches.map((coach) => (
+              <CoachCard key={coach.name} coach={coach} />
+            ))}
+          </div>
 
-          {showAfonso && (
-            <div className="w-full max-w-md mx-auto animate-fade-up">
-              <CoachCard coach={afonsoCoach} />
-            </div>
-          )}
+          <div className="mt-8 flex flex-col items-center">
+            {!showAfonso && (
+              <button
+                onClick={() => setShowAfonso(true)}
+                className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-border/50 text-muted-foreground hover:text-primary hover:border-primary/50 font-medium text-sm tracking-wider uppercase transition-all duration-300 active:scale-[0.97]"
+              >
+                Show More
+                <ChevronDown size={18} />
+              </button>
+            )}
+
+            {showAfonso && (
+              <div className="w-full max-w-md mx-auto animate-fade-up mt-8">
+                <CoachCard coach={afonsoCoach} />
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </section>
