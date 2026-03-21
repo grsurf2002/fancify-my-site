@@ -16,6 +16,26 @@ const SurfCoaching = () => {
     if (metaDesc) {
       metaDesc.setAttribute("content", "Improve your surfing with professional surf coaching in Ericeira, Portugal. Private lessons, video analysis, and training at the best surf spots.");
     }
+
+    // JSON-LD structured data
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.text = JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Service",
+      "serviceType": "Surf Coaching",
+      "provider": {
+        "@type": "LocalBusiness",
+        "name": "Upgrade Surf Coaching"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Ericeira, Portugal"
+      },
+      "description": "Professional surf coaching in Ericeira designed to improve technique, confidence, and performance."
+    });
+    document.head.appendChild(script);
+    return () => { document.head.removeChild(script); };
   }, []);
 
   return (
