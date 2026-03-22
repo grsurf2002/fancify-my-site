@@ -33,6 +33,11 @@ import nicoPhoto2 from "@/assets/review-nico-2.jpeg";
 import joaquimPhoto1 from "@/assets/review-joaquim-1.jpeg";
 import davidePhoto1 from "@/assets/review-davide-1.jpeg";
 import davidePhoto2 from "@/assets/review-davide-2.jpeg";
+import roryPhoto1 from "@/assets/review-rory-1.jpeg";
+import madsPhoto1 from "@/assets/review-mads-1.jpeg";
+import yevgeniyPhoto1 from "@/assets/review-yevgeniy-1.png";
+import yevgeniyPhoto2 from "@/assets/review-yevgeniy-2.jpeg";
+import yevgeniyPhoto3 from "@/assets/review-yevgeniy-3.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -48,8 +53,12 @@ const filippoPhotos = [filippoPhoto1, filippoPhoto2];
 const nicoPhotos = [nicoPhoto1, nicoPhoto2];
 const joaquimPhotos = [joaquimPhoto1];
 const davidePhotos = [davidePhoto1, davidePhoto2];
+const roryPhotos = [roryPhoto1];
+const madsPhotos = [madsPhoto1];
+const yevgeniyPhotos = [yevgeniyPhoto1, yevgeniyPhoto2, yevgeniyPhoto3];
 
 const reviews = [
+  // Reviews with photos first
   {
     name: "Paul Tavares",
     text: "Started training last year with Gabriel and Hugo and improved more in a year than in the last 10 surfing by myself! These guys are amazing and they push you with knowledge and experience to give you the confidence you need to get a bit better every session 👍👍",
@@ -61,38 +70,19 @@ const reviews = [
     photos: yaelPhotos,
   },
   {
-    name: "Marina Dias",
-    text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
-    photos: marinaPhotos,
-  },
-  {
-    name: "Rory White",
-    text: "Gabriel & Hugo are the pure surf energy, sharing their passion for the ocean & the local community. Their advice always helps to expand my awareness in the ocean, learning the right mindset & technique, and have more fun! Thanks lads",
-  },
-  {
     name: "Roman Van Loo",
     text: "Joined their coaching about half a year ago and it's been a very pleasant experience. The vibe is great, the tips they give are very helpful and I'm happy with the progress I've made with them. Definitely recommend!",
     photos: romanPhotos,
   },
   {
-    name: "Gonçalo Meneses",
-    text: "Best coaching in town!! 💪💪💪",
-  },
-  {
-    name: "Tommaso Pianta",
-    text: "Trained with Hugo and Gabriel for a few months. Seeing yourself on video and having immediate and good feedback is key to improve your surfing. If you're feeling stuck I would totally recommend Upgrade to step up your surfing skills",
-  },
-  {
-    name: "Mads Thiele",
-    text: "Gabriel and Hugo are really the best surf coaches in Ericeira. No matter your level they make you improve every session. And really awesome guys as well :)",
+    name: "Davide Fontana",
+    text: "Just finished an amazing month of surf coaching and video analysis, mainly in Ericeira and surrounding areas, with a short but special weekend trip to the Algarve. The combination of in-water coaching and detailed video feedback really helped me understand my mistakes and improve session after session. Huge thanks to the amazing coaches Gabriel and Hugo for their support, precision, and constant motivation 🤙 The Algarve trip wasn't just about surfing — it was also about the people. We created real friendships and connections that made the whole experience even more meaningful and reminded me how much surfing is about sharing moments. I've seen real progress in my technique, positioning, and overall confidence in the water. Highly recommend this experience to anyone who wants to level up their surfing!",
+    photos: davidePhotos,
   },
   {
     name: "Yevgeniy Polev",
     text: "Have been training with Hugo and Gabriel for over a year now. I'm more than happy with the progress I've made with them. If you're ready to commit for at least a couple of months you'll see how your confidence and skills grow. Definitely recommend!",
-  },
-  {
-    name: "Leon Braun",
-    text: "I had many great surf sessions. Gabriel and Hugo have been a great help. The video analysis is a game changer.",
+    photos: yevgeniyPhotos,
   },
   {
     name: "Pedro Henrique Nascimento e Silva",
@@ -130,9 +120,28 @@ const reviews = [
     photos: joaquimPhotos,
   },
   {
-    name: "Davide Fontana",
-    text: "Just finished an amazing month of surf coaching and video analysis, mainly in Ericeira and surrounding areas, with a short but special weekend trip to the Algarve. The combination of in-water coaching and detailed video feedback really helped me understand my mistakes and improve session after session. Huge thanks to the amazing coaches Gabriel and Hugo for their support, precision, and constant motivation 🤙 The Algarve trip wasn't just about surfing — it was also about the people. We created real friendships and connections that made the whole experience even more meaningful and reminded me how much surfing is about sharing moments. I've seen real progress in my technique, positioning, and overall confidence in the water. Highly recommend this experience to anyone who wants to level up their surfing!",
-    photos: davidePhotos,
+    name: "Marina Dias",
+    text: "I've been taking surf lessons with Gabriel and Hugo for about a month now, and I couldn't recommend them more. They're knowledgeable, patient, and make every session both enjoyable and effective. I've already seen a big improvement in my surfing. If you're looking for great coaches who make you feel confident in the water, they're the ones!",
+    photos: marinaPhotos,
+  },
+  {
+    name: "Rory White",
+    text: "Gabriel & Hugo are the pure surf energy, sharing their passion for the ocean & the local community. Their advice always helps to expand my awareness in the ocean, learning the right mindset & technique, and have more fun! Thanks lads",
+    photos: roryPhotos,
+  },
+  {
+    name: "Mads Thiele",
+    text: "Gabriel and Hugo are really the best surf coaches in Ericeira. No matter your level they make you improve every session. And really awesome guys as well :)",
+    photos: madsPhotos,
+  },
+  // Reviews without photos
+  {
+    name: "Tommaso Pianta",
+    text: "Trained with Hugo and Gabriel for a few months. Seeing yourself on video and having immediate and good feedback is key to improve your surfing. If you're feeling stuck I would totally recommend Upgrade to step up your surfing skills",
+  },
+  {
+    name: "Leon Braun",
+    text: "I had many great surf sessions. Gabriel and Hugo have been a great help. The video analysis is a game changer.",
   },
 ];
 
