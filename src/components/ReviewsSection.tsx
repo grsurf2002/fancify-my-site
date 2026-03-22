@@ -20,6 +20,12 @@ import romanPhoto3 from "@/assets/review-roman-3.jpeg";
 import martijnPhoto1 from "@/assets/review-martijn-1.jpeg";
 import martijnPhoto2 from "@/assets/review-martijn-2.png";
 import martijnPhoto3 from "@/assets/review-martijn-3.jpeg";
+import martijnNewPhoto1 from "@/assets/review-martijn-new-1.png";
+import martijnNewPhoto2 from "@/assets/review-martijn-new-2.jpeg";
+import johanensPhoto1 from "@/assets/review-johanens-1.jpeg";
+import johanensPhoto2 from "@/assets/review-johanens-2.jpeg";
+import nickNewPhoto1 from "@/assets/review-nick-new-1.jpeg";
+import nickNewPhoto2 from "@/assets/review-nick-new-2.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -28,6 +34,9 @@ const marinaPhotos = [marinaPhoto1];
 const nickPhotos = [nickPhoto1];
 const romanPhotos = [romanPhoto2, romanPhoto1, romanPhoto3];
 const martijnPhotos = [martijnPhoto1, martijnPhoto2, martijnPhoto3];
+const martijnNewPhotos = [martijnNewPhoto1, martijnNewPhoto2];
+const johanensPhotos = [johanensPhoto1, johanensPhoto2];
+const nickNewPhotos = [nickNewPhoto1, nickNewPhoto2];
 
 const reviews = [
   {
