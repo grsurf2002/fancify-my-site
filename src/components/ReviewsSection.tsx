@@ -31,6 +31,8 @@ import filippoPhoto2 from "@/assets/review-filippo-2.jpeg";
 import nicoPhoto1 from "@/assets/review-nico-1.jpeg";
 import nicoPhoto2 from "@/assets/review-nico-2.jpeg";
 import joaquimPhoto1 from "@/assets/review-joaquim-1.jpeg";
+import davidePhoto1 from "@/assets/review-davide-1.jpeg";
+import davidePhoto2 from "@/assets/review-davide-2.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -45,6 +47,7 @@ const nickNewPhotos = [nickNewPhoto1, nickNewPhoto2];
 const filippoPhotos = [filippoPhoto1, filippoPhoto2];
 const nicoPhotos = [nicoPhoto1, nicoPhoto2];
 const joaquimPhotos = [joaquimPhoto1];
+const davidePhotos = [davidePhoto1, davidePhoto2];
 
 const reviews = [
   {
