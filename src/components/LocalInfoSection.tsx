@@ -8,7 +8,7 @@ const LocalInfoSection = () => {
       style={{ backgroundImage: `url(${ericeiraBg})` }}
     >
       <div className="absolute inset-0 bg-background/85" />
-      <div className="container px-4 max-w-4xl mx-auto">
+      <div className="container px-4 max-w-4xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
             Location
