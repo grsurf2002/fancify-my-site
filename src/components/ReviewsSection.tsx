@@ -111,6 +111,21 @@ const reviews = [
     text: "Started the coaching with upgrade last year and after a period of travelling I came back because I liked it a lot. The tips and video analysis are very helpful and I feel a lot of improvement in my surfing. Also the people in the vibe in the group is always good and I really enjoy the sessions out together so I would definitely recommend this to anyone staying in the area.",
     photos: nickNewPhotos,
   },
+  {
+    name: "Filippo Galli",
+    text: "I have been coaching with them for more than a year. Moving from intermediate towards more and more advanced. Focusing on keeping more speed on the waves, cutbacks and beginning of snaps. Hugo and Gabriel really helped me improving. I love their approach to surfing, and how they teach breaking down things into easier steps. Thank you guys and let's keep surfing better! 🤙",
+    photos: filippoPhotos,
+  },
+  {
+    name: "Ni Co",
+    text: "I had an excellent experience with Upgrade Surfing. The coaching is highly professional, structured, and tailored to individual skill levels. The instructors provide clear, detailed feedback that significantly helps improve technique, confidence, and overall performance in the water. What stands out most is their serious and committed approach to progression. Each session is purposeful, with a strong focus on measurable improvement rather than just casual practice. This makes it an ideal choice for anyone who is genuinely interested in advancing their surfing skills. Thanks to their guidance, I have seen a clear improvement in my surfing ability. I would highly recommend Upgrade Surfing to anyone looking for high-quality, professional coaching and real progress.",
+    photos: nicoPhotos,
+  },
+  {
+    name: "Joaquim Cassapo",
+    text: "Loved to grow up my surfing with this guys, pretty good surfers, also pretty good coaching!! If you wanna learn more and improve your surfing this guys are the best option in town for sure!! 5 stars",
+    photos: joaquimPhotos,
+  },
 ];
 
 const PhotoCarousel = ({ photos }: { photos: string[] }) => {
