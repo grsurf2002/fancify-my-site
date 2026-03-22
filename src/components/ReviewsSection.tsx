@@ -31,6 +31,8 @@ import filippoPhoto2 from "@/assets/review-filippo-2.jpeg";
 import nicoPhoto1 from "@/assets/review-nico-1.jpeg";
 import nicoPhoto2 from "@/assets/review-nico-2.jpeg";
 import joaquimPhoto1 from "@/assets/review-joaquim-1.jpeg";
+import davidePhoto1 from "@/assets/review-davide-1.jpeg";
+import davidePhoto2 from "@/assets/review-davide-2.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -45,6 +47,7 @@ const nickNewPhotos = [nickNewPhoto1, nickNewPhoto2];
 const filippoPhotos = [filippoPhoto1, filippoPhoto2];
 const nicoPhotos = [nicoPhoto1, nicoPhoto2];
 const joaquimPhotos = [joaquimPhoto1];
+const davidePhotos = [davidePhoto1, davidePhoto2];
 
 const reviews = [
   {
@@ -125,6 +128,11 @@ const reviews = [
     name: "Joaquim Cassapo",
     text: "Loved to grow up my surfing with this guys, pretty good surfers, also pretty good coaching!! If you wanna learn more and improve your surfing this guys are the best option in town for sure!! 5 stars",
     photos: joaquimPhotos,
+  },
+  {
+    name: "Davide Fontana",
+    text: "Just finished an amazing month of surf coaching and video analysis, mainly in Ericeira and surrounding areas, with a short but special weekend trip to the Algarve. The combination of in-water coaching and detailed video feedback really helped me understand my mistakes and improve session after session. Huge thanks to the amazing coaches Gabriel and Hugo for their support, precision, and constant motivation 🤙 The Algarve trip wasn't just about surfing — it was also about the people. We created real friendships and connections that made the whole experience even more meaningful and reminded me how much surfing is about sharing moments. I've seen real progress in my technique, positioning, and overall confidence in the water. Highly recommend this experience to anyone who wants to level up their surfing!",
+    photos: davidePhotos,
   },
 ];
 
