@@ -20,6 +20,12 @@ import romanPhoto3 from "@/assets/review-roman-3.jpeg";
 import martijnPhoto1 from "@/assets/review-martijn-1.jpeg";
 import martijnPhoto2 from "@/assets/review-martijn-2.png";
 import martijnPhoto3 from "@/assets/review-martijn-3.jpeg";
+import martijnNewPhoto1 from "@/assets/review-martijn-new-1.png";
+import martijnNewPhoto2 from "@/assets/review-martijn-new-2.jpeg";
+import johanensPhoto1 from "@/assets/review-johanens-1.jpeg";
+import johanensPhoto2 from "@/assets/review-johanens-2.jpeg";
+import nickNewPhoto1 from "@/assets/review-nick-new-1.jpeg";
+import nickNewPhoto2 from "@/assets/review-nick-new-2.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -28,6 +34,9 @@ const marinaPhotos = [marinaPhoto1];
 const nickPhotos = [nickPhoto1];
 const romanPhotos = [romanPhoto2, romanPhoto1, romanPhoto3];
 const martijnPhotos = [martijnPhoto1, martijnPhoto2, martijnPhoto3];
+const martijnNewPhotos = [martijnNewPhoto1, martijnNewPhoto2];
+const johanensPhotos = [johanensPhoto1, johanensPhoto2];
+const nickNewPhotos = [nickNewPhoto1, nickNewPhoto2];
 
 const reviews = [
   {
@@ -78,6 +87,21 @@ const reviews = [
     name: "Pedro Henrique Nascimento e Silva",
     text: "Treinos de surf com vídeo analise, os treinadores são super profissionais e confiáveis. Os treinos com an Upgrade me estão a levar a outro nível, com feedbacks precisos e boas ondas. Recomendo!",
     photos: pedroPhotos,
+  },
+  {
+    name: "Martijn van Heeswijk",
+    text: "Surf coaching with Gabriel and Hugo helped me to progress significantly faster as they identify (basic) flaws in your surfing technique and have actionable tips & advice on how to improve on those. They are very knowledgeable and experienced surfers themselves and genuinely care to make you progress in the best and fastest way possible. Also very fun guys to hang out with - would highly recommend to anyone who wants to take their surfing to the next level",
+    photos: martijnNewPhotos,
+  },
+  {
+    name: "Johanens Hirsch",
+    text: "I had the pleasure to work with both, Hugo and Gabriel several times when I'm traveling to Portugal. They have a great attitude, fun groups and especially good coaching style. Especially together they are a really good Team and I could see my surfing improving step by step. Would highly recommend and really look forward to train with you guys again!",
+    photos: johanensPhotos,
+  },
+  {
+    name: "Nick van Dijk",
+    text: "Started the coaching with upgrade last year and after a period of travelling I came back because I liked it a lot. The tips and video analysis are very helpful and I feel a lot of improvement in my surfing. Also the people in the vibe in the group is always good and I really enjoy the sessions out together so I would definitely recommend this to anyone staying in the area.",
+    photos: nickNewPhotos,
   },
 ];
 
