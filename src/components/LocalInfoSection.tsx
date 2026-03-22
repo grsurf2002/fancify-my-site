@@ -1,8 +1,13 @@
 import { MapPin, Sun, Car } from "lucide-react";
+import ericeiraBg from "@/assets/ericeira-coast.png";
 
 const LocalInfoSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-ocean">
+    <section
+      className="py-24 md:py-32 relative bg-cover bg-center"
+      style={{ backgroundImage: `url(${ericeiraBg})` }}
+    >
+      <div className="absolute inset-0 bg-background/85" />
       <div className="container px-4 max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
