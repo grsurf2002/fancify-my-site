@@ -143,7 +143,7 @@ const reviews = [
   },
   // Reviews without photos
   {
-    name: "Manuel Jorge",
+    name: "Dana Zahavi",
     text: "Hands down the best surf coach in Ericeira. I improved more in a few sessions than I ever did before. From the first session, everything felt different from a typical surf lesson. It wasn't just about getting in the water. There was a clear focus on progression, technique, and really understanding what I was doing and why. The coaching was super personalized, and you can tell there's a lot of experience behind it. What I really appreciated was how each session built on the previous one. Small adjustments made a huge difference, and I started catching waves more consistently and with much more confidence. Also, the choice of surf spots was always spot-on for the conditions and my level, which made every session feel productive and safe. If you're looking for surf lessons or surf coaching in Ericeira and actually want to improve (not just stand on a board once), I can't recommend this enough.",
   },
   {
