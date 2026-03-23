@@ -45,7 +45,7 @@ const SessionTypesSection = () => {
           {sessionTypes.map((s) => (
             <div
               key={s.title}
-              className="flex flex-col rounded-2xl border border-border/50 bg-card p-6 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-all duration-300"
+              className="flex flex-col rounded-2xl border border-border/50 bg-card/80 backdrop-blur-sm p-6 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-all duration-300"
             >
               <s.icon className="text-primary mb-4" size={28} />
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">
