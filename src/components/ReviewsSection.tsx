@@ -39,6 +39,7 @@ import yevgeniyPhoto1 from "@/assets/review-yevgeniy-1.png";
 import yevgeniyPhoto2 from "@/assets/review-yevgeniy-2.jpeg";
 import yevgeniyPhoto3 from "@/assets/review-yevgeniy-3.jpeg";
 import manuelJorgePhoto1 from "@/assets/review-manuel-jorge.jpeg";
+import ricardoCraveiroPhoto1 from "@/assets/review-ricardo-craveiro.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -58,6 +59,7 @@ const roryPhotos = [roryPhoto1];
 const madsPhotos = [madsPhoto1];
 const yevgeniyPhotos = [yevgeniyPhoto1, yevgeniyPhoto3];
 const manuelJorgePhotos = [manuelJorgePhoto1];
+const ricardoCraveiroPhotos = [ricardoCraveiroPhoto1];
 
 const reviews = [
   // Reviews with photos first
@@ -140,6 +142,11 @@ const reviews = [
     name: "Manuel Jorge",
     text: "Hands down the best surf lessons in Ericeira. Gabriel and Hugo make learning surfing feel effortless and fun. They have this amazing energy that makes everyone comfortable, and the video feedback with such clear footage really helped me correct my technique fast. Every session felt like a perfect mix of coaching and good vibes.",
     photos: manuelJorgePhotos,
+  },
+  {
+    name: "Ricardo Craveiro",
+    text: "I've surfed in a few places, but training with Gabriel and Hugo was on another level. They are truly the best surf coach in Ericeira — patient, professional, and always keeping a fun, positive vibe. The video analysis is incredible, and the camera quality makes it so easy to see exactly what to improve. Can't recommend them enough!",
+    photos: ricardoCraveiroPhotos,
   },
   // Reviews without photos
   {
