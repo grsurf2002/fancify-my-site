@@ -1,4 +1,5 @@
-import coachingImg from "@/assets/coaching-expect.jpeg";
+import coachingImg from "@/assets/coaching-2.jpeg";
+import cameraImg from "@/assets/coaching-expect.jpeg";
 
 const WhatToExpectSection = () => {
   return (
