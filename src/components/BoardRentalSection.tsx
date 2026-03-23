@@ -1,9 +1,11 @@
 import { ExternalLink, Instagram } from "lucide-react";
+import boardcultureBg from "@/assets/boardculture-store.png";
 
 const BoardRentalSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-card">
-      <div className="container px-4 max-w-4xl mx-auto text-center">
+    <section className="py-24 md:py-32 relative bg-cover bg-center" style={{ backgroundImage: `url(${boardcultureBg})` }}>
+      <div className="absolute inset-0 bg-background/60" />
+      <div className="container px-4 max-w-4xl mx-auto text-center relative z-10">
         <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
           Equipment
         </p>
