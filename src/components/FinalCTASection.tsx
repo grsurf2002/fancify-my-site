@@ -11,7 +11,7 @@ const FinalCTASection = () => {
           className="w-full h-full object-cover opacity-60"
           loading="lazy"
         />
-        <div className="absolute inset-0 bg-background/70" />
+        <div className="absolute inset-0 bg-background/50" />
       </div>
 
       <div className="relative z-10 container px-4 text-center max-w-3xl mx-auto">
