@@ -65,6 +65,16 @@ const WhatToExpectSection = () => {
             </div>
           </div>
         </div>
+
+        {/* Full-width image below */}
+        <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card">
+          <img
+            src={cameraImg}
+            alt="Video analysis camera setup on the beach in Ericeira"
+            className="w-full h-[400px] md:h-[500px] object-cover"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );
