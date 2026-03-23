@@ -38,6 +38,7 @@ import madsPhoto1 from "@/assets/review-mads-1.jpeg";
 import yevgeniyPhoto1 from "@/assets/review-yevgeniy-1.png";
 import yevgeniyPhoto2 from "@/assets/review-yevgeniy-2.jpeg";
 import yevgeniyPhoto3 from "@/assets/review-yevgeniy-3.jpeg";
+import manuelJorgePhoto1 from "@/assets/review-manuel-jorge.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
@@ -56,6 +57,7 @@ const davidePhotos = [davidePhoto1, davidePhoto2];
 const roryPhotos = [roryPhoto1];
 const madsPhotos = [madsPhoto1];
 const yevgeniyPhotos = [yevgeniyPhoto1, yevgeniyPhoto3];
+const manuelJorgePhotos = [manuelJorgePhoto1];
 
 const reviews = [
   // Reviews with photos first
@@ -134,7 +136,16 @@ const reviews = [
     text: "Gabriel and Hugo are really the best surf coaches in Ericeira. No matter your level they make you improve every session. And really awesome guys as well :)",
     photos: madsPhotos,
   },
+  {
+    name: "Manuel Jorge",
+    text: "Hands down the best surf lessons in Ericeira. Gabriel and Hugo make learning surfing feel effortless and fun. They have this amazing energy that makes everyone comfortable, and the video feedback with such clear footage really helped me correct my technique fast. Every session felt like a perfect mix of coaching and good vibes.",
+    photos: manuelJorgePhotos,
+  },
   // Reviews without photos
+  {
+    name: "Manuel Jorge",
+    text: "Hands down the best surf coach in Ericeira. I improved more in a few sessions than I ever did before. From the first session, everything felt different from a typical surf lesson. It wasn't just about getting in the water. There was a clear focus on progression, technique, and really understanding what I was doing and why. The coaching was super personalized, and you can tell there's a lot of experience behind it. What I really appreciated was how each session built on the previous one. Small adjustments made a huge difference, and I started catching waves more consistently and with much more confidence. Also, the choice of surf spots was always spot-on for the conditions and my level, which made every session feel productive and safe. If you're looking for surf lessons or surf coaching in Ericeira and actually want to improve (not just stand on a board once), I can't recommend this enough.",
+  },
   {
     name: "Tommaso Pianta",
     text: "Trained with Hugo and Gabriel for a few months. Seeing yourself on video and having immediate and good feedback is key to improve your surfing. If you're feeling stuck I would totally recommend Upgrade to step up your surfing skills",
