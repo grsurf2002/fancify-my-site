@@ -1,5 +1,5 @@
 import { User, UsersRound, Video, ArrowRight } from "lucide-react";
-import sessionBg from "@/assets/session-types-bg.jpeg";
+
 const sessionTypes = [
   {
     icon: User,
@@ -27,12 +27,8 @@ const sessionTypes = [
 
 const SessionTypesSection = () => {
   return (
-    <section
-      className="py-24 md:py-32 relative bg-cover bg-center"
-      style={{ backgroundImage: `url(${sessionBg})` }}
-    >
-      <div className="absolute inset-0 bg-background/80" />
-      <div className="container px-4 relative z-10">
+    <section className="py-24 md:py-32">
+      <div className="container px-4">
         <div className="text-center mb-16">
 
 
@@ -45,7 +41,7 @@ const SessionTypesSection = () => {
           {sessionTypes.map((s) => (
             <div
               key={s.title}
-              className="flex flex-col rounded-2xl border border-border/50 bg-card/80 backdrop-blur-sm p-6 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-all duration-300"
+              className="flex flex-col rounded-2xl border border-border/50 bg-card p-6 hover:border-primary/50 hover:shadow-[var(--shadow-glow)] transition-all duration-300"
             >
               <s.icon className="text-primary mb-4" size={28} />
               <h3 className="font-heading text-lg font-bold text-foreground mb-2">
