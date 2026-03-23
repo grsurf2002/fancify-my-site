@@ -13,7 +13,7 @@ const BoardRentalSection = () => {
           Do You Need a <span className="text-gradient-golden">Board</span>?
         </h2>
         <p className="mt-6 text-muted-foreground max-w-2xl mx-auto text-lg leading-relaxed">
-          We work with <span className="text-foreground font-semibold">Boardculture Store</span> and
+          We work with <span className="text-foreground font-semibold">Boardculture Store Ericeira</span> and
           they have you covered — from softboards and hardtops to high-performance boards.
         </p>
 
