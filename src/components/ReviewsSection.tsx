@@ -57,6 +57,7 @@ const davidePhotos = [davidePhoto1, davidePhoto2];
 const roryPhotos = [roryPhoto1];
 const madsPhotos = [madsPhoto1];
 const yevgeniyPhotos = [yevgeniyPhoto1, yevgeniyPhoto3];
+const manuelJorgePhotos = [manuelJorgePhoto1];
 
 const reviews = [
   // Reviews with photos first
