@@ -26,11 +26,13 @@ const outcomes = [
 
 const ResultsSection = () => {
   return (
-    <section className="py-24 md:py-32 bg-ocean">
-      <div className="container px-4">
+    <section
+      className="py-24 md:py-32 relative bg-cover bg-center"
+      style={{ backgroundImage: `url(${resultsSurfImg})` }}
+    >
+      <div className="absolute inset-0 bg-background/85" />
+      <div className="container px-4 relative z-10">
         <div className="text-center mb-16">
-
-
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Real Progress, <span className="text-gradient-golden">Real Outcomes</span>
           </h2>
@@ -40,7 +42,7 @@ const ResultsSection = () => {
           {outcomes.map((o) => (
             <div
               key={o.title}
-              className="text-center rounded-2xl border border-border/50 bg-card p-6 hover:border-primary/50 transition-all duration-300"
+              className="text-center rounded-2xl border border-border/50 bg-card/80 backdrop-blur-sm p-6 hover:border-primary/50 transition-all duration-300"
             >
               <o.icon className="mx-auto text-accent mb-4" size={32} />
               <h3 className="font-heading text-base font-bold text-foreground mb-2">
@@ -49,15 +51,6 @@ const ResultsSection = () => {
               <p className="text-sm text-muted-foreground">{o.description}</p>
             </div>
           ))}
-        </div>
-
-        <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card">
-          <img
-            src={resultsSurfImg}
-            alt="Surfer performing a turn during coaching session in Ericeira"
-            className="w-full h-[400px] md:h-[500px] object-cover"
-            loading="lazy"
-          />
         </div>
       </div>
     </section>
