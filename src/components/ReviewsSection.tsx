@@ -38,6 +38,7 @@ import madsPhoto1 from "@/assets/review-mads-1.jpeg";
 import yevgeniyPhoto1 from "@/assets/review-yevgeniy-1.png";
 import yevgeniyPhoto2 from "@/assets/review-yevgeniy-2.jpeg";
 import yevgeniyPhoto3 from "@/assets/review-yevgeniy-3.jpeg";
+import manuelJorgePhoto1 from "@/assets/review-manuel-jorge.jpeg";
 
 const paulPhotos = [reviewPhoto1, reviewPhoto2, reviewPhoto3, reviewPhoto4];
 const yaelPhotos = [yaelPhoto1, yaelPhoto2, yaelPhoto3, yaelPhoto4];
