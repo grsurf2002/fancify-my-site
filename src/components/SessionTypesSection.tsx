@@ -1,5 +1,5 @@
 import { User, UsersRound, Video, ArrowRight } from "lucide-react";
-
+import sessionBg from "@/assets/session-types-bg.jpeg";
 const sessionTypes = [
   {
     icon: User,
