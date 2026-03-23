@@ -6,7 +6,7 @@ const FinalCTASection = () => {
       {/* Background */}
       <div className="absolute inset-0">
         <img
-          src={missionImg}
+          src={ctaSurfImg}
           alt="Surfer at sunset on Ericeira beach"
           className="w-full h-full object-cover opacity-30"
           loading="lazy"
