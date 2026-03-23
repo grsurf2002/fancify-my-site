@@ -143,6 +143,11 @@ const reviews = [
     text: "Hands down the best surf lessons in Ericeira. Gabriel and Hugo make learning surfing feel effortless and fun. They have this amazing energy that makes everyone comfortable, and the video feedback with such clear footage really helped me correct my technique fast. Every session felt like a perfect mix of coaching and good vibes.",
     photos: manuelJorgePhotos,
   },
+  {
+    name: "Ricardo Craveiro",
+    text: "I've surfed in a few places, but training with Gabriel and Hugo was on another level. They are truly the best surf coach in Ericeira — patient, professional, and always keeping a fun, positive vibe. The video analysis is incredible, and the camera quality makes it so easy to see exactly what to improve. Can't recommend them enough!",
+    photos: ricardoCraveiroPhotos,
+  },
   // Reviews without photos
   {
     name: "Dana Zahavi",
