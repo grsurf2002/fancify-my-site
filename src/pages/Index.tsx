@@ -32,6 +32,7 @@ const Index = () => {
       <ReviewsSection />
       <FAQSection />
       <LocalInfoSection />
+      <BoardRentalSection />
       <FinalCTASection />
       <ContactSection />
       <Footer />
