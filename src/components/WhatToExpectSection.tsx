@@ -1,4 +1,5 @@
-import coachingImg from "@/assets/coaching-expect.jpeg";
+import coachingImg from "@/assets/coaching-2.jpeg";
+import cameraImg from "@/assets/coaching-expect.jpeg";
 
 const WhatToExpectSection = () => {
   return (
@@ -63,6 +64,16 @@ const WhatToExpectSection = () => {
               />
             </div>
           </div>
+        </div>
+
+        {/* Full-width image below */}
+        <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card">
+          <img
+            src={cameraImg}
+            alt="Video analysis camera setup on the beach in Ericeira"
+            className="w-full h-[400px] md:h-[500px] object-cover"
+            loading="lazy"
+          />
         </div>
       </div>
     </section>
