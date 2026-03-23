@@ -50,6 +50,15 @@ const ResultsSection = () => {
             </div>
           ))}
         </div>
+
+        <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card">
+          <img
+            src={resultsSurfImg}
+            alt="Surfer performing a turn during coaching session in Ericeira"
+            className="w-full h-[400px] md:h-[500px] object-cover"
+            loading="lazy"
+          />
+        </div>
       </div>
     </section>
   );
