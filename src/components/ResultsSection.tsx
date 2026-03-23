@@ -1,4 +1,5 @@
 import { TrendingUp, RotateCcw, Eye, BarChart3 } from "lucide-react";
+import resultsSurfImg from "@/assets/results-surf.jpeg";
 
 const outcomes = [
   {
