@@ -1,4 +1,4 @@
-import missionImg from "@/assets/mission-surf.jpg";
+import ctaSurfImg from "@/assets/cta-surf.jpeg";
 
 const FinalCTASection = () => {
   return (
