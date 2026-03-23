@@ -1,10 +1,13 @@
 import coachingImg from "@/assets/coaching-2.jpeg";
-import cameraImg from "@/assets/coaching-expect.jpeg";
 
 const WhatToExpectSection = () => {
   return (
-    <section className="py-24 md:py-32">
-      <div className="container px-4">
+    <section
+      className="py-24 md:py-32 relative bg-cover bg-center"
+      style={{ backgroundImage: `url(${coachingImg})` }}
+    >
+      <div className="absolute inset-0 bg-background/85" />
+      <div className="container px-4 relative z-10">
         <div className="text-center mb-16">
           <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
             What to Expect
@@ -15,65 +18,40 @@ const WhatToExpectSection = () => {
           </h2>
         </div>
 
-        <div className="grid lg:grid-cols-2 gap-12 max-w-5xl mx-auto items-start">
-          {/* Left - Content */}
-          <div className="space-y-10">
-            <div>
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
-                The First Session
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                We assess your current surfing: ocean awareness, pop-up mechanics, board control and goal setting. On land we teach key drills; in water we focus on targeted reps. You leave knowing exactly what to practice.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
-                Ongoing Coaching
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Follow-up sessions use progressive drills, wave selection coaching and real-time corrections. We track your progress and adapt sessions to keep you moving forward.
-              </p>
-            </div>
-
-            <div>
-              <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
-                Local Conditions We Use to Accelerate Learning
-              </h3>
-              <p className="text-muted-foreground leading-relaxed">
-                Ericeira offers varied breaks - sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
-              </p>
-            </div>
-
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
-            >
-              Book Now - Surf Lessons Ericeira
-            </a>
-          </div>
-
-          {/* Right - Image */}
+        <div className="max-w-5xl mx-auto space-y-10">
           <div>
-            <div className="rounded-2xl overflow-hidden shadow-card">
-              <img
-                src={coachingImg}
-                alt="On-beach surf coaching session in Ericeira"
-                className="w-full h-80 object-cover"
-                loading="lazy"
-              />
-            </div>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
+              The First Session
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              We assess your current surfing: ocean awareness, pop-up mechanics, board control and goal setting. On land we teach key drills; in water we focus on targeted reps. You leave knowing exactly what to practice.
+            </p>
           </div>
-        </div>
 
-        {/* Full-width image below */}
-        <div className="mt-16 max-w-5xl mx-auto rounded-2xl overflow-hidden shadow-card">
-          <img
-            src={cameraImg}
-            alt="Video analysis camera setup on the beach in Ericeira"
-            className="w-full h-[400px] md:h-[500px] object-cover"
-            loading="lazy"
-          />
+          <div>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
+              Ongoing Coaching
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Follow-up sessions use progressive drills, wave selection coaching and real-time corrections. We track your progress and adapt sessions to keep you moving forward.
+            </p>
+          </div>
+
+          <div>
+            <h3 className="font-heading text-2xl font-bold text-foreground mb-3">
+              Local Conditions We Use to Accelerate Learning
+            </h3>
+            <p className="text-muted-foreground leading-relaxed">
+              Ericeira offers varied breaks - sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
+            </p>
+          </div>
+
+          <a
+            href="#contact"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
+          >
+            Book Now - Surf Lessons Ericeira
+          </a>
         </div>
       </div>
     </section>
