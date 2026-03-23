@@ -27,8 +27,12 @@ const sessionTypes = [
 
 const SessionTypesSection = () => {
   return (
-    <section className="py-24 md:py-32">
-      <div className="container px-4">
+    <section
+      className="py-24 md:py-32 relative bg-cover bg-center"
+      style={{ backgroundImage: `url(${sessionBg})` }}
+    >
+      <div className="absolute inset-0 bg-background/80" />
+      <div className="container px-4 relative z-10">
         <div className="text-center mb-16">
 
 
