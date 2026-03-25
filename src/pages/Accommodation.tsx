@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Home, Bath, Dumbbell, Waves, MapPin, Calendar } from "lucide-react";
+import { Home, Bath, Dumbbell, Waves, MapPin, Calendar, Archive } from "lucide-react";
 import bedroomImg from "@/assets/surf-house-bedroom.jpeg";
 import livingImg from "@/assets/surf-house-living.jpeg";
 import gymImg from "@/assets/surf-house-gym.jpeg";
@@ -11,6 +11,7 @@ const features = [
   { icon: Bath, label: "Private Toilet" },
   { icon: Dumbbell, label: "Access to Gym" },
   { icon: Waves, label: "Access to Pool" },
+  { icon: Archive, label: "Surf Board Store" },
   { icon: MapPin, label: "2 min drive from Ribeira d'Ilhas" },
 ];
 
@@ -27,8 +28,13 @@ const Accommodation = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-4">
-        <div className="container mx-auto text-center max-w-4xl">
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{ backgroundImage: `url(${livingImg})` }}
+        />
+        <div className="absolute inset-0 bg-background/75" />
+        <div className="container mx-auto text-center max-w-4xl relative z-10">
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-[0.3em] uppercase rounded-full bg-primary/10 text-primary">
             Stay With Us
           </span>
