@@ -1,6 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { MapPin, Calendar, ChevronDown, ChevronUp, Check, Globe, Video, Users, Target, Heart, ArrowRight } from "lucide-react";
+import { MapPin, Calendar, ChevronDown, ChevronUp, Check, Globe, Video, Users, Target, Heart, ArrowRight, ShieldCheck } from "lucide-react";
 import { useState, useEffect } from "react";
 import surfTripsHero from "@/assets/surf-trips-hero.png";
 import algarveStay1 from "@/assets/algarve-stay-1.png";
@@ -169,6 +169,7 @@ const whyJoinReasons = [
   { icon: Users, text: "Small groups for better progression" },
   { icon: Target, text: "Trips adapted to all levels" },
   { icon: Heart, text: "Meet like-minded surfers" },
+  { icon: ShieldCheck, text: "Led by experienced surf coaches & surfers" },
 ];
 
 const TripCard = ({ trip }: { trip: Trip }) => {
