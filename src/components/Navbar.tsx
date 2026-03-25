@@ -62,6 +62,9 @@ const Navbar = () => {
       {/* Mobile menu */}
       {menuOpen && (
         <div className="md:hidden glass mt-2 mx-4 rounded-xl p-6 flex flex-col gap-4 animate-fade-up">
+          <a href="/#services" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+            Services
+          </a>
           <a href="/board-rental" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Board Rental
           </a>
