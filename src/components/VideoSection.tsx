@@ -7,17 +7,17 @@ const VideoSection = () => {
             Watch Us Surf
           </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
-            Latest Video
+            Your Surf Coach in Action
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-            Your coach in action.
+            See how we ride the waves.
           </p>
         </div>
 
         <div className="max-w-4xl mx-auto rounded-2xl overflow-hidden shadow-card aspect-video">
           <iframe
             src="https://www.youtube.com/embed/cZIjdCa-yJs"
-            title="Gabriel Ribeiro Surfing"
+            title="Your Surf Coach in Action - Upgrade Surf Coaching Ericeira"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="w-full h-full"

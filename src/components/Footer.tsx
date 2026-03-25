@@ -14,6 +14,7 @@ const Footer = () => {
               {[
                 { label: "Home", href: "/" },
                 { label: "Surf Coaching", href: "/surf-coaching" },
+                { label: "Who Is Your Surf Coach", href: "/#team" },
                 { label: "Surfskate", href: "/surfskate" },
                 { label: "Surf Trips", href: "/surf-trips" },
                 { label: "Prices", href: "/prices" },

@@ -15,6 +15,7 @@ import FinalCTASection from "@/components/FinalCTASection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import VideoSection from "@/components/VideoSection";
 
 const Index = () => {
   return (
@@ -33,6 +34,7 @@ const Index = () => {
       <ReviewsSection />
       <FAQSection />
       <LocalInfoSection />
+      <VideoSection />
       <FinalCTASection />
       <ContactSection />
       <Footer />
