@@ -9,6 +9,9 @@ import poolImg from "@/assets/surf-house-pool.jpeg";
 import officeImg from "@/assets/surf-house-office.jpeg";
 import bathroomImg from "@/assets/surf-house-bathroom.jpeg";
 import balconyImg from "@/assets/surf-house-balcony.jpeg";
+import sunsetImg from "@/assets/surf-house-sunset.jpeg";
+import kitchenImg from "@/assets/surf-house-kitchen.jpeg";
+import gymExteriorImg from "@/assets/surf-house-gym-exterior.jpeg";
 
 const features = [
   { icon: Home, label: "4 Rooms" },
@@ -27,6 +30,9 @@ const allPhotos = [
   { src: officeImg, alt: "Office and workspace" },
   { src: bathroomImg, alt: "Private bathroom" },
   { src: balconyImg, alt: "Balcony with village view" },
+  { src: sunsetImg, alt: "House exterior at sunset" },
+  { src: kitchenImg, alt: "Kitchen and dining area" },
+  { src: gymExteriorImg, alt: "Gym and pool exterior view" },
 ];
 
 const Accommodation = () => {
