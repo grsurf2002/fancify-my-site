@@ -55,7 +55,7 @@ const coaches = [
     role: "Certified Coach",
     subtitle: "Co-Founder",
     images: gabrielImages,
-    bio: "Born in Cascais, surfing since age 3. Moved to Ericeira young and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in his junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
+    bio: "Raised in Ericeira and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in his junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
     instagram: "https://www.instagram.com/_gabriel.ribeiro7/",
     handle: "@_gabriel.ribeiro7",
   },
@@ -63,7 +63,7 @@ const coaches = [
 
 const afonsoCoach = {
   name: "Afonso Pinto",
-  role: "Coach",
+  role: "Certified Coach",
   subtitle: "",
   images: afonsoImages,
   bio: "Born in Ericeira, with a long and significant junior career with notable results, now actively competing in the QS (Qualifying Series). Known for his sharp backside surfing and always being with a smile on the face.",
