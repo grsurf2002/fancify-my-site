@@ -28,7 +28,7 @@ const Accommodation = () => {
       <Navbar />
 
       {/* Hero */}
-      <section className="relative pt-32 pb-20 px-4 overflow-hidden">
+      <section className="relative pt-32 pb-20 px-4 overflow-hidden min-h-[80vh]">
         <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
           {[bedroomImg, livingImg, gymImg, poolImg].map((img, i) => (
             <div key={i} className="overflow-hidden">
