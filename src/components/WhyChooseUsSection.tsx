@@ -9,7 +9,7 @@ const reasons = [
   },
   {
     icon: MapPin,
-    title: "Local expertise",
+    title: "Coach with local expertise",
     description:
       "Based in Ericeira, but we also do sessions in Peniche or Lisbon area. We know tides, wind windows and the best spots for each level.",
   },
