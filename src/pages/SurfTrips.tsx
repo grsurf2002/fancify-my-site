@@ -169,6 +169,7 @@ const whyJoinReasons = [
   { icon: Users, text: "Small groups for better progression" },
   { icon: Target, text: "Trips adapted to all levels" },
   { icon: Heart, text: "Meet like-minded surfers" },
+  { icon: ShieldCheck, text: "Led by experienced surf coaches & surfers" },
 ];
 
 const TripCard = ({ trip }: { trip: Trip }) => {
