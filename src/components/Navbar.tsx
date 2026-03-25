@@ -35,6 +35,9 @@ const Navbar = () => {
           <a href="/prices" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Prices
           </a>
+          <a href="/accommodation" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+            Accommodation
+          </a>
           <a href="/#team" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
             Team
           </a>
@@ -67,6 +70,9 @@ const Navbar = () => {
           </a>
           <a href="/prices" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Prices
+          </a>
+          <a href="/accommodation" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+            Accommodation
           </a>
           <a href="/#team" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Team
