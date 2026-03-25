@@ -10,7 +10,7 @@ import TeamSection from "@/components/TeamSection";
 import SessionTypesSection from "@/components/SessionTypesSection";
 import ReviewsSection from "@/components/ReviewsSection";
 import LocalInfoSection from "@/components/LocalInfoSection";
-import BoardRentalSection from "@/components/BoardRentalSection";
+
 import FinalCTASection from "@/components/FinalCTASection";
 import ContactSection from "@/components/ContactSection";
 import FAQSection from "@/components/FAQSection";
@@ -30,7 +30,7 @@ const Index = () => {
       
       <ResultsSection />
       <SessionTypesSection />
-      <BoardRentalSection />
+      
       <ReviewsSection />
       <FAQSection />
       <LocalInfoSection />
