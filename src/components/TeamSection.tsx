@@ -174,7 +174,7 @@ const TeamSection = () => {
             Meet Your Coaches
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-            Two long-time friends, competitive surfers and certified instructors ready to help you achieve your goals.
+            We are a team of experienced surfers and coaches in Ericeira, offering personalized surf coaching sessions tailored to your level and goals.
           </p>
         </div>
 
