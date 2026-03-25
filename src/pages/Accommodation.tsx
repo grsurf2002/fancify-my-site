@@ -68,53 +68,34 @@ const Accommodation = () => {
 
       {/* Photos of the House */}
       <section className="container mx-auto px-4 pb-16">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground uppercase text-center mb-10">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground uppercase mb-4">
             Photos of the House
           </h2>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            {visiblePhotos.map((photo, i) => (
-              <div key={i} className="rounded-2xl overflow-hidden shadow-card aspect-[4/3]">
-                <img
-                  src={photo.src}
-                  alt={photo.alt}
-                  className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                  loading="lazy"
-                />
-              </div>
-            ))}
-          </div>
-          {allPhotos.length > 4 && (
-            <div className="mt-8 text-center">
-              <button
-                onClick={() => setShowAll(!showAll)}
-                className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold tracking-wider uppercase rounded-full border border-border bg-card text-foreground hover:bg-accent transition-colors"
-              >
-                {showAll ? (
-                  <>Show Less <ChevronUp className="w-4 h-4" /></>
-                ) : (
-                  <>See More <ChevronDown className="w-4 h-4" /></>
-                )}
-              </button>
+          <button
+            onClick={() => setShowAll(!showAll)}
+            className="inline-flex items-center gap-2 px-6 py-3 text-sm font-semibold tracking-wider uppercase rounded-full border border-border bg-card text-foreground hover:bg-accent transition-colors mb-8"
+          >
+            {showAll ? (
+              <>Hide Photos <ChevronUp className="w-4 h-4" /></>
+            ) : (
+              <>See More <ChevronDown className="w-4 h-4" /></>
+            )}
+          </button>
+          {showAll && (
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 animate-fade-up">
+              {allPhotos.map((photo, i) => (
+                <div key={i} className="rounded-2xl overflow-hidden shadow-card aspect-[4/3]">
+                  <img
+                    src={photo.src}
+                    alt={photo.alt}
+                    className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
             </div>
           )}
-        </div>
-      </section>
-
-      {/* Features */}
-      <section className="container mx-auto px-4 pb-16">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground uppercase text-center mb-10">
-            What's Included
-          </h2>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-            {features.map((f, i) => (
-              <div key={i} className="flex flex-col items-center text-center gap-3 p-4 rounded-xl bg-card border border-border">
-                <f.icon className="w-8 h-8 text-primary" />
-                <span className="text-sm font-medium text-foreground">{f.label}</span>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
