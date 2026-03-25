@@ -50,21 +50,6 @@ const Accommodation = () => {
         </div>
       </section>
 
-      {/* Photo Grid */}
-      <section className="container mx-auto px-4 pb-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-5xl mx-auto">
-          {photos.map((photo, i) => (
-            <div key={i} className="rounded-2xl overflow-hidden shadow-card aspect-[4/3]">
-              <img
-                src={photo.src}
-                alt={photo.alt}
-                className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                loading="lazy"
-              />
-            </div>
-          ))}
-        </div>
-      </section>
 
       {/* Features */}
       <section className="container mx-auto px-4 pb-16">
