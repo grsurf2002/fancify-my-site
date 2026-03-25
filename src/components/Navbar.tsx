@@ -25,25 +25,25 @@ const Navbar = () => {
         </a>
 
         {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
-          <a href="/board-rental" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+        <div className="hidden md:flex items-center gap-4 lg:gap-6">
+          <a href="/board-rental" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Board Rental
           </a>
-          <a href="/surf-trips" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/surf-trips" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Surf Trips
           </a>
-          <a href="/prices" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/prices" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Prices
           </a>
-          <a href="/accommodation" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/accommodation" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Accommodation
           </a>
-          <a href="/#team" className="text-sm font-medium tracking-widest text-foreground hover:text-primary transition-colors uppercase">
+          <a href="/#team" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Team
           </a>
           <a
             href="/#contact"
-            className="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-opacity"
+            className="px-5 py-2 text-xs lg:text-sm font-semibold tracking-wider uppercase rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-opacity whitespace-nowrap"
           >
             Contact
           </a>
