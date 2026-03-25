@@ -26,6 +26,7 @@ const allPhotos = [
   { src: poolImg, alt: "Pool area" },
   { src: officeImg, alt: "Office and workspace" },
   { src: bathroomImg, alt: "Private bathroom" },
+  { src: balconyImg, alt: "Balcony with village view" },
 ];
 
 const Accommodation = () => {
