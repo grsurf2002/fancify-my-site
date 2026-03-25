@@ -29,11 +29,14 @@ const Accommodation = () => {
 
       {/* Hero */}
       <section className="relative pt-32 pb-20 px-4 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{ backgroundImage: `url(${livingImg})` }}
-        />
-        <div className="absolute inset-0 bg-background/75" />
+        <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
+          {[bedroomImg, livingImg, gymImg, poolImg].map((img, i) => (
+            <div key={i} className="overflow-hidden">
+              <img src={img} alt="" className="w-full h-full object-cover" />
+            </div>
+          ))}
+        </div>
+        <div className="absolute inset-0 bg-background/80" />
         <div className="container mx-auto text-center max-w-4xl relative z-10">
           <span className="inline-block px-4 py-1.5 mb-6 text-xs font-semibold tracking-[0.3em] uppercase rounded-full bg-primary/10 text-primary">
             Stay With Us
