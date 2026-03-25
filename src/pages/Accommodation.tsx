@@ -108,7 +108,7 @@ const Accommodation = () => {
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-border bg-card p-8 text-center shadow-card">
               <Calendar className="w-8 h-8 text-primary mx-auto mb-4" />
-              <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Per Day</p>
+              <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Per Room / Day</p>
               <p className="font-heading text-5xl font-bold text-foreground">€100</p>
             </div>
             <div className="rounded-2xl border-2 border-primary bg-card p-8 text-center shadow-card relative">
@@ -116,7 +116,7 @@ const Accommodation = () => {
                 Best Value
               </span>
               <Calendar className="w-8 h-8 text-primary mx-auto mb-4" />
-              <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Per Week</p>
+              <p className="text-muted-foreground text-sm uppercase tracking-widest mb-2">Per Room / Week</p>
               <p className="font-heading text-5xl font-bold text-foreground">€500</p>
             </div>
           </div>
