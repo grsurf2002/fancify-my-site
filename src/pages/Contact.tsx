@@ -45,24 +45,26 @@ const Contact = () => {
 
       {/* Hero Header with Background Image */}
       <section
-        className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-cover bg-center bg-no-repeat"
+        className="relative bg-cover bg-center bg-no-repeat pt-28 pb-16 md:pt-36 md:pb-20"
         style={{ backgroundImage: `url(${contactHeroBg})` }}
       >
         <div className="absolute inset-0 bg-background/70" />
-        <div className="container px-4 max-w-6xl mx-auto relative z-10">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
-              Get in Touch
-            </p>
-            <h1 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6 uppercase">
-              Contact Our Surf Coaches in Ericeira
-            </h1>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Looking for a surf coach in Ericeira? Get in touch with our team to book your personalized surf coaching session.
-            </p>
-          </div>
+        <div className="container px-4 max-w-6xl mx-auto relative z-10 text-center">
+          <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
+            Get in Touch
+          </p>
+          <h1 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6 uppercase">
+            Contact Our Surf Coaches in Ericeira
+          </h1>
+          <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            Looking for a surf coach in Ericeira? Get in touch with our team to book your personalized surf coaching session.
+          </p>
+        </div>
+      </section>
 
+      {/* Form + Contact Info */}
+      <section className="py-16 md:py-24">
+        <div className="container px-4 max-w-6xl mx-auto">
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20">
             {/* Form */}
             <div className="order-2 md:order-1">
