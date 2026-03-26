@@ -42,7 +42,7 @@ const Navbar = () => {
             Team
           </a>
           <a
-            href="/#contact"
+            href="/contact"
             className="px-5 py-2 text-xs lg:text-sm font-semibold tracking-wider uppercase rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-opacity whitespace-nowrap"
           >
             Contact
@@ -81,7 +81,7 @@ const Navbar = () => {
             Team
           </a>
           <a
-            href="/#contact"
+            href="/contact"
             onClick={() => setMenuOpen(false)}
             className="px-6 py-2.5 text-sm font-semibold tracking-wider uppercase rounded-full bg-primary text-primary-foreground hover:opacity-90 transition-opacity text-center"
           >
