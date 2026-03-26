@@ -1,4 +1,5 @@
 import { useState } from "react";
+import contactHeroBg from "@/assets/contact-hero.png";
 import { Mail, Phone, MapPin, Instagram, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -224,6 +225,7 @@ const Contact = () => {
               </div>
             </div>
           </div>
+        </div>
         </div>
       </section>
 
