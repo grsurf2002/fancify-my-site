@@ -42,8 +42,13 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-28 pb-16 md:pt-36 md:pb-24">
-        <div className="container px-4 max-w-6xl mx-auto">
+      {/* Hero Header with Background Image */}
+      <section
+        className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactHeroBg})` }}
+      >
+        <div className="absolute inset-0 bg-background/70" />
+        <div className="container px-4 max-w-6xl mx-auto relative z-10">
           {/* Header */}
           <div className="text-center mb-16">
             <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
