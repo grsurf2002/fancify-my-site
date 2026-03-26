@@ -24,13 +24,13 @@ const FinalCTASection = () => {
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
             Book a Lesson
           </a>
           <a
-            href="#contact"
+            href="/contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-sm hover:border-primary hover:text-primary transition-all duration-300"
           >
             Send a Message
