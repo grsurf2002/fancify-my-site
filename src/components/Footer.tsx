@@ -92,7 +92,7 @@ const Footer = () => {
             </h4>
             <div className="rounded-lg overflow-hidden h-24">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2807.127922312719!2d-9.419611472478818!3d38.97018564076593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2spt!4v1774007778737!5m2!1sen!2spt"
+                src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d175.44576585605427!2d-9.419073114197161!3d38.97007635073217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xa4fa469d0cb4b8f9%3A0x968d586a442cfe9d!2sUpgrade%20surf%20Coaching%2C%20Forum%2C%20Urbaniza%C3%A7%C3%A3o%20S%C3%A3o%20Sebasti%C3%A3o%2C%20Av.%20S%C3%A3o%20Sebasti%C3%A3o%20Loja%20G%2C%202655-270%20Ericeira!3m2!1d38.9704261!2d-9.4189998!4m5!1s0xa4fa469d0cb4b8f9%3A0x968d586a442cfe9d!2sUpgrade%20surf%20Coaching%2C%20Forum%2C%20Urbaniza%C3%A7%C3%A3o%20S%C3%A3o%20Sebasti%C3%A3o%2C%20Av.%20S%C3%A3o%20Sebasti%C3%A3o%20Loja%20G%2C%202655-270%20Ericeira!3m2!1d38.9704261!2d-9.4189998!5e1!3m2!1sen!2spt!4v1774524308805!5m2!1sen!2spt"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}
