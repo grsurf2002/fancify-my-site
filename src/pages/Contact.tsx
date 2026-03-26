@@ -1,4 +1,5 @@
 import { useState } from "react";
+import contactHeroBg from "@/assets/contact-hero.png";
 import { Mail, Phone, MapPin, Instagram, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -42,8 +43,13 @@ const Contact = () => {
     <div className="min-h-screen bg-background">
       <Navbar />
 
-      <section className="pt-28 pb-16 md:pt-36 md:pb-24">
-        <div className="container px-4 max-w-6xl mx-auto">
+      {/* Hero Header with Background Image */}
+      <section
+        className="relative pt-28 pb-16 md:pt-36 md:pb-24 bg-cover bg-center bg-no-repeat"
+        style={{ backgroundImage: `url(${contactHeroBg})` }}
+      >
+        <div className="absolute inset-0 bg-background/70" />
+        <div className="container px-4 max-w-6xl mx-auto relative z-10">
           {/* Header */}
           <div className="text-center mb-16">
             <p className="text-sm tracking-[0.3em] uppercase text-primary font-medium mb-3">
@@ -208,7 +214,7 @@ const Contact = () => {
               <div className="rounded-xl overflow-hidden border border-border h-64">
                 <iframe
                   title="Upgrade Surf Coaching location in Ericeira, Portugal"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24816.47837392386!2d-9.435!3d38.963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd1ec91e7c97a4e1%3A0x3c4a293f2e124c01!2sEriceira!5e0!3m2!1sen!2spt!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d175.44576585605427!2d-9.419073114197161!3d38.97007635073217!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e6!4m5!1s0xa4fa469d0cb4b8f9%3A0x968d586a442cfe9d!2sUpgrade%20surf%20Coaching%2C%20Forum%2C%20Urbaniza%C3%A7%C3%A3o%20S%C3%A3o%20Sebasti%C3%A3o%2C%20Av.%20S%C3%A3o%20Sebasti%C3%A3o%20Loja%20G%2C%202655-270%20Ericeira!3m2!1d38.9704261!2d-9.4189998!4m5!1s0xa4fa469d0cb4b8f9%3A0x968d586a442cfe9d!2sUpgrade%20surf%20Coaching%2C%20Forum%2C%20Urbaniza%C3%A7%C3%A3o%20S%C3%A3o%20Sebasti%C3%A3o%2C%20Av.%20S%C3%A3o%20Sebasti%C3%A3o%20Loja%20G%2C%202655-270%20Ericeira!3m2!1d38.9704261!2d-9.4189998!5e1!3m2!1sen!2spt!4v1774524308805!5m2!1sen!2spt"
                   width="100%"
                   height="100%"
                   style={{ border: 0 }}
