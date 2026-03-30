@@ -23,6 +23,7 @@ interface Trip {
   dates: string;
   flag: string;
   taglineShort: string;
+  fullyBooked?: boolean;
   details?: {
     tagline: string;
     location?: string;
@@ -64,6 +65,7 @@ const trips2026: Trip[] = [
     destination: "Maldives Surf Camp",
     dates: "6 — 16 May 2026",
     flag: "🌴",
+    fullyBooked: true,
     taglineShort: "Tropical reef waves & high-performance coaching",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
@@ -85,6 +87,7 @@ const trips2026: Trip[] = [
     destination: "Maldives Surf Trip",
     dates: "16 — 26 May 2026",
     flag: "🌴",
+    fullyBooked: true,
     taglineShort: "Perfect for intermediate & advanced surfers",
     details: {
       tagline: "Surf – Learn – Evolve – Repeat",
@@ -196,10 +199,15 @@ const TripCard = ({ trip }: { trip: Trip }) => {
             <span className="font-body text-sm">{trip.dates}</span>
           </div>
           <p className="text-sm text-muted-foreground/80">{trip.taglineShort}</p>
-          {!hasDetails && (
+          {trip.fullyBooked && (
+            <span className="inline-block mt-2 text-xs font-heading font-bold uppercase tracking-wider text-red-500">
+              Fully Booked
+            </span>
+          )}
+          {!trip.fullyBooked && !hasDetails && (
             <span className="inline-block mt-2 text-xs font-heading uppercase tracking-wider text-primary/70">Coming soon</span>
           )}
-          {hasDetails && !expanded && (
+          {!trip.fullyBooked && hasDetails && !expanded && (
             <span className="inline-block mt-2 text-xs font-heading uppercase tracking-wider text-primary">
               Limited spots available — Click for details
             </span>
