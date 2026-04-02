@@ -26,8 +26,8 @@ const Navbar = () => {
 
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-4 lg:gap-6">
-          <a href="/board-rental" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
-            Board Rental
+          <a href="/surf-coaching" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
+            Surf Coaching
           </a>
           <a href="/surf-trips" className="text-xs lg:text-sm font-medium tracking-wider text-foreground hover:text-primary transition-colors uppercase whitespace-nowrap">
             Surf Trips
@@ -65,8 +65,8 @@ const Navbar = () => {
           <a href="/#services" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Services
           </a>
-          <a href="/board-rental" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
-            Board Rental
+          <a href="/surf-coaching" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
+            Surf Coaching
           </a>
           <a href="/surf-trips" onClick={() => setMenuOpen(false)} className="text-sm font-medium tracking-widest text-muted-foreground hover:text-primary transition-colors uppercase">
             Surf Trips
