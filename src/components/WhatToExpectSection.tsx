@@ -14,7 +14,7 @@ const WhatToExpectSection = () => {
           </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Surf Coaching{" "}
-            <span className="text-gradient-teal">Ericeira</span>
+            <span className="text-gradient-teal">in Ericeira</span>
           </h2>
         </div>
 
@@ -24,7 +24,7 @@ const WhatToExpectSection = () => {
               The First Session
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              We assess your current surfing: ocean awareness, pop-up mechanics, board control and goal setting. On land we teach key drills; in water we focus on targeted reps. You leave knowing exactly what to practice.
+              We assess your current surfing: ocean awareness, pop-up mechanics, board control, and goals. On land, we teach key drills; in the water, we focus on targeted repetition. You leave knowing exactly what to practice.
             </p>
           </div>
 
@@ -33,7 +33,7 @@ const WhatToExpectSection = () => {
               Ongoing Coaching
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Follow-up sessions use progressive drills, wave selection coaching and real-time corrections. We track your progress and adapt sessions to keep you moving forward.
+              Follow-up sessions use progressive drills, wave selection guidance, and real-time corrections. We track your progress and adapt each session to keep you moving forward.
             </p>
           </div>
 
@@ -42,7 +42,7 @@ const WhatToExpectSection = () => {
               Local Conditions We Use to Accelerate Learning
             </h3>
             <p className="text-muted-foreground leading-relaxed">
-              Ericeira offers varied breaks - sandy beach breaks for safe repetition, reef and point breaks for advanced timing and maneuvers. But we also take sessions up to Peniche or Lisbon area. We leverage the right spot for your stage.
+              Ericeira offers varied breaks: sandy beach breaks for safe repetition, and reef and point breaks for advanced timing and maneuvers. We also run sessions in Peniche and the Lisbon area, using the right conditions for your level.
             </p>
           </div>
 
@@ -50,7 +50,7 @@ const WhatToExpectSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
-            Book Now - Surf Lessons Ericeira
+            Book Surf Coaching
           </a>
         </div>
       </div>

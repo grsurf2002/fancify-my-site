@@ -5,22 +5,22 @@ const outcomes = [
   {
     icon: TrendingUp,
     title: "Faster take-offs & better wave selection",
-    description: "Gain confidence in more conditions.",
+    description: "Build confidence across a wider range of conditions.",
   },
   {
     icon: RotateCcw,
     title: "Cleaner turns & speed generation",
-    description: "Surf smarter with more technique and applying more powerful turns.",
+    description: "Surf with better technique and generate more speed and power.",
   },
   {
     icon: Eye,
     title: "Better ocean awareness",
-    description: "Read sets, currents and wind to be in the right place.",
+    description: "Read sets, currents, and wind to position yourself in the right place.",
   },
   {
     icon: BarChart3,
     title: "Structured progression",
-    description: "Milestones you can measure each session.",
+    description: "Clear milestones you can measure in every session.",
   },
 ];
 
@@ -34,7 +34,7 @@ const ResultsSection = () => {
       <div className="container px-4 relative z-10">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
-            Real Progress, <span className="text-gradient-golden">Real Outcomes</span>
+            Real Progress. <span className="text-gradient-golden">Real Results.</span>
           </h2>
         </div>
 

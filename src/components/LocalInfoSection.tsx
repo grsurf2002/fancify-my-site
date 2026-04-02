@@ -17,7 +17,7 @@ const LocalInfoSection = () => {
             Based in <span className="text-gradient-golden">Ericeira</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            Surf lessons Ericeira · Surf coaching Ericeira
+            Surf coaching in Ericeira · Surf lessons in Ericeira
           </p>
         </div>
 
@@ -37,7 +37,7 @@ const LocalInfoSection = () => {
               Best Time to Visit
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Autumn and winter for more powerful waves, but always with the option to drive and find easy waves.
+              Autumn and winter offer more powerful waves, with the flexibility to drive and find easier conditions when needed.
             </p>
           </div>
           <div className="rounded-2xl border border-border/50 bg-card p-6">
@@ -46,7 +46,7 @@ const LocalInfoSection = () => {
               Directions & Parking
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Free parking available at most surf spots.
+              Free parking is available at most surf spots.
             </p>
           </div>
         </div>

@@ -8,35 +8,35 @@ import surfTripsImg from "@/assets/surf-trips-main.png";
 const services = [
   {
     icon: Waves,
-    title: "Surf Coaching / Lesson",
+    title: "Surf Coaching",
     description:
-      "Tailored coaching to help you reach your full potential. We focus on technique, wave reading, positioning and confidence, making you a more capable surfer who truly enjoys every session.",
+      "Tailored surf coaching to help you reach your full potential. We focus on technique, wave reading, positioning, and confidence, whether you're joining beginner surf lessons or progressing to more advanced surfing.",
     image: surfCoachingImg,
     link: "/surf-coaching",
-  },
-  {
-    icon: Plane,
-    title: "Surf Trips",
-    description:
-      "Join us on unforgettable surf adventures around the world. From Algarve to Sri Lanka, Morocco and Maldives, we organize trips for all levels, combining great waves, coaching and good vibes.",
-    image: surfTripsImg,
-    imagePosition: "center 65%",
-    link: "/surf-trips",
-  },
-  {
-    icon: Compass,
-    title: "Surf Skate Lessons",
-    description:
-      "We use surfskating to upgrade surf skills quicker - work on new skills or correct mistakes efficiently, independent of wave conditions. Train frequently and build the best skillset for the water.",
-    image: "https://freight.cargo.site/w/750/i/B1733479139200985709999216607689/F5B6F47B-F0DF-4975-BD41-687861DF8F40-2.png",
-    link: "/surfskate",
   },
   {
     icon: Video,
     title: "Video Analysis",
     description:
-      "Video analysis is a key tool for improving technique. Break down your movements in detail, identify areas for improvement, and track your progress over time to stay motivated.",
+      "Video analysis is a key part of our surf coaching. Break down your movements in detail, identify areas for improvement, and track your progress over time.",
     image: videoAnalysisImg,
+  },
+  {
+    icon: Compass,
+    title: "Surf Skate Lessons",
+    description:
+      "We use surfskating to improve your surfing faster: refine technique, build muscle memory, and correct mistakes efficiently, even without waves. A powerful complement to your surf coaching in Ericeira.",
+    image: "https://freight.cargo.site/w/750/i/B1733479139200985709999216607689/F5B6F47B-F0DF-4975-BD41-687861DF8F40-2.png",
+    link: "/surfskate",
+  },
+  {
+    icon: Plane,
+    title: "Surf Trips",
+    description:
+      "Join us on unforgettable surf trips around the world. From Algarve to Sri Lanka, Morocco and the Maldives, we combine great waves with expert surf coaching and a relaxed, high-quality experience.",
+    image: surfTripsImg,
+    imagePosition: "center 65%",
+    link: "/surf-trips",
   },
 ];
 
@@ -46,7 +46,7 @@ const ServicesSection = () => {
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
-            Our Services
+            Our Surf Coaching Services
           </h2>
         </div>
 
@@ -85,7 +85,7 @@ const ServicesSection = () => {
                     to={service.link}
                     className="inline-flex items-center gap-2 mt-4 text-sm font-medium text-primary hover:underline transition-colors"
                   >
-                    Find out more <ArrowRight size={16} />
+                    Learn more <ArrowRight size={16} />
                   </Link>
                 )}
               </div>

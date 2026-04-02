@@ -43,19 +43,19 @@ const afonsoImages = [
 const coaches = [
   {
     name: "Hugo Cardoso",
-    role: "Certified Coach",
+    role: "Certified Surf Coach",
     subtitle: "Co-Founder",
     images: hugoImages,
-    bio: "Born in Ericeira, surfing since age 5. Started competing at 11, with a full junior career and a couple years of QS (Qualifying Series) around Europe. His entire life revolves around surfing, training, competing, and traveling. Passionate about teaching and making everyone feel supported and challenged.",
+    bio: "Born in Ericeira, surfing since age 5. Started competing at 11, with a full junior career and several years in the QS (Qualifying Series) across Europe. His life revolves around surfing, training, and competition. A dedicated surf coach who creates a supportive and challenging environment.",
     instagram: "https://www.instagram.com/hugodsc/",
     handle: "@hugodsc",
   },
   {
     name: "Gabriel Ribeiro",
-    role: "Certified Coach",
+    role: "Certified Surf Coach",
     subtitle: "Co-Founder",
     images: gabrielImages,
-    bio: "Raised in Ericeira and started competing at 9. He has dedicated his life to surfing and traveling to improve his skills, doing nice results in his junior career and a couple years of QS (Qualifying Series) around Europe. Super dedicated and transparent surf coach to help you reach your goals.",
+    bio: "Raised in Ericeira, he started competing at 9 and has dedicated his life to surfing and progression. With strong results in his junior career and experience in the QS (Qualifying Series) across Europe, he's a highly dedicated surf coach focused on helping you reach your goals.",
     instagram: "https://www.instagram.com/_gabriel.ribeiro7/",
     handle: "@_gabriel.ribeiro7",
   },
@@ -63,10 +63,10 @@ const coaches = [
 
 const afonsoCoach = {
   name: "Afonso Pinto",
-  role: "Certified Coach",
+  role: "Certified Surf Coach",
   subtitle: "",
   images: afonsoImages,
-  bio: "Born in Ericeira, with a long and significant junior career with notable results, now actively competing in the QS (Qualifying Series). Known for his sharp backside surfing and always being with a smile on the face.",
+  bio: "Born in Ericeira, with a strong junior career and notable results, now actively competing in the QS (Qualifying Series). Known for his sharp backside surfing and positive, motivating coaching style.",
   instagram: "https://www.instagram.com/afonso._pinto/",
   handle: "@afonso._pinto",
 };
@@ -171,10 +171,10 @@ const TeamSection = () => {
             Who We Are
           </p>
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
-            Meet Your Coaches
+            Meet Your Surf Coaches
           </h2>
           <p className="mt-4 text-muted-foreground max-w-lg mx-auto">
-            We are a team of experienced surfers and coaches in Ericeira, offering personalized surf coaching sessions tailored to your level and goals.
+            We are a team of experienced surf coaches in Ericeira, offering personalized surf coaching sessions tailored to your level and goals.
           </p>
         </div>
 

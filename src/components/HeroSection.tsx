@@ -43,7 +43,7 @@ const HeroSection = () => {
           <span className="hidden sm:inline text-muted-foreground">•</span>
           <span>Video feedback</span>
           <span className="hidden sm:inline text-muted-foreground">•</span>
-          <span>Local expert surfers</span>
+          <span>Local surf coaches</span>
         </div>
 
         {/* CTAs */}
@@ -55,13 +55,13 @@ const HeroSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-xs sm:text-sm hover:shadow-glow transition-all duration-300"
           >
-            Book a Lesson
+            Book Coaching
           </a>
           <a
             href="#reviews"
             className="inline-flex items-center gap-2 px-6 sm:px-8 py-3 sm:py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-xs sm:text-sm hover:border-primary hover:text-primary transition-all duration-300"
           >
-            What Do People Say
+            What Our Surfers Say
           </a>
         </div>
       </div>

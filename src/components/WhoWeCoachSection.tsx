@@ -1,17 +1,17 @@
 import { CheckCircle, XCircle } from "lucide-react";
 
 const idealFor = [
-  "Feeling stuck with your progression, and not knowing what to work on.",
-  "People that want to progress smarter while having fun.",
+  "Feeling stuck in your progression and unsure what to work on.",
+  "Surfers who want to improve faster while still enjoying the process.",
   "Intermediate surfers stuck on small improvements (turns, timing, confidence).",
-  "Travellers who want effective coaching during a short trip to Ericeira.",
+  "Travellers looking for focused surf coaching during a short trip to Ericeira.",
   "Adults returning to surfing after a break.",
-  "Advanced surfers who want to take the next step.",
+  "Advanced surfers ready to take the next step.",
 ];
 
 const notAFit = [
-  "Large-group party lessons.",
-  "Complete beginner playtime without structure.",
+  "Large-group surf lessons or party sessions.",
+  "Unstructured beginner sessions without clear progression.",
 ];
 
 const WhoWeCoachSection = () => {
@@ -19,8 +19,6 @@ const WhoWeCoachSection = () => {
     <section className="py-24 md:py-32 bg-ocean">
       <div className="container px-4 max-w-4xl mx-auto">
         <div className="text-center mb-16">
-
-
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
             Who We <span className="text-gradient-golden">Coach</span>
           </h2>
@@ -54,7 +52,7 @@ const WhoWeCoachSection = () => {
               ))}
             </ul>
             <p className="mt-6 text-sm text-muted-foreground italic">
-              Our focus is progression and measurable improvement.
+              Our focus is surf coaching, progression, and measurable improvement.
             </p>
           </div>
         </div>
@@ -64,7 +62,7 @@ const WhoWeCoachSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
-            Contact Us - Find the Right Session
+            Find the Right Surf Coaching Session
           </a>
         </div>
       </div>
