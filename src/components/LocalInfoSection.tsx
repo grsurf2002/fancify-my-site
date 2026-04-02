@@ -28,7 +28,8 @@ const LocalInfoSection = () => {
               Meeting Points
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              Ericeira, Lisbon area and Peniche.
+              <strong>Ericeira</strong> — World Surf Reserve with consistent waves for all levels, with point breaks and beach breaks.<br /><br />
+              <strong>Peniche</strong> — Powerful swells and world-class beach breaks.
             </p>
           </div>
           <div className="rounded-2xl border border-border/50 bg-card p-6">
