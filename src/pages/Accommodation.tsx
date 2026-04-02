@@ -48,7 +48,7 @@ const Accommodation = () => {
         <div className="absolute inset-0 grid grid-cols-2 grid-rows-2">
           {[bedroomImg, livingImg, gymImg, poolImg].map((img, i) => (
             <div key={i} className="overflow-hidden">
-              <img src={img} alt="" className={`w-full h-full object-cover ${i === 2 ? 'scale-[0.85]' : ''}`} />
+              <img src={img} alt="" className="w-full h-full object-cover" />
             </div>
           ))}
         </div>
