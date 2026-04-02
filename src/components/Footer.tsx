@@ -17,6 +17,8 @@ const Footer = () => {
                 { label: "Who Is Your Surf Coach", href: "/#team" },
                 { label: "Surfskate", href: "/surfskate" },
                 { label: "Surf Trips", href: "/surf-trips" },
+                { label: "Board Rental", href: "/board-rental" },
+                { label: "Accommodation", href: "/accommodation" },
                 { label: "Prices", href: "/prices" },
                 { label: "Contact", href: "/#contact" },
               ].map((link) => (
