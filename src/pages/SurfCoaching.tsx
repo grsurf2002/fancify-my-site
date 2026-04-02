@@ -3,7 +3,7 @@ import { MapPin, Video, Target, Users, CheckCircle, ChevronRight, MessageCircle 
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import ReviewsSection from "@/components/ReviewsSection";
-import heroSurf from "@/assets/hero-surf.jpg";
+import heroSurf from "@/assets/surf-coaching-hero.jpeg";
 import coaching1 from "@/assets/coaching-1.jpeg";
 import coaching2 from "@/assets/coaching-2.jpeg";
 import coaching5 from "@/assets/coaching-5.jpeg";
