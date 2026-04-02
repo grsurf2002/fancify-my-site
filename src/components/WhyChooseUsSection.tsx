@@ -5,13 +5,13 @@ const reasons = [
     icon: Target,
     title: "Performance-first coaching",
     description:
-      "We structure sessions around clear progression goals, not just \"have fun.\"",
+      "We structure sessions around clear progression goals - not just \"having fun.\"",
   },
   {
     icon: MapPin,
-    title: "Coach with local expertise",
+    title: "Local surf coaches",
     description:
-      "Based in Ericeira, but we also do sessions in Peniche or Lisbon area. We know tides, wind windows and the best spots for each level.",
+      "Based in Ericeira, with sessions also in Peniche and the Lisbon area. We know the tides, wind windows, and the best spots for each level.",
   },
   {
     icon: Zap,
@@ -21,21 +21,21 @@ const reasons = [
   },
   {
     icon: Users,
-    title: "Adult-focused",
+    title: "Adult-focused coaching",
     description:
-      "Coaching designed for busy adults, efficient sessions that accelerate improvement.",
+      "Coaching designed for busy adults - efficient sessions that accelerate improvement.",
   },
   {
     icon: Baby,
     title: "Kids 8+",
     description:
-      "We also do kids 8+ that want to progress while having fun or take a competitive career.",
+      "Coaching for kids who want to progress, build confidence, and enjoy surfing — whether for fun or future competition.",
   },
   {
     icon: ShieldCheck,
     title: "Safety & equipment",
     description:
-      "Modern soft-top and performance boards, adjustable wetsuits, and certified coaching standards.",
+      "Modern soft-top and performance boards, quality wetsuits, and certified surf coaching standards.",
   },
 ];
 
@@ -45,8 +45,8 @@ const WhyChooseUsSection = () => {
       <div className="container px-4">
         <div className="text-center mb-16">
           <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground uppercase">
-            Why Upgrade Your Surfing{" "}
-            <span className="text-gradient-golden">With Us?</span>
+            Why Train{" "}
+            <span className="text-gradient-golden">With Us</span>
           </h2>
         </div>
 
@@ -72,7 +72,7 @@ const WhyChooseUsSection = () => {
             href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
-            Book a Progression Session
+            Book a Surf Coaching Session
           </a>
         </div>
       </div>

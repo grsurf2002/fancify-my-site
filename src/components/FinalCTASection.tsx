@@ -19,21 +19,21 @@ const FinalCTASection = () => {
           Ready to <span className="text-gradient-golden">Surf Better?</span>
         </h2>
         <p className="text-lg text-muted-foreground mb-10 leading-relaxed">
-          Book a lesson, reserve a coaching package, or get a free assessment call. Limited spots per day to ensure quality coaching.
+          Book a surf coaching session, reserve a coaching package, or request a free assessment call. Limited spots per day to ensure high-quality coaching.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
           <a
-            href="/contact"
+            href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full bg-primary text-primary-foreground font-semibold tracking-wider uppercase text-sm hover:shadow-glow transition-all duration-300"
           >
-            Book a Lesson
+            Book Surf Coaching
           </a>
           <a
-            href="/contact"
+            href="#contact"
             className="inline-flex items-center gap-2 px-8 py-3.5 rounded-full border border-foreground/30 text-foreground font-semibold tracking-wider uppercase text-sm hover:border-primary hover:text-primary transition-all duration-300"
           >
-            Send a Message
+            Get in Touch
           </a>
         </div>
       </div>

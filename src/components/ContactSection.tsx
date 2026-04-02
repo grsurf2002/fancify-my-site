@@ -8,10 +8,10 @@ const ContactSection = () => {
           Get Started
         </p>
         <h2 className="font-heading text-4xl md:text-6xl font-bold text-foreground mb-6 uppercase">
-          Book Your Session
+          Book Your Surf Coaching Session
         </h2>
         <p className="text-muted-foreground mb-12">
-          Ready to upgrade your surfing? Reach out and schedule your class today.
+          Ready to upgrade your surfing? Get in touch to schedule your surf coaching session.
         </p>
 
         <div className="space-y-6">
