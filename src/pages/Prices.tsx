@@ -152,17 +152,17 @@ const Prices = () => {
 
       {/* Surf Packs */}
       <section className="py-16 md:py-24 bg-secondary/30">
-        <div className="container px-4 max-w-6xl">
+        <div className="container px-4 max-w-7xl">
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
             Surf Lesson Packages
           </h2>
           <p className="text-muted-foreground text-center mb-12 text-lg">Best for Flexibility</p>
 
-          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4">
             {lessonPacks.map((pack) => (
               <div
                 key={pack.sessions}
-                className={`relative rounded-2xl p-8 flex flex-col items-center text-center transition-all duration-500 ${
+                className={`relative rounded-2xl p-6 flex flex-col items-center text-center transition-all duration-500 ${
                   pack.badge
                     ? "bg-gradient-to-b from-primary/10 to-card border-2 border-primary shadow-glow scale-105"
                     : "bg-card shadow-card hover:shadow-glow"
@@ -173,10 +173,10 @@ const Prices = () => {
                     <Flame className="w-3 h-3" /> {pack.badge}
                   </span>
                 )}
-                <h3 className="font-heading text-xl font-bold text-foreground mb-4">
-                  {pack.sessions}-Lesson Pack
+                <h3 className="font-heading text-lg font-bold text-foreground mb-3">
+                  {pack.sessions === 1 ? "1 Lesson" : `${pack.sessions}-Lesson Pack`}
                 </h3>
-                <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{pack.perSession}</p>
+                <p className="text-3xl md:text-4xl font-bold text-primary mb-1">€{pack.perSession}</p>
                 <p className="text-sm text-muted-foreground mb-4">per session</p>
                 <p className="text-lg font-semibold text-foreground mb-2">€{pack.price}</p>
                 {pack.validity && (
@@ -250,6 +250,29 @@ const Prices = () => {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Surf Skate */}
+      <section className="py-16 md:py-24 bg-secondary/30">
+        <div className="container px-4 max-w-4xl">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
+            Surf Skate Coaching
+          </h2>
+          <p className="text-muted-foreground text-center mb-12 text-lg">Improve your surf technique on land</p>
+
+          <div className="grid sm:grid-cols-2 gap-6 max-w-2xl mx-auto">
+            <div className="rounded-2xl p-8 flex flex-col items-center text-center bg-card shadow-card hover:shadow-glow transition-all duration-500">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-3">Group Lesson</h3>
+              <p className="text-3xl md:text-4xl font-bold text-primary mb-1">€30</p>
+              <p className="text-sm text-muted-foreground">per session</p>
+            </div>
+            <div className="rounded-2xl p-8 flex flex-col items-center text-center bg-card shadow-card hover:shadow-glow transition-all duration-500">
+              <h3 className="font-heading text-lg font-bold text-foreground mb-3">Private Lesson</h3>
+              <p className="text-3xl md:text-4xl font-bold text-primary mb-1">€90</p>
+              <p className="text-sm text-muted-foreground">per session</p>
+            </div>
           </div>
         </div>
       </section>
