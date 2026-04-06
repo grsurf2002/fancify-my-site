@@ -158,7 +158,7 @@ const Prices = () => {
           </h2>
           <p className="text-muted-foreground text-center mb-12 text-lg">Best for Flexibility</p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {lessonPacks.map((pack) => (
               <div
                 key={pack.sessions}
