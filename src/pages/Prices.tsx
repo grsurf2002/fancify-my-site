@@ -11,6 +11,8 @@ const monthlyPlans = [
 ];
 
 const lessonPacks = [
+  { sessions: 1, price: 80, perSession: 80, validity: null, badge: null },
+  { sessions: 3, price: 210, perSession: 70, validity: "2 months", badge: null },
   { sessions: 5, price: 340, perSession: 68, validity: "3 months", badge: null },
   { sessions: 12, price: 750, perSession: 62.5, validity: "6 months", badge: null },
   { sessions: 24, price: 1320, perSession: 55, validity: "12 months", badge: "Best Value" },
