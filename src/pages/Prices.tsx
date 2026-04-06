@@ -11,6 +11,8 @@ const monthlyPlans = [
 ];
 
 const lessonPacks = [
+  { sessions: 1, price: 80, perSession: 80, validity: null, badge: null },
+  { sessions: 3, price: 210, perSession: 70, validity: "2 months", badge: null },
   { sessions: 5, price: 340, perSession: 68, validity: "3 months", badge: null },
   { sessions: 12, price: 750, perSession: 62.5, validity: "6 months", badge: null },
   { sessions: 24, price: 1320, perSession: 55, validity: "12 months", badge: "Best Value" },
@@ -156,7 +158,7 @@ const Prices = () => {
           </h2>
           <p className="text-muted-foreground text-center mb-12 text-lg">Best for Flexibility</p>
 
-          <div className="grid md:grid-cols-3 gap-6">
+          <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {lessonPacks.map((pack) => (
               <div
                 key={pack.sessions}
@@ -177,7 +179,9 @@ const Prices = () => {
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{pack.perSession}</p>
                 <p className="text-sm text-muted-foreground mb-4">per session</p>
                 <p className="text-lg font-semibold text-foreground mb-2">€{pack.price}</p>
-                <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
+                {pack.validity && (
+                  <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
+                )}
               </div>
             ))}
           </div>
