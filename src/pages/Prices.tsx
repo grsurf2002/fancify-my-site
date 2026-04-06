@@ -179,7 +179,9 @@ const Prices = () => {
                 <p className="text-4xl md:text-5xl font-bold text-primary mb-1">€{pack.perSession}</p>
                 <p className="text-sm text-muted-foreground mb-4">per session</p>
                 <p className="text-lg font-semibold text-foreground mb-2">€{pack.price}</p>
-                <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
+                {pack.validity && (
+                  <p className="text-sm text-muted-foreground">Valid for {pack.validity}</p>
+                )}
               </div>
             ))}
           </div>
